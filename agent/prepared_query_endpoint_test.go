@@ -14,12 +14,12 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/shulutkov/yellow-pages/testrpc"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 // MockPreparedQuery is a fake endpoint that we inject into the Consul server

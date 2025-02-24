@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/structs/aclfilter"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/structs/aclfilter"
 )
 
 type aclTokenReplicator struct {

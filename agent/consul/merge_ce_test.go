@@ -12,8 +12,8 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 func TestMerge_CE_LAN(t *testing.T) {

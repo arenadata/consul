@@ -9,8 +9,8 @@ package agent
 import (
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/api"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/api"
 )
 
 func serfMemberFillAuthzContext(m *serf.Member, ctx *acl.AuthorizerContext) {

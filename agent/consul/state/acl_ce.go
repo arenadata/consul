@@ -12,8 +12,8 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 func updateTableIndexEntries(tx WriteTxn, tableName string, modifyIndex uint64, _ *acl.EnterpriseMeta) error {

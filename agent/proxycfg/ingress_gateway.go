@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/leafcert"
-	"github.com/hashicorp/consul/agent/proxycfg/internal/watch"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/shulutkov/yellow-pages/agent/leafcert"
+	"github.com/shulutkov/yellow-pages/agent/proxycfg/internal/watch"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
 )
 
 type handlerIngressGateway struct {

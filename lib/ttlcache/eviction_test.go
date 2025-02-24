@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
 )
 
 var _ heap.Interface = (*entryHeap)(nil)

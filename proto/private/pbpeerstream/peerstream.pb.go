@@ -10,10 +10,10 @@
 package pbpeerstream
 
 import (
-	_ "github.com/hashicorp/consul/proto-public/annotations/ratelimit"
-	pbpeering "github.com/hashicorp/consul/proto/private/pbpeering"
-	pbservice "github.com/hashicorp/consul/proto/private/pbservice"
-	pbstatus "github.com/hashicorp/consul/proto/private/pbstatus"
+	_ "github.com/shulutkov/yellow-pages/proto-public/annotations/ratelimit"
+	pbpeering "github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	pbservice "github.com/shulutkov/yellow-pages/proto/private/pbservice"
+	pbstatus "github.com/shulutkov/yellow-pages/proto/private/pbstatus"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	anypb "google.golang.org/protobuf/types/known/anypb"

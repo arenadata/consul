@@ -9,12 +9,12 @@ import (
 
 	memdb "github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbcommon"
-	"github.com/hashicorp/consul/proto/private/pbservice"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent/consul/stream"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
+	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
 )
 
 // EventSubjectService is a stream.Subject used to route and receive events for

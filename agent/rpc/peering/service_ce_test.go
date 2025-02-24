@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
 )
 
 func TestPeeringService_RejectsPartition(t *testing.T) {

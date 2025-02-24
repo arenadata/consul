@@ -12,11 +12,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/hashicorp/consul/agent/consul/autopilotevents"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/grpc-external/testutils"
-	"github.com/hashicorp/consul/proto-public/pbserverdiscovery"
+	"github.com/shulutkov/yellow-pages/agent/consul/autopilotevents"
+	"github.com/shulutkov/yellow-pages/agent/consul/state"
+	"github.com/shulutkov/yellow-pages/agent/consul/stream"
+	"github.com/shulutkov/yellow-pages/agent/grpc-external/testutils"
+	"github.com/shulutkov/yellow-pages/proto-public/pbserverdiscovery"
 )
 
 type mockSnapshotHandler struct {

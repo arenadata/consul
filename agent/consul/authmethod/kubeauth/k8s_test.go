@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/authmethod"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/connect"
+	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 	"github.com/stretchr/testify/require"
 )
 

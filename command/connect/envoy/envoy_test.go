@@ -20,12 +20,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/agent/xds"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent"
+	"github.com/shulutkov/yellow-pages/agent/xds"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
 )
 
 var update = flag.Bool("update", false, "update golden files")

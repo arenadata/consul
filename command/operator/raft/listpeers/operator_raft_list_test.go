@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/consul/agent"
 	"github.com/mitchellh/cli"
+	"github.com/shulutkov/yellow-pages/agent"
 )
 
 func TestOperatorRaftListPeersCommand_noTabs(t *testing.T) {

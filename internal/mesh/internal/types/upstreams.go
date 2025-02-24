@@ -4,9 +4,9 @@
 package types
 
 import (
-	"github.com/hashicorp/consul/internal/resource"
-	pbmesh "github.com/hashicorp/consul/proto-public/pbmesh/v1alpha1"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/shulutkov/yellow-pages/internal/resource"
+	pbmesh "github.com/shulutkov/yellow-pages/proto-public/pbmesh/v1alpha1"
+	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
 )
 
 const (

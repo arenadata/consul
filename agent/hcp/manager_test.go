@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	hcpclient "github.com/hashicorp/consul/agent/hcp/client"
 	"github.com/hashicorp/go-hclog"
+	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/net/context"

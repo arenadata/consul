@@ -3,7 +3,7 @@
 
 package resolver
 
-import "github.com/hashicorp/consul/acl"
+import "github.com/shulutkov/yellow-pages/acl"
 
 // DANGER_NO_AUTH implements an ACL resolver short-circuit authorization in
 // cases where it is handled somewhere else or expressly not required.

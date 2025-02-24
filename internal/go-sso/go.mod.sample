@@ -1,4 +1,4 @@
-module github.com/hashicorp/consul/go-sso
+module github.com/shulutkov/yellow-pages/go-sso
 
 go 1.13
 

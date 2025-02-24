@@ -12,10 +12,10 @@ import (
 
 	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/stringslice"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/lib/stringslice"
+	"github.com/shulutkov/yellow-pages/testrpc"
 )
 
 func TestSession_Apply(t *testing.T) {

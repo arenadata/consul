@@ -9,8 +9,8 @@ import (
 	"time"
 
 	fuzz "github.com/google/gofuzz"
-	"github.com/hashicorp/consul/api"
 	"github.com/mitchellh/reflectwalk"
+	"github.com/shulutkov/yellow-pages/api"
 	"github.com/stretchr/testify/require"
 )
 

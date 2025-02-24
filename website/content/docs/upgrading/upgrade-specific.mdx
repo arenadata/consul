@@ -399,7 +399,7 @@ You are using the Vault CA provider if either of the following configurations ex
 
 Though this guidance is listed in the 1.13.x section, it applies to several release series.
 Affected Consul versions contain a
-[bugfix that allows the intermediate CA's TTL configuration to be modified](https://github.com/hashicorp/consul/pull/14516).
+[bugfix that allows the intermediate CA's TTL configuration to be modified](https://github.com/shulutkov/yellow-pages/pull/14516).
 The bugfix requires the `update` capability to tune that configuration.
 Without the `update` capability, the Consul versions listed in the _breaking change_ column
 cannot provide services with the certificates they need to participate in the mesh.
@@ -532,7 +532,7 @@ system. Complete the [Migrate Legacy ACL Tokens](/consul/tutorials/security-oper
 ### Raft Storage Changes
 
 The underlying library used for persisting the Raft log to persistent storage
-was [upgraded](https://github.com/hashicorp/consul/issues/11720) from
+was [upgraded](https://github.com/shulutkov/yellow-pages/issues/11720) from
 [`boltdb`](https://pkg.go.dev/github.com/boltdb/bolt) to
 [`bbolt`](https://pkg.go.dev/go.etcd.io/bbolt).
 
@@ -628,8 +628,8 @@ be done on most earlier versions of Consul+Envoy in advance of the Consul
 1.10.0 upgrade.
 
 As an example, here's a Zipkin integration
-[before](https://github.com/hashicorp/consul/blob/v1.9.5/test/integration/connect/envoy/case-zipkin/service_s2.hcl)
-and [after](https://github.com/hashicorp/consul/blob/71d45a34601423abdfc0a64d44c6a55cf88fa2fc/test/integration/connect/envoy/case-zipkin/service_s2.hcl)
+[before](https://github.com/shulutkov/yellow-pages/blob/v1.9.5/test/integration/connect/envoy/case-zipkin/service_s2.hcl)
+and [after](https://github.com/shulutkov/yellow-pages/blob/71d45a34601423abdfc0a64d44c6a55cf88fa2fc/test/integration/connect/envoy/case-zipkin/service_s2.hcl)
 
 #### Stairstep Upgrade Path
 
@@ -809,7 +809,7 @@ Starting with Consul 1.7.1 this is the new default.
 
 #### Removal of Deprecated Features
 
-Managed proxies, which are deprecated since Consul v1.3.0, have now been 
+Managed proxies, which are deprecated since Consul v1.3.0, have now been
 [removed](/consul/docs/connect/proxies). Before upgrading, you must
 migrate any managed proxy usage to [sidecar service
 registrations](/consul/docs/connect/proxies/deploy-sidecar-services).
@@ -975,7 +975,7 @@ When requesting a specific service (`/v1/health/:service` or
 `/v1/catalog/:service` endpoints), the `X-Consul-Index` returned is now the
 index at which that _specific service_ was last modified. In version 1.0.6 and
 earlier the `X-Consul-Index` returned was the index at which _any_ service was
-last modified. See [GH-3890](https://github.com/hashicorp/consul/issues/3890)
+last modified. See [GH-3890](https://github.com/shulutkov/yellow-pages/issues/3890)
 for more details.
 
 During upgrades from 1.0.6 or lower to 1.0.7 or higher, watchers are likely to
@@ -1274,7 +1274,7 @@ users can just use the built in web assets.
 
 We identified a potential issue with Consul 0.8 that requires the current
 cluster leader to be upgraded last when updating multiple servers. Please see
-[this issue](https://github.com/hashicorp/consul/issues/2889) for more details.
+[this issue](https://github.com/shulutkov/yellow-pages/issues/2889) for more details.
 
 #### Command-Line Interface RPC Deprecation
 

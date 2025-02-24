@@ -6,11 +6,11 @@ package structs
 import (
 	"time"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/shulutkov/yellow-pages/acl"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 // CheckDefinition is used to JSON decode the Check definitions

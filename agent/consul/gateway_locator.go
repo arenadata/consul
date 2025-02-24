@@ -14,13 +14,13 @@ import (
 	"github.com/hashicorp/go-hclog"
 	memdb "github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/agent/blockingquery"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/ipaddr"
-	"github.com/hashicorp/consul/lib/stringslice"
-	"github.com/hashicorp/consul/logging"
+	"github.com/shulutkov/yellow-pages/agent/blockingquery"
+	"github.com/shulutkov/yellow-pages/agent/consul/state"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/ipaddr"
+	"github.com/shulutkov/yellow-pages/lib/stringslice"
+	"github.com/shulutkov/yellow-pages/logging"
 )
 
 // GatewayLocator assists in selecting an appropriate mesh gateway when wan

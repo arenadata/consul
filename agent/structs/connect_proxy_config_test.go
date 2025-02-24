@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/shulutkov/yellow-pages/api"
 )
 
 func TestConnectProxyConfig_ToAPI(t *testing.T) {

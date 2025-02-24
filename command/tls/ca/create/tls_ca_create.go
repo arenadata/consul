@@ -9,10 +9,10 @@ import (
 
 	"github.com/mitchellh/cli"
 
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/command/tls"
-	"github.com/hashicorp/consul/lib/file"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/shulutkov/yellow-pages/command/tls"
+	"github.com/shulutkov/yellow-pages/lib/file"
+	"github.com/shulutkov/yellow-pages/tlsutil"
 )
 
 func New(ui cli.Ui) *cmd {

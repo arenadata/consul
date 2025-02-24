@@ -20,9 +20,9 @@ import (
 
 	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
 
-	"github.com/hashicorp/consul/agent/pool"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/snapshot"
+	"github.com/shulutkov/yellow-pages/agent/pool"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/snapshot"
 )
 
 // dispatchSnapshotRequest takes an incoming request structure with possibly some

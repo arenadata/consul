@@ -17,13 +17,13 @@ import (
 	"github.com/hashicorp/raft"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/hashicorp/consul/agent/consul/wanfed"
-	"github.com/hashicorp/consul/agent/metadata"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	libserf "github.com/hashicorp/consul/lib/serf"
-	"github.com/hashicorp/consul/logging"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/agent/consul/wanfed"
+	"github.com/shulutkov/yellow-pages/agent/metadata"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/lib"
+	libserf "github.com/shulutkov/yellow-pages/lib/serf"
+	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 const (

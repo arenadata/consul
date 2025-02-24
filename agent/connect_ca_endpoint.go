@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/consul"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 // GET /v1/connect/ca/roots

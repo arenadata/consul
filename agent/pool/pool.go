@@ -19,10 +19,10 @@ import (
 	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 	"github.com/hashicorp/consul-net-rpc/net/rpc"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/proto/private/pbcommon"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	"github.com/shulutkov/yellow-pages/tlsutil"
 )
 
 const DefaultDialTimeout = 10 * time.Second

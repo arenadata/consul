@@ -9,9 +9,9 @@ import (
 
 	memdb "github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent/consul/stream"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 var (
@@ -93,7 +93,7 @@ var (
 	// are. This value was recommended by customers with many servers. We
 	// expect streaming to arrive soon and that should help a lot with
 	// blocking queries. Please see
-	// https://github.com/hashicorp/consul/pull/7200 and linked issues/prs
+	// https://github.com/shulutkov/yellow-pages/pull/7200 and linked issues/prs
 	// for more context
 	watchLimit = 8192
 )

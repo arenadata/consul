@@ -21,9 +21,9 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 	pstruct "google.golang.org/protobuf/types/known/structpb"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/envoyextensions/extensioncommon"
-	"github.com/hashicorp/consul/proto/private/prototest"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
+	"github.com/shulutkov/yellow-pages/proto/private/prototest"
 )
 
 func TestConstructor(t *testing.T) {

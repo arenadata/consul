@@ -8,8 +8,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/internal/resource"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/shulutkov/yellow-pages/internal/resource"
+	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
 )
 
 // Manager is responsible for scheduling the execution of controllers.

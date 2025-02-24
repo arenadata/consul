@@ -9,13 +9,13 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/cache"
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/submatview"
-	"github.com/hashicorp/consul/proto/private/pbservice"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
+	"github.com/shulutkov/yellow-pages/acl/resolver"
+	"github.com/shulutkov/yellow-pages/agent/cache"
+	"github.com/shulutkov/yellow-pages/agent/consul/stream"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/submatview"
+	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
+	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
 )
 
 type Subscriber interface {

@@ -13,11 +13,11 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/config"
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/command/helpers"
-	"github.com/hashicorp/consul/lib/decode"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/command/config"
+	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/shulutkov/yellow-pages/command/helpers"
+	"github.com/shulutkov/yellow-pages/lib/decode"
 )
 
 func New(ui cli.Ui) *cmd {

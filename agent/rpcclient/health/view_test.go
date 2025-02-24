@@ -18,14 +18,14 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/submatview"
-	"github.com/hashicorp/consul/proto/private/pbcommon"
-	"github.com/hashicorp/consul/proto/private/pbservice"
-	"github.com/hashicorp/consul/proto/private/pbsubscribe"
-	"github.com/hashicorp/consul/proto/private/prototest"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/submatview"
+	"github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
+	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/shulutkov/yellow-pages/proto/private/prototest"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 func TestSortCheckServiceNodes_OrderIsConsistentWithRPCResponse(t *testing.T) {

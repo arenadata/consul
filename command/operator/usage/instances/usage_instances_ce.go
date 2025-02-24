@@ -7,8 +7,8 @@
 package instances
 
 import (
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/api"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/api"
 )
 
 const showPartitionNamespace = false

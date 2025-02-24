@@ -9,8 +9,8 @@ package state
 import (
 	"time"
 
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
 )
 
 func testIndexerTablePeering() map[string]indexerTestCase {

@@ -6,7 +6,7 @@ package api
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
 )
 
 func TestAPI_DebugHeap(t *testing.T) {

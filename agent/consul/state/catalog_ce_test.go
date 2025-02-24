@@ -10,9 +10,9 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 func testIndexerTableChecks() map[string]indexerTestCase {

@@ -10,19 +10,19 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/shulutkov/yellow-pages/acl"
 
 	bexpr "github.com/hashicorp/go-bexpr"
 
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/authmethod/ssoauth"
-	"github.com/hashicorp/consul/agent/dns"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib/template"
-	"github.com/hashicorp/consul/proto/private/pbautoconf"
-	"github.com/hashicorp/consul/proto/private/pbconfig"
-	"github.com/hashicorp/consul/proto/private/pbconnect"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/shulutkov/yellow-pages/agent/connect"
+	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/ssoauth"
+	"github.com/shulutkov/yellow-pages/agent/dns"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/lib/template"
+	"github.com/shulutkov/yellow-pages/proto/private/pbautoconf"
+	"github.com/shulutkov/yellow-pages/proto/private/pbconfig"
+	"github.com/shulutkov/yellow-pages/proto/private/pbconnect"
+	"github.com/shulutkov/yellow-pages/tlsutil"
 )
 
 type AutoConfigOptions struct {

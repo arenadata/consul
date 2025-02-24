@@ -9,7 +9,7 @@ package connect
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/shulutkov/yellow-pages/acl"
 )
 
 // GetEnterpriseMeta will synthesize an EnterpriseMeta struct from the SpiffeIDAgent.

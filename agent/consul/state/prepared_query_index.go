@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/consul/agent/consul/prepared_query"
+	"github.com/shulutkov/yellow-pages/agent/consul/prepared_query"
 )
 
 // PreparedQueryIndex is a custom memdb indexer used to manage index prepared

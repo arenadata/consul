@@ -4,8 +4,8 @@
 package mesh
 
 import (
-	"github.com/hashicorp/consul/internal/mesh/internal/types"
-	"github.com/hashicorp/consul/internal/resource"
+	"github.com/shulutkov/yellow-pages/internal/mesh/internal/types"
+	"github.com/shulutkov/yellow-pages/internal/resource"
 )
 
 var (

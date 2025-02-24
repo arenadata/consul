@@ -11,12 +11,12 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/shulutkov/yellow-pages/agent"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/testrpc"
 
 	// activate testing auth method
-	_ "github.com/hashicorp/consul/agent/consul/authmethod/testauth"
+	_ "github.com/shulutkov/yellow-pages/agent/consul/authmethod/testauth"
 )
 
 func TestBindingRuleDeleteCommand_noTabs(t *testing.T) {

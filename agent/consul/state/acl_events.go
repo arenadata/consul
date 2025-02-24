@@ -6,8 +6,8 @@ package state
 import (
 	memdb "github.com/hashicorp/go-memdb"
 
-	"github.com/hashicorp/consul/agent/consul/stream"
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/consul/stream"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 // aclChangeUnsubscribeEvent creates and returns stream.UnsubscribeEvents that

@@ -1,10 +1,10 @@
-module github.com/hashicorp/consul/troubleshoot
+module github.com/shulutkov/yellow-pages/troubleshoot
 
 go 1.19
 
-replace github.com/hashicorp/consul/api => ../api
+replace github.com/shulutkov/yellow-pages/api => ../api
 
-replace github.com/hashicorp/consul/envoyextensions => ../envoyextensions
+replace github.com/shulutkov/yellow-pages/envoyextensions => ../envoyextensions
 
 exclude (
 	github.com/hashicorp/go-msgpack v1.1.5 // has breaking changes and must be avoided
@@ -14,9 +14,9 @@ exclude (
 require (
 	github.com/envoyproxy/go-control-plane v0.11.1-0.20230524094728-9239064ad72f
 	github.com/envoyproxy/go-control-plane/xdsmatcher v0.0.0-20230524161521-aaaacbfbe53e
-	github.com/hashicorp/consul/api v1.24.0
-	github.com/hashicorp/consul/envoyextensions v0.4.1
-	github.com/hashicorp/consul/sdk v0.15.0
+	github.com/shulutkov/yellow-pages/api v1.24.0
+	github.com/shulutkov/yellow-pages/envoyextensions v0.4.1
+	github.com/shulutkov/yellow-pages/sdk v0.15.0
 	github.com/stretchr/testify v1.8.3
 	google.golang.org/protobuf v1.30.0
 )

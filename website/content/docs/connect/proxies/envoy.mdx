@@ -193,7 +193,7 @@ the [`sidecar_service`](/consul/docs/connect/proxies/deploy-sidecar-services) bl
 
 - `envoy_telemetry_collector_bind_socket_dir` - Specifies the directory where Envoy creates a Unix socket.
   Envoy sends metrics to the socket where a Consul telemetry collector can collect them.
-  The socket is not configured by default. 
+  The socket is not configured by default.
   Enabling this sets Envoy's [`stats_flush_interval`](https://www.envoyproxy.io/docs/envoy/v1.17.2/api-v3/config/bootstrap/v3/bootstrap.proto#envoy-v3-api-field-config-bootstrap-v3-bootstrap-stats-flush-interval) to one minute if `envoy_stats_flush_interval` is unset and if no other stats sinks are configured, like `envoy_dogstats_url`, for instance.
 
 The [Advanced Configuration](#advanced-configuration) section describes additional configurations that allow incremental or complete control over the bootstrap configuration generated.
@@ -800,11 +800,11 @@ definition](/consul/docs/connect/proxies/proxy-config-reference) or
 
 - `envoy_bootstrap_json_tpl` - Specifies a template in Go template syntax that
   is used in place of [the default
-  template](https://github.com/hashicorp/consul/blob/71d45a34601423abdfc0a64d44c6a55cf88fa2fc/command/connect/envoy/bootstrap_tpl.go#L129)
+  template](https://github.com/shulutkov/yellow-pages/blob/71d45a34601423abdfc0a64d44c6a55cf88fa2fc/command/connect/envoy/bootstrap_tpl.go#L129)
   when generating bootstrap via [`consul connect envoy`
   command](/consul/commands/connect/envoy). The variables that are available
   to be interpolated are [documented
-  here](https://github.com/hashicorp/consul/blob/71d45a34601423abdfc0a64d44c6a55cf88fa2fc/command/connect/envoy/bootstrap_tpl.go#L5).
+  here](https://github.com/shulutkov/yellow-pages/blob/71d45a34601423abdfc0a64d44c6a55cf88fa2fc/command/connect/envoy/bootstrap_tpl.go#L5).
   This offers complete control of the proxy's bootstrap although major
   deviations from the default template may break Consul's ability to correctly
   manage the proxy or enforce its security model.

@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/consul/command/flags"
 	"github.com/mitchellh/cli"
+	"github.com/shulutkov/yellow-pages/command/flags"
 )
 
 // cmd is a Command implementation that enables or disables

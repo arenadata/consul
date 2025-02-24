@@ -1,12 +1,12 @@
-module github.com/hashicorp/consul/api
+module github.com/shulutkov/yellow-pages/api
 
 go 1.19
 
-replace github.com/hashicorp/consul/sdk => ../sdk
+replace github.com/shulutkov/yellow-pages/sdk => ../sdk
 
 require (
 	github.com/google/go-cmp v0.5.9
-	github.com/hashicorp/consul/sdk v0.14.1
+	github.com/shulutkov/yellow-pages/sdk v0.14.1
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/hashicorp/go-hclog v1.5.0
 	github.com/hashicorp/go-multierror v1.1.1

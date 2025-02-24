@@ -11,7 +11,7 @@ import (
 
 	"github.com/armon/go-metrics/prometheus"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 var SegmentCESummaries = []prometheus.SummaryDefinition{

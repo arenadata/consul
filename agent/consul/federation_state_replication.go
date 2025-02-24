@@ -10,7 +10,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 var errFederationStatesNotSupported = errors.New("Not all servers in the datacenter support federation states - preventing replication")

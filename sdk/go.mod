@@ -1,4 +1,4 @@
-module github.com/hashicorp/consul/sdk
+module github.com/shulutkov/yellow-pages/sdk
 
 go 1.19
 

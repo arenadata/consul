@@ -10,8 +10,8 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent"
-	consulapi "github.com/hashicorp/consul/api"
+	"github.com/shulutkov/yellow-pages/agent"
+	consulapi "github.com/shulutkov/yellow-pages/api"
 )
 
 func TestKeyringCommand_noTabs(t *testing.T) {

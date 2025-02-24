@@ -4,12 +4,12 @@
 package catalog
 
 import (
-	"github.com/hashicorp/consul/internal/catalog/internal/controllers"
-	"github.com/hashicorp/consul/internal/catalog/internal/mappers/nodemapper"
-	"github.com/hashicorp/consul/internal/catalog/internal/mappers/selectiontracker"
-	"github.com/hashicorp/consul/internal/catalog/internal/types"
-	"github.com/hashicorp/consul/internal/controller"
-	"github.com/hashicorp/consul/internal/resource"
+	"github.com/shulutkov/yellow-pages/internal/catalog/internal/controllers"
+	"github.com/shulutkov/yellow-pages/internal/catalog/internal/mappers/nodemapper"
+	"github.com/shulutkov/yellow-pages/internal/catalog/internal/mappers/selectiontracker"
+	"github.com/shulutkov/yellow-pages/internal/catalog/internal/types"
+	"github.com/shulutkov/yellow-pages/internal/controller"
+	"github.com/shulutkov/yellow-pages/internal/resource"
 )
 
 var (

@@ -14,9 +14,9 @@ import (
 
 	"github.com/oklog/ulid/v2"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/internal/storage"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/internal/storage"
+	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
 )
 
 func (s *Server) WriteStatus(ctx context.Context, req *pbresource.WriteStatusRequest) (*pbresource.WriteStatusResponse, error) {

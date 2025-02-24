@@ -1,6 +1,6 @@
 package utils
 
-import "github.com/hashicorp/consul/api"
+import "github.com/shulutkov/yellow-pages/api"
 
 func PartitionOrDefault(name string) string {
 	if name == "" {

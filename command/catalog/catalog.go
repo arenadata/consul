@@ -4,8 +4,8 @@
 package catalog
 
 import (
-	"github.com/hashicorp/consul/command/flags"
 	"github.com/mitchellh/cli"
+	"github.com/shulutkov/yellow-pages/command/flags"
 )
 
 func New() *cmd {

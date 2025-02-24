@@ -9,24 +9,24 @@ description: >-
 
 ## Release Highlights
 
-- **Cluster Peering (GA):** This version promotes Cluster Peering, a new model to federate Consul clusters for both service mesh and traditional service discovery, to General Availability. Cluster peering allows for service interconnectivity with looser coupling than the existing WAN federation. For more information, refer to the [cluster peering](/consul/docs/connect/cluster-peering) documentation. Some notable improvements to Cluster Peering include: 
- 
+- **Cluster Peering (GA):** This version promotes Cluster Peering, a new model to federate Consul clusters for both service mesh and traditional service discovery, to General Availability. Cluster peering allows for service interconnectivity with looser coupling than the existing WAN federation. For more information, refer to the [cluster peering](/consul/docs/connect/cluster-peering) documentation. Some notable improvements to Cluster Peering include:
+
   - **Cluster Peering Failover:** Cluster Peering now supports the ability to redirect to services running on cluster peers with service resolvers. More details for configuring failover across peers is provided in the Service Resolver [failover](/consul/docs/connect/config-entries/service-resolver#failover) stanza.
-  
-  - **Control Plane traffic over Mesh Gateways:** Cluster Peering now supports the establishing peering through Mesh Gateways. More detail on using Mesh Gateways for Cluster Peering are found in [Enabling Peering Control Plane Traffic](/consul/docs/connect/gateways/mesh-gateway/peering-via-mesh-gateways). Mesh Gateways are used by default for [Cluster Peering on Kubernetes](/consul/docs/k8s/connect/cluster-peering/tech-specs). 
-  
-- **Simplified Service Mesh with Consul Dataplane:** Support for a new `consul-dataplane`, a lightweight process for managing Envoy proxies introduced in Consul v1.14.0. Consul Dataplane removes the need to run client agents on every node in a cluster for service discovery and service mesh. Instead, Consul deploys sidecar proxies that provide lower latency, support additional runtimes, and integrate with cloud infrastructure providers. Read more in [Simplified Service Mesh with Consul Dataplane](/consul/docs/connect/dataplane). 
+
+  - **Control Plane traffic over Mesh Gateways:** Cluster Peering now supports the establishing peering through Mesh Gateways. More detail on using Mesh Gateways for Cluster Peering are found in [Enabling Peering Control Plane Traffic](/consul/docs/connect/gateways/mesh-gateway/peering-via-mesh-gateways). Mesh Gateways are used by default for [Cluster Peering on Kubernetes](/consul/docs/k8s/connect/cluster-peering/tech-specs).
+
+- **Simplified Service Mesh with Consul Dataplane:** Support for a new `consul-dataplane`, a lightweight process for managing Envoy proxies introduced in Consul v1.14.0. Consul Dataplane removes the need to run client agents on every node in a cluster for service discovery and service mesh. Instead, Consul deploys sidecar proxies that provide lower latency, support additional runtimes, and integrate with cloud infrastructure providers. Read more in [Simplified Service Mesh with Consul Dataplane](/consul/docs/connect/dataplane).
 
   ~> **Note:** Currently `consul-dataplane` is only supported on clusters running on Consul on Kubernetes 1.0+.
 
 
 ## What's Changed
 
-- 1.14 adds a new `ports.grpc_tls` configuration option. This introduces a new port to better separate TLS config from the existing `ports.grpc` config. The new `ports.grpc_tls` only supports TLS encrypted communication. The existing `ports.grpc` now only supports plain-text communication. 
-- `peering` and `connect` are default. 
-- The gRPC TLS port default value to 8503 
+- 1.14 adds a new `ports.grpc_tls` configuration option. This introduces a new port to better separate TLS config from the existing `ports.grpc` config. The new `ports.grpc_tls` only supports TLS encrypted communication. The existing `ports.grpc` now only supports plain-text communication.
+- `peering` and `connect` are default.
+- The gRPC TLS port default value to 8503
 - Removes support for Envoy 1.20.x and adds Envoy 1.24.0 to support matrix.
-- Renames `PeerName` to `Peer` on prepared queries and exported services. 
+- Renames `PeerName` to `Peer` on prepared queries and exported services.
 - Converts service mesh failover to use Envoy's aggregate clusters. This
 changes the names of some [Envoy dynamic HTTP metrics](https://www.envoyproxy.io/docs/envoy/latest/configuration/upstream/cluster_manager/cluster_stats#dynamic-http-statistics).
 
@@ -49,8 +49,8 @@ The changelogs for this major release version and any maintenance versions are l
 
 -> **Note**: These links take you to the changelogs on the GitHub website.
 
-- [1.14.0](https://github.com/hashicorp/consul/releases/tag/v1.14.0)
-- [1.14.1](https://github.com/hashicorp/consul/releases/tag/v1.14.1)
-- [1.14.2](https://github.com/hashicorp/consul/releases/tag/v1.14.2)
-- [1.14.3](https://github.com/hashicorp/consul/releases/tag/v1.14.3)
-- [1.14.4](https://github.com/hashicorp/consul/releases/tag/v1.14.4)
+- [1.14.0](https://github.com/shulutkov/yellow-pages/releases/tag/v1.14.0)
+- [1.14.1](https://github.com/shulutkov/yellow-pages/releases/tag/v1.14.1)
+- [1.14.2](https://github.com/shulutkov/yellow-pages/releases/tag/v1.14.2)
+- [1.14.3](https://github.com/shulutkov/yellow-pages/releases/tag/v1.14.3)
+- [1.14.4](https://github.com/shulutkov/yellow-pages/releases/tag/v1.14.4)

@@ -7,10 +7,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/hashicorp/consul/agent/consul/authmethod"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/internal/go-sso/oidcauth"
 	"github.com/hashicorp/go-hclog"
+	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth"
 )
 
 func init() {

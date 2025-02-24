@@ -1,4 +1,4 @@
-module github.com/hashicorp/consul/test/integration/consul-container
+module github.com/shulutkov/yellow-pages/test/integration/consul-container
 
 go 1.20
 
@@ -8,9 +8,9 @@ require (
 	github.com/docker/docker v24.0.5+incompatible
 	github.com/docker/go-connections v0.4.0
 	github.com/go-jose/go-jose/v3 v3.0.0
-	github.com/hashicorp/consul/api v1.24.0
-	github.com/hashicorp/consul/envoyextensions v0.4.1
-	github.com/hashicorp/consul/sdk v0.14.1
+	github.com/shulutkov/yellow-pages/api v1.24.0
+	github.com/shulutkov/yellow-pages/envoyextensions v0.4.1
+	github.com/shulutkov/yellow-pages/sdk v0.14.1
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/hashicorp/go-uuid v1.0.3
@@ -93,9 +93,9 @@ require (
 
 replace (
 	github.com/hashicorp/consul => ../../..
-	github.com/hashicorp/consul/api => ../../../api
-	github.com/hashicorp/consul/envoyextensions => ../../../envoyextensions
-	github.com/hashicorp/consul/proto-public => ../../../proto-public
-	github.com/hashicorp/consul/sdk => ../../../sdk
-	github.com/hashicorp/consul/testing/deployer => ../../../testing/deployer
+	github.com/shulutkov/yellow-pages/api => ../../../api
+	github.com/shulutkov/yellow-pages/envoyextensions => ../../../envoyextensions
+	github.com/shulutkov/yellow-pages/proto-public => ../../../proto-public
+	github.com/shulutkov/yellow-pages/sdk => ../../../sdk
+	github.com/shulutkov/yellow-pages/testing/deployer => ../../../testing/deployer
 )

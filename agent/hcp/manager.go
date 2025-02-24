@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	hcpclient "github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/lib"
 	"github.com/hashicorp/go-hclog"
+	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
+	"github.com/shulutkov/yellow-pages/lib"
 )
 
 var (

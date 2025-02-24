@@ -1,4 +1,4 @@
-module github.com/hashicorp/consul/proto-public
+module github.com/shulutkov/yellow-pages/proto-public
 
 go 1.19
 

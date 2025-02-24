@@ -4,11 +4,11 @@ import (
 	"context"
 	"sync"
 
-	"github.com/hashicorp/consul/internal/catalog/internal/types"
-	"github.com/hashicorp/consul/internal/controller"
-	"github.com/hashicorp/consul/internal/resource"
-	pbcatalog "github.com/hashicorp/consul/proto-public/pbcatalog/v1alpha1"
-	"github.com/hashicorp/consul/proto-public/pbresource"
+	"github.com/shulutkov/yellow-pages/internal/catalog/internal/types"
+	"github.com/shulutkov/yellow-pages/internal/controller"
+	"github.com/shulutkov/yellow-pages/internal/resource"
+	pbcatalog "github.com/shulutkov/yellow-pages/proto-public/pbcatalog/v1alpha1"
+	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
 )
 
 type NodeMapper struct {

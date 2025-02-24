@@ -1,13 +1,13 @@
-module github.com/hashicorp/consul
+module github.com/shulutkov/yellow-pages
 
 go 1.20
 
 replace (
-	github.com/hashicorp/consul/api => ./api
-	github.com/hashicorp/consul/envoyextensions => ./envoyextensions
-	github.com/hashicorp/consul/proto-public => ./proto-public
-	github.com/hashicorp/consul/sdk => ./sdk
-	github.com/hashicorp/consul/troubleshoot => ./troubleshoot
+	github.com/shulutkov/yellow-pages/api => ./api
+	github.com/shulutkov/yellow-pages/envoyextensions => ./envoyextensions
+	github.com/shulutkov/yellow-pages/proto-public => ./proto-public
+	github.com/shulutkov/yellow-pages/sdk => ./sdk
+	github.com/shulutkov/yellow-pages/troubleshoot => ./troubleshoot
 )
 
 exclude (
@@ -38,11 +38,6 @@ require (
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/hashicorp/consul-awsauth v0.0.0-20220713182709-05ac1c5c2706
 	github.com/hashicorp/consul-net-rpc v0.0.0-20221205195236-156cfab66a69
-	github.com/hashicorp/consul/api v1.25.1
-	github.com/hashicorp/consul/envoyextensions v0.4.1
-	github.com/hashicorp/consul/proto-public v0.4.1
-	github.com/hashicorp/consul/sdk v0.15.0
-	github.com/hashicorp/consul/troubleshoot v0.3.1
 	github.com/hashicorp/go-bexpr v0.1.2
 	github.com/hashicorp/go-checkpoint v0.5.0
 	github.com/hashicorp/go-cleanhttp v0.5.2
@@ -95,6 +90,11 @@ require (
 	github.com/rboyer/safeio v0.2.3
 	github.com/ryanuber/columnize v2.1.2+incompatible
 	github.com/shirou/gopsutil/v3 v3.22.9
+	github.com/shulutkov/yellow-pages/api v1.25.1
+	github.com/shulutkov/yellow-pages/envoyextensions v0.4.1
+	github.com/shulutkov/yellow-pages/proto-public v0.4.1
+	github.com/shulutkov/yellow-pages/sdk v0.15.0
+	github.com/shulutkov/yellow-pages/troubleshoot v0.3.1
 	github.com/stretchr/testify v1.8.4
 	go.etcd.io/bbolt v1.3.7
 	go.opentelemetry.io/otel v1.16.0

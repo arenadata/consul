@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/hashicorp/consul/command/catalog"
+	"github.com/shulutkov/yellow-pages/command/catalog"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/command/helpers"
 	"github.com/mitchellh/cli"
 	"github.com/ryanuber/columnize"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/shulutkov/yellow-pages/command/helpers"
 )
 
 func New(ui cli.Ui) *cmd {

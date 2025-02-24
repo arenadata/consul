@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/tlsutil"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 func TestLoad_DeprecatedConfig(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/lib/ttlcache"
+	"github.com/shulutkov/yellow-pages/lib/ttlcache"
 )
 
 // cacheEntry stores a single cache entry.

@@ -6,7 +6,7 @@ package state
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 	"github.com/stretchr/testify/require"
 )
 

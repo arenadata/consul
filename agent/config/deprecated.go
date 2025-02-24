@@ -6,8 +6,8 @@ package config
 import (
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/agent/consul"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 type DeprecatedConfig struct {

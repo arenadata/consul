@@ -4,8 +4,8 @@
 package peerstream
 
 import (
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 // healthSnapshot represents a normalized view of a set of CheckServiceNodes

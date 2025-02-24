@@ -16,14 +16,14 @@ import (
 	"gopkg.in/square/go-jose.v2/jwt"
 
 	"github.com/hashicorp/consul-awsauth/iamauthtest"
-	"github.com/hashicorp/consul/agent"
-	"github.com/hashicorp/consul/agent/consul/authmethod/kubeauth"
-	"github.com/hashicorp/consul/agent/consul/authmethod/testauth"
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/acl"
-	"github.com/hashicorp/consul/internal/go-sso/oidcauth/oidcauthtest"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/shulutkov/yellow-pages/agent"
+	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/kubeauth"
+	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/testauth"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/command/acl"
+	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/oidcauthtest"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/testrpc"
 )
 
 func TestLoginCommand_noTabs(t *testing.T) {

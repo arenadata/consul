@@ -112,7 +112,7 @@ Use these links to navigate to a particular top-level stanza.
   - `datacenter` ((#v-global-datacenter)) (`string: dc1`) - The name of the datacenter that the agents should
     register as. This can't be changed once the Consul cluster is up and running
     since Consul doesn't support an automatic way to change this value currently:
-    https://github.com/hashicorp/consul/issues/1858.
+    https://github.com/shulutkov/yellow-pages/issues/1858.
 
   - `enablePodSecurityPolicies` ((#v-global-enablepodsecuritypolicies)) (`boolean: false`) - Controls whether pod security policies are created for the Consul components
     created by this chart. Refer to https://kubernetes.io/docs/concepts/policy/pod-security-policy/.
@@ -134,7 +134,7 @@ Use these links to navigate to a particular top-level stanza.
 
     - `vault` ((#v-global-secretsbackend-vault))
 
-      - `vaultNamespace` ((#v-global-secretsbackend-vault-vaultnamespace)) (`string: ""`) - Vault namespace (optional). This sets the Vault namespace for the `vault.hashicorp.com/namespace` 
+      - `vaultNamespace` ((#v-global-secretsbackend-vault-vaultnamespace)) (`string: ""`) - Vault namespace (optional). This sets the Vault namespace for the `vault.hashicorp.com/namespace`
         agent annotation and [Vault Connect CA namespace](/consul/docs/connect/ca/vault#namespace).
         To override one of these values individually, see `agentAnnotations` and `connectCA.additionalConfig`.
 
@@ -423,7 +423,7 @@ Use these links to navigate to a particular top-level stanza.
 
       - `secretKey` ((#v-global-acls-replicationtoken-secretkey)) (`string: null`) - The key within the Kubernetes or Vault secret that holds the replication token.
 
-    - `resources` ((#v-global-acls-resources)) (`map`) - The resource requests (CPU, memory, etc.) for the server-acl-init and server-acl-init-cleanup pods. 
+    - `resources` ((#v-global-acls-resources)) (`map`) - The resource requests (CPU, memory, etc.) for the server-acl-init and server-acl-init-cleanup pods.
       This should be a YAML map corresponding to a Kubernetes
       [`ResourceRequirements``](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.27/#resourcerequirements-v1-core)
       object.
@@ -501,7 +501,7 @@ Use these links to navigate to a particular top-level stanza.
     - `enabled` ((#v-global-federation-enabled)) (`boolean: false`) - If enabled, this datacenter will be federation-capable. Only federation
       via mesh gateways is supported.
       Mesh gateways and servers will be configured to allow federation.
-      Requires `global.tls.enabled`, `connectInject.enabled`, and one of 
+      Requires `global.tls.enabled`, `connectInject.enabled`, and one of
       `meshGateway.enabled` or `externalServers.enabled` to be true.
       Requires Consul 1.8+.
 
@@ -525,7 +525,7 @@ Use these links to navigate to a particular top-level stanza.
       from the one used by the Consul Service Mesh.
       Please refer to the [Kubernetes Auth Method documentation](/consul/docs/security/acl/auth-methods/kubernetes).
 
-      If `externalServers.enabled` is set to true, `global.federation.k8sAuthMethodHost` and 
+      If `externalServers.enabled` is set to true, `global.federation.k8sAuthMethodHost` and
       `externalServers.k8sAuthMethodHost` should be set to the same value.
 
       You can retrieve this value from your `kubeconfig` by running:
@@ -1056,7 +1056,7 @@ Use these links to navigate to a particular top-level stanza.
         See https://en.wikipedia.org/wiki/Token_bucket for more about token
         buckets.
 
-  - `auditLogs` ((#v-server-auditlogs)) - <EnterpriseAlert inline /> Added in Consul 1.8, the audit object allow users to enable auditing 
+  - `auditLogs` ((#v-server-auditlogs)) - <EnterpriseAlert inline /> Added in Consul 1.8, the audit object allow users to enable auditing
     and configure a sink and filters for their audit logs. Please refer to
     [audit logs](/consul/docs/enterprise/audit-logging) documentation
     for further information.
@@ -1145,7 +1145,7 @@ Use these links to navigate to a particular top-level stanza.
     This address must be reachable from the Consul servers.
     Please refer to the [Kubernetes Auth Method documentation](/consul/docs/security/acl/auth-methods/kubernetes).
 
-    If `global.federation.enabled` is set to true, `global.federation.k8sAuthMethodHost` and 
+    If `global.federation.enabled` is set to true, `global.federation.k8sAuthMethodHost` and
     `externalServers.k8sAuthMethodHost` should be set to the same value.
 
     You could retrieve this value from your `kubeconfig` by running:
@@ -1765,7 +1765,7 @@ Use these links to navigate to a particular top-level stanza.
       These CRDs can clash with existing Gateway API CRDs if they are already installed in your cluster.
       If this setting is false, you will need to install the Gateway API CRDs manually.
 
-    - `manageNonStandardCRDs` ((#v-connectinject-apigateway-managenonstandardcrds)) (`boolean: false`) - Enables Consul on Kubernets to manage only the non-standard CRDs used for Gateway API. If manageExternalCRDs is true 
+    - `manageNonStandardCRDs` ((#v-connectinject-apigateway-managenonstandardcrds)) (`boolean: false`) - Enables Consul on Kubernets to manage only the non-standard CRDs used for Gateway API. If manageExternalCRDs is true
       then all CRDs will be installed; otherwise, if manageNonStandardCRDs is true then only TCPRoute, GatewayClassConfig and MeshService
       will be installed.
 
@@ -2462,8 +2462,8 @@ Use these links to navigate to a particular top-level stanza.
 
   - `gateways` ((#v-ingressgateways-gateways)) (`array<map>`) - Gateways is a list of gateway objects. The only required field for
     each is `name`, though they can also contain any of the fields in
-    `defaults`. You must provide a unique name for each ingress gateway. These names 
-    must be unique across different namespaces. 
+    `defaults`. You must provide a unique name for each ingress gateway. These names
+    must be unique across different namespaces.
     Values defined here override the defaults, except in the case of annotations where both will be applied.
 
     - `name` ((#v-ingressgateways-gateways-name)) (`string: ingress-gateway`)

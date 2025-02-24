@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/consul/testrpc"
+	"github.com/shulutkov/yellow-pages/testrpc"
 
-	"github.com/hashicorp/consul/agent"
-	consulapi "github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
 	"github.com/mitchellh/cli"
+	"github.com/shulutkov/yellow-pages/agent"
+	consulapi "github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
 )
 
 func TestExecCommand_noTabs(t *testing.T) {

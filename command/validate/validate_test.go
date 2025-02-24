@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/consul/sdk/testutil"
 	"github.com/mitchellh/cli"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	require "github.com/stretchr/testify/require"
 )
 

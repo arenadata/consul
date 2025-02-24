@@ -4,10 +4,10 @@ package proxycfg
 
 import (
 	"context"
-	"github.com/hashicorp/consul/agent/structs"
-	xds "github.com/hashicorp/consul/agent/xds/config"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	xds "github.com/shulutkov/yellow-pages/agent/xds/config"
+	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/shulutkov/yellow-pages/types"
 	"time"
 )
 

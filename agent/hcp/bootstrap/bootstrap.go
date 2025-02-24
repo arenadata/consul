@@ -21,12 +21,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/connect"
-	hcpclient "github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/retry"
 	"github.com/hashicorp/go-uuid"
+	"github.com/shulutkov/yellow-pages/agent/config"
+	"github.com/shulutkov/yellow-pages/agent/connect"
+	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
+	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/shulutkov/yellow-pages/lib/retry"
 )
 
 const (

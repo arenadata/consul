@@ -2,7 +2,7 @@ package ports
 
 import (
 	"fmt"
-	"github.com/hashicorp/consul/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/stretchr/testify/require"
 	"strconv"
 	"strings"

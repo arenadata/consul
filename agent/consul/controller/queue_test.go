@@ -7,7 +7,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hashicorp/consul/agent/consul/controller/queue"
+	"github.com/shulutkov/yellow-pages/agent/consul/controller/queue"
 )
 
 type countingWorkQueue[T queue.ItemType] struct {

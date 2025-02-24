@@ -9,15 +9,15 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/consul/discoverychain"
-	"github.com/hashicorp/consul/agent/proxycfg/internal/watch"
-	"github.com/hashicorp/consul/agent/structs"
-	config "github.com/hashicorp/consul/agent/xds/config"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/proto/private/pbpeering"
 	"github.com/hashicorp/go-hclog"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent/connect"
+	"github.com/shulutkov/yellow-pages/agent/consul/discoverychain"
+	"github.com/shulutkov/yellow-pages/agent/proxycfg/internal/watch"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	config "github.com/shulutkov/yellow-pages/agent/xds/config"
+	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
 )
 
 // TODO(ingress): Can we think of a better for this bag of data?

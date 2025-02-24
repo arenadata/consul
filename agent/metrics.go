@@ -11,8 +11,8 @@ import (
 	"github.com/armon/go-metrics/prometheus"
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/tlsutil"
+	"github.com/shulutkov/yellow-pages/agent/consul"
+	"github.com/shulutkov/yellow-pages/tlsutil"
 )
 
 var CertExpirationGauges = []prometheus.GaugeDefinition{

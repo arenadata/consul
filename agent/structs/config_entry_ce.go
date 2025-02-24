@@ -12,7 +12,7 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 
-	"github.com/hashicorp/consul/acl"
+	"github.com/shulutkov/yellow-pages/acl"
 )
 
 func (e *ProxyConfigEntry) validateEnterpriseMeta() error {

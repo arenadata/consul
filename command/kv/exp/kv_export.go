@@ -8,10 +8,10 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/command/flags"
-	"github.com/hashicorp/consul/command/kv/impexp"
 	"github.com/mitchellh/cli"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/shulutkov/yellow-pages/command/kv/impexp"
 )
 
 func New(ui cli.Ui) *cmd {

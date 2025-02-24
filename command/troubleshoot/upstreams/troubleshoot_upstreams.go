@@ -11,9 +11,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/hashicorp/consul/command/cli"
-	"github.com/hashicorp/consul/command/flags"
-	troubleshoot "github.com/hashicorp/consul/troubleshoot/proxy"
+	"github.com/shulutkov/yellow-pages/command/cli"
+	"github.com/shulutkov/yellow-pages/command/flags"
+	troubleshoot "github.com/shulutkov/yellow-pages/troubleshoot/proxy"
 )
 
 func New(ui cli.Ui) *cmd {

@@ -4,7 +4,7 @@
 package structs
 
 import (
-	"github.com/hashicorp/consul/api"
+	"github.com/shulutkov/yellow-pages/api"
 )
 
 // EnvoyExtension has configuration for an extension that patches Envoy resources.

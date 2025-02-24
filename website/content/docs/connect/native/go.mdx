@@ -10,7 +10,7 @@ description: >-
 <Note>
 
 The Connect Native golang SDK is currently deprecated and will be removed in a future Consul release.
-The SDK will be removed when the long term replacement to native application integration (such as a proxyless gRPC service mesh integration) is delivered. Refer to [GH-10339](https://github.com/hashicorp/consul/issues/10339) for additional information and to track progress toward one potential solution that is tracked as replacement functionality.
+The SDK will be removed when the long term replacement to native application integration (such as a proxyless gRPC service mesh integration) is delivered. Refer to [GH-10339](https://github.com/shulutkov/yellow-pages/issues/10339) for additional information and to track progress toward one potential solution that is tracked as replacement functionality.
 
 </Note>
 
@@ -52,8 +52,8 @@ Example, followed by more details:
 import(
   "net/http"
 
-  "github.com/hashicorp/consul/api"
-  "github.com/hashicorp/consul/connect"
+  "github.com/shulutkov/yellow-pages/api"
+  "github.com/shulutkov/yellow-pages/connect"
 )
 
 func main() {
@@ -103,8 +103,8 @@ Another example is shown below with just a plain TLS listener:
 import(
   "crypto/tls"
 
-  "github.com/hashicorp/consul/api"
-  "github.com/hashicorp/consul/connect"
+  "github.com/shulutkov/yellow-pages/api"
+  "github.com/shulutkov/yellow-pages/connect"
 )
 
 func main() {
@@ -135,8 +135,8 @@ Example, followed by more details:
 
 ```go
 import(
-  "github.com/hashicorp/consul/api"
-  "github.com/hashicorp/consul/connect"
+  "github.com/shulutkov/yellow-pages/api"
+  "github.com/shulutkov/yellow-pages/connect"
 )
 
 func main() {
@@ -208,8 +208,8 @@ Example:
 import (
   "context"
 
-  "github.com/hashicorp/consul/api"
-  "github.com/hashicorp/consul/connect"
+  "github.com/shulutkov/yellow-pages/api"
+  "github.com/shulutkov/yellow-pages/connect"
 )
 
 func main() {

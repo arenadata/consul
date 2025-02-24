@@ -11,8 +11,8 @@ import (
 	"github.com/armon/go-metrics"
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/hashicorp/consul/agent/hcp/client"
-	"github.com/hashicorp/consul/agent/hcp/telemetry"
+	"github.com/shulutkov/yellow-pages/agent/hcp/client"
+	"github.com/shulutkov/yellow-pages/agent/hcp/telemetry"
 )
 
 var (

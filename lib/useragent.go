@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/hashicorp/consul/version"
+	"github.com/shulutkov/yellow-pages/version"
 )
 
 var (

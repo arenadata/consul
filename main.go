@@ -11,10 +11,10 @@ import (
 
 	mcli "github.com/mitchellh/cli"
 
-	"github.com/hashicorp/consul/command"
-	"github.com/hashicorp/consul/command/cli"
-	"github.com/hashicorp/consul/command/version"
-	_ "github.com/hashicorp/consul/service_os"
+	"github.com/shulutkov/yellow-pages/command"
+	"github.com/shulutkov/yellow-pages/command/cli"
+	"github.com/shulutkov/yellow-pages/command/version"
+	_ "github.com/shulutkov/yellow-pages/service_os"
 )
 
 func main() {

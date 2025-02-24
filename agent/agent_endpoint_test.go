@@ -22,8 +22,8 @@ import (
 
 	"github.com/armon/go-metrics"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/version"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/version"
 
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-uuid"
@@ -33,23 +33,23 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/acl/resolver"
-	"github.com/hashicorp/consul/agent/config"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/connect/ca"
-	"github.com/hashicorp/consul/agent/consul"
-	"github.com/hashicorp/consul/agent/debug"
-	"github.com/hashicorp/consul/agent/local"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/token"
-	tokenStore "github.com/hashicorp/consul/agent/token"
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/sdk/testutil"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	"github.com/hashicorp/consul/testrpc"
-	"github.com/hashicorp/consul/types"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/acl/resolver"
+	"github.com/shulutkov/yellow-pages/agent/config"
+	"github.com/shulutkov/yellow-pages/agent/connect"
+	"github.com/shulutkov/yellow-pages/agent/connect/ca"
+	"github.com/shulutkov/yellow-pages/agent/consul"
+	"github.com/shulutkov/yellow-pages/agent/debug"
+	"github.com/shulutkov/yellow-pages/agent/local"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/token"
+	tokenStore "github.com/shulutkov/yellow-pages/agent/token"
+	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
+	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/shulutkov/yellow-pages/types"
 )
 
 func createACLTokenWithAgentReadPolicy(t *testing.T, srv *HTTPHandlers) string {
@@ -1772,7 +1772,7 @@ func (s *delegateConfigReloadShim) ReloadConfig(cfg consul.ReloadableConfig) err
 }
 
 // TestAgent_ReloadDoesNotTriggerWatch Ensure watches not triggered after reload
-// see https://github.com/hashicorp/consul/issues/7446
+// see https://github.com/shulutkov/yellow-pages/issues/7446
 func TestAgent_ReloadDoesNotTriggerWatch(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")
@@ -2610,7 +2610,7 @@ func TestAgent_RegisterCheck_UDP(t *testing.T) {
 }
 
 // This verifies all the forms of the new args-style check that we need to
-// support as a result of https://github.com/hashicorp/consul/issues/3587.
+// support as a result of https://github.com/shulutkov/yellow-pages/issues/3587.
 func TestAgent_RegisterCheck_Scripts(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")
@@ -7061,7 +7061,7 @@ func TestAgentConnectCALeafCert_goodNotLocal(t *testing.T) {
 		require.Equal(t, issued, issued2)
 	}
 
-	// Test Blocking - see https://github.com/hashicorp/consul/issues/4462
+	// Test Blocking - see https://github.com/shulutkov/yellow-pages/issues/4462
 	{
 		// Fetch it again
 		resp := httptest.NewRecorder()
@@ -7113,7 +7113,7 @@ func TestAgentConnectCALeafCert_goodNotLocal(t *testing.T) {
 }
 
 func TestAgentConnectCALeafCert_nonBlockingQuery_after_blockingQuery_shouldNotBlock(t *testing.T) {
-	// see: https://github.com/hashicorp/consul/issues/12048
+	// see: https://github.com/shulutkov/yellow-pages/issues/12048
 
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

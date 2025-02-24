@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/vault/api/auth/gcp"
 
-	"github.com/hashicorp/consul/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 var _ VaultAuthenticator = (*gcp.GCPAuth)(nil)

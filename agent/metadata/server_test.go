@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/agent/metadata"
+	"github.com/shulutkov/yellow-pages/agent/metadata"
 )
 
 func TestServer_Key_params(t *testing.T) {

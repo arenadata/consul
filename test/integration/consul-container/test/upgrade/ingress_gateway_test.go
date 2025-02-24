@@ -21,13 +21,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hashicorp/consul/api"
-	"github.com/hashicorp/consul/sdk/testutil/retry"
-	libassert "github.com/hashicorp/consul/test/integration/consul-container/libs/assert"
-	libcluster "github.com/hashicorp/consul/test/integration/consul-container/libs/cluster"
-	libservice "github.com/hashicorp/consul/test/integration/consul-container/libs/service"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/topology"
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/shulutkov/yellow-pages/api"
+	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	libassert "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/assert"
+	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
+	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
+	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
+	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
 )
 
 // These tests adapt BATS-based tests from test/integration/connect/case-ingress-gateway*
@@ -111,7 +111,7 @@ func TestIngressGateway_UpgradeToTarget_fromLatest(t *testing.T) {
 	require.NoError(t, err)
 
 	// these must be one of the externally-mapped ports from
-	// https://github.com/hashicorp/consul/blob/c5e729e86576771c4c22c6da1e57aaa377319323/test/integration/consul-container/libs/cluster/container.go#L521-L525
+	// https://github.com/shulutkov/yellow-pages/blob/c5e729e86576771c4c22c6da1e57aaa377319323/test/integration/consul-container/libs/cluster/container.go#L521-L525
 	const portRouter = 8080
 	const portWildcard = 9997
 	const portS1Direct = 9998

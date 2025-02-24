@@ -7,8 +7,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/hashicorp/consul/agent/structs"
 	"github.com/mitchellh/mapstructure"
+	"github.com/shulutkov/yellow-pages/agent/structs"
 	"google.golang.org/grpc/metadata"
 )
 

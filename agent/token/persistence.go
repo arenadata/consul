@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/hashicorp/consul/lib/file"
+	"github.com/shulutkov/yellow-pages/lib/file"
 )
 
 // Logger used by Store.Load to report warnings.

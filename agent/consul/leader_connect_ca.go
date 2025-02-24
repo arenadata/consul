@@ -18,14 +18,14 @@ import (
 	"github.com/hashicorp/go-uuid"
 	"golang.org/x/time/rate"
 
-	"github.com/hashicorp/consul/acl"
-	"github.com/hashicorp/consul/agent/connect"
-	"github.com/hashicorp/consul/agent/connect/ca"
-	"github.com/hashicorp/consul/agent/consul/state"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/lib"
-	"github.com/hashicorp/consul/lib/routine"
-	"github.com/hashicorp/consul/lib/semaphore"
+	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/shulutkov/yellow-pages/agent/connect"
+	"github.com/shulutkov/yellow-pages/agent/connect/ca"
+	"github.com/shulutkov/yellow-pages/agent/consul/state"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/shulutkov/yellow-pages/lib/routine"
+	"github.com/shulutkov/yellow-pages/lib/semaphore"
 )
 
 type caState string
@@ -863,7 +863,7 @@ type ValidateConfigUpdater interface {
 	// ValidateConfigUpdate should return an error if the next configuration is
 	// incompatible with the previous configuration.
 	//
-	// TODO: use better types after https://github.com/hashicorp/consul/issues/12238
+	// TODO: use better types after https://github.com/shulutkov/yellow-pages/issues/12238
 	ValidateConfigUpdate(previous, next map[string]interface{}) error
 }
 

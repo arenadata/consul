@@ -6,7 +6,7 @@ package uiserver
 import (
 	"encoding/json"
 
-	"github.com/hashicorp/consul/agent/config"
+	"github.com/shulutkov/yellow-pages/agent/config"
 )
 
 // uiTemplateDataFromConfig returns the base set of variables that should be

@@ -9,9 +9,9 @@ import (
 
 	"github.com/testcontainers/testcontainers-go"
 
-	"github.com/hashicorp/consul/api"
+	"github.com/shulutkov/yellow-pages/api"
 
-	"github.com/hashicorp/consul/test/integration/consul-container/libs/utils"
+	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
 )
 
 // Agent represent a Consul agent abstraction

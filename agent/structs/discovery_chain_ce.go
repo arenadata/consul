@@ -7,7 +7,7 @@
 package structs
 
 import (
-	"github.com/hashicorp/consul/acl"
+	"github.com/shulutkov/yellow-pages/acl"
 )
 
 func (t *DiscoveryTarget) GetEnterpriseMetadata() *acl.EnterpriseMeta {

@@ -9,7 +9,7 @@ package command
 import (
 	mcli "github.com/mitchellh/cli"
 
-	"github.com/hashicorp/consul/command/cli"
+	"github.com/shulutkov/yellow-pages/command/cli"
 )
 
 func registerEnterpriseCommands(_ cli.Ui, _ map[string]mcli.CommandFactory) {}

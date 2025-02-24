@@ -6,14 +6,14 @@ package validateupstream_test
 import (
 	"testing"
 
-	"github.com/hashicorp/consul/agent/proxycfg"
-	"github.com/hashicorp/consul/agent/structs"
-	"github.com/hashicorp/consul/agent/xds"
-	"github.com/hashicorp/consul/agent/xds/testcommon"
-	"github.com/hashicorp/consul/envoyextensions/xdscommon"
-	"github.com/hashicorp/consul/sdk/testutil"
-	troubleshoot "github.com/hashicorp/consul/troubleshoot/proxy"
 	testinf "github.com/mitchellh/go-testing-interface"
+	"github.com/shulutkov/yellow-pages/agent/proxycfg"
+	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/shulutkov/yellow-pages/agent/xds"
+	"github.com/shulutkov/yellow-pages/agent/xds/testcommon"
+	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
+	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	troubleshoot "github.com/shulutkov/yellow-pages/troubleshoot/proxy"
 	"github.com/stretchr/testify/require"
 )
 

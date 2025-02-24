@@ -1,4 +1,4 @@
-module github.com/hashicorp/consul/internal/tools/proto-gen-rpc-glue/e2e
+module github.com/shulutkov/yellow-pages/internal/tools/proto-gen-rpc-glue/e2e
 
 go 1.13
 
