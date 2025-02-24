@@ -1,3 +1,0 @@
-```release-note:feature
-ui: Support connect-native services in the Topology view.
-```

@@ -1,3 +1,0 @@
-```release-note:enhancement
-ui: Slightly improve usability of main navigation
-```

@@ -1,3 +1,0 @@
-```release-note:enhancement
-Refactor ACL denied error code and start improving error details
-```

@@ -1,3 +1,0 @@
-```release-note:improvement
-container: Upgrade container image to use to Alpine 3.17.
-```

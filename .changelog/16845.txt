@@ -1,3 +1,0 @@
-```release-note:improvement
-systemd: set service type to notify.
-```

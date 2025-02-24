@@ -1,3 +1,0 @@
-```release-note:improvement
-http: if a GET request has a non-empty body, log a warning that suggests a possible problem (parameters were meant for the query string, but accidentally placed in the body)
-```

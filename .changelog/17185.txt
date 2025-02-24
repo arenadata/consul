@@ -1,3 +1,0 @@
-```release-note:bug
-xds: Fix possible panic that can when generating clusters before the root certificates have been fetched.
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-connect: Fix issue where `auto_config` and `auto_encrypt` could unintentionally enable TLS for gRPC xDS connections.
-```

@@ -1,3 +1,0 @@
-```release-note:feature
-config-entry(ingress-gateway): Added support for `max_connections` for upstream clusters
-```

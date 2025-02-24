@@ -1,3 +1,0 @@
-```release-note:breaking-change
-config-entry: Exporting a specific service name across all namespace is invalid.
-```

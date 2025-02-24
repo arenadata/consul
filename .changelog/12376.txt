@@ -1,3 +1,0 @@
-```release-note:enhancement
-ci: include 'enhancement' entry type in IMPROVEMENTS section of changelog.
-```

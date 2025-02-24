@@ -1,3 +1,0 @@
-```release-note:improvement
-envoy: adds additional Envoy outlier ejection parameters to passive health check configurations.
-```

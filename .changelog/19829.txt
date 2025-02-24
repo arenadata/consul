@@ -1,3 +1,0 @@
-```release-note:enhancement
-mesh: parse the proxy-defaults protocol when write the config-entry to avoid parsing it when compiling the discovery chain.
-```

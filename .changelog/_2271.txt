@@ -1,3 +1,0 @@
-```release-note:improvement
-snapshot agent: **(Enterprise only)** Add support for path-based addressing when using s3 backend.
-```

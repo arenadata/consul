@@ -1,3 +1,0 @@
-```release-note:bug
-xds: prevents tight loop where the Consul client agent would repeatedly re-send config that Envoy has rejected.
-```

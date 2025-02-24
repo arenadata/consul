@@ -1,3 +1,0 @@
-```release-note:improvement
-connect: reduce raft apply on CA configuration when no change is performed
-```

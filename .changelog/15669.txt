@@ -1,3 +1,0 @@
-```release-note:improvement
-connect: ensure all vault connect CA tests use limited privilege tokens
-```

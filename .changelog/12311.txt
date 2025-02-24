@@ -1,3 +1,0 @@
-```release-note:note
-Forked net/rpc to add middleware support: https://github.com/hashicorp/consul-net-rpc/ .
-```

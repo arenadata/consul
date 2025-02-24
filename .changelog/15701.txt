@@ -1,3 +1,0 @@
-```release-note:improvement
-grpc: Use new balancer implementation to reduce periodic WARN logs when shuffling servers.
-```

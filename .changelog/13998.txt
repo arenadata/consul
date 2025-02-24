@@ -1,3 +1,0 @@
-```release-note:improvement
-connect: expose new tracing configuration on envoy
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-kvs: Fixed a bug where query options were not being applied to KVS.Get RPC operations.
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-deps: update go-memdb, fixing goroutine leak [[GH-15010](https://github.com/hashicorp/consul/issues/15010)]
-```

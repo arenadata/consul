@@ -1,3 +1,0 @@
-```release-note: improvement
-connect: Bump latest Envoy to 1.23.1 in test matrix
-```

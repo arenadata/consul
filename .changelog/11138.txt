@@ -1,3 +1,0 @@
-```release-note:bug
-checks: populate interval and timeout when registering services
-```

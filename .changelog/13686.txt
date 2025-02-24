@@ -1,3 +1,0 @@
-```release-note:enhancement
-ui: Add new CopyableCode component and use it in certain pre-existing areas
-```

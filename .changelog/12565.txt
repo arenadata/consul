@@ -1,3 +1,0 @@
-```release-note:bug
-replication: Fixed a bug which could prevent ACL replication from continuing successfully after a leader election.
-```

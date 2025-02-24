@@ -1,3 +1,0 @@
-```release-note:feature
-streaming: Added topics for `ingress-gateway`, `mesh`, `service-intentions` and `service-resolver` config entry events.
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-agent: Fixed a bug in HTTP handlers where URLs were being decoded twice
-```

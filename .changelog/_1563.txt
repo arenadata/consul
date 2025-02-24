@@ -1,3 +1,0 @@
-```release-note:bug
-server: **(Enterprise only)** Namespace deletion will now attempt to delete as many namespaced config entries as possible instead of halting on the first deletion that failed.
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-acl: Fix parsing of IAM user and role tags in IAM auth method
-```

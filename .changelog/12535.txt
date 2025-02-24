@@ -1,3 +1,0 @@
-```release-note:bug
-dns: allow max of 63 character DNS labels instead of 64 per RFC 1123
-```

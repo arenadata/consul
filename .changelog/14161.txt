@@ -1,3 +1,0 @@
-```release-note:improvement
-metrics: add labels of segment, partition, network area, network (lan or wan) to serf and memberlist metrics
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-ca: Fixed issue where using Vault as Connect CA with Vault-managed policies would error on start-up if the intermediate PKI mount existed but was empty
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-ca: ensure Vault CA provider respects Vault Enterprise namespace configuration.
-```

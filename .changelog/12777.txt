@@ -1,3 +1,0 @@
-```release-note:improvement
-connect: Add Envoy 1.21.1 to support matrix, remove 1.17.4
-```

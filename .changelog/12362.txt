@@ -1,3 +1,0 @@
-```release-note:improvement
-server: suppress spurious blocking query returns where multiple config entries are involved
-```

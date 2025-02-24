@@ -1,3 +1,0 @@
-```release-note:feature
-deps: update to latest go-discover to provide ECS auto-discover capabilities.
-```

@@ -1,3 +1,0 @@
-```release-note:improvement
-deps: update to latest go-discover to fix vulnerable transitive jwt-go dependency
-```

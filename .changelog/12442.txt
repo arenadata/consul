@@ -1,3 +1,0 @@
-```release-note:enhancement
-agent: Allow client agents to perform keyring operations
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-ui: update token list on Role details page to show only linked tokens
-```

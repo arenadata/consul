@@ -1,3 +1,0 @@
-```release-note:note
-ci: change action to pull v1 instead of main
-```

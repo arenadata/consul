@@ -1,3 +1,0 @@
-```release-note:bug
-namespace: **(Enterprise Only)** Unreserve `consul` namespace to allow K8s namespace mirroring when deploying in `consul` K8s namespace .
-```

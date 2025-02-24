@@ -1,3 +1,0 @@
-```release-note:bug
-agent: Fixed issue where blocking queries with short waits could timeout on the client
-```

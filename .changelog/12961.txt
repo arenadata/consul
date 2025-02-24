@@ -1,3 +1,0 @@
-```release-note:bug
-api: agent/self now returns version with +ent suffix for Enterprise Consul
-```

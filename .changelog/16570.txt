@@ -1,3 +1,0 @@
-```release-note:bug
-peering: Fixes a bug that can lead to peering service deletes impacting the state of local services
-```

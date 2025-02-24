@@ -1,3 +1,0 @@
-```release-note:bug
-agent: avoid leaking the alias check runner goroutine when the check is de-registered
-```

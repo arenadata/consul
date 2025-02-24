@@ -1,3 +1,0 @@
-```release-note:feature
-cli: The `token read` command now supports the `-expanded` flag to display detailed role and policy information for the token.
-```

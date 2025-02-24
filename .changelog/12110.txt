@@ -1,3 +1,0 @@
-```release-note:improvement
-rpc: improve blocking queries for items that do not exist, by continuing to block until they exist (or the timeout).
-```

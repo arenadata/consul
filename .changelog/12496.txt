@@ -1,3 +1,0 @@
-```release-note:bug
-raft: upgrade to v1.3.6 which fixes a bug where a read replica node could attempt bootstrapping raft and prevent other nodes from bootstrapping at all
-```

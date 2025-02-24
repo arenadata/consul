@@ -1,3 +1,0 @@
-```release-note:bug
-connect: fixes bug where passthrough addressses for transparent proxies dialed directly weren't being cleaned up.
-```

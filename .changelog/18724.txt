@@ -1,3 +1,0 @@
-```release-note:bug
-telemetry: emit consul version metric on a regular interval.
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-server: fix spurious blocking query suppression for discovery chains
-```

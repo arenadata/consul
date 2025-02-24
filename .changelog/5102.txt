@@ -1,3 +1,0 @@
-```release-note:feature
-server: **(Enterprise Only)** allow automatic license utilization reporting.
-```

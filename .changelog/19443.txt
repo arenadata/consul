@@ -1,3 +1,0 @@
-```release-note:bug
-ui: only show hcp link if url is present
-```

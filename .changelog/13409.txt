@@ -1,3 +1,0 @@
-```release-note:bug
-ui: Fix incorrect text on certain page empty states
-```

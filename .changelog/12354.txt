@@ -1,3 +1,0 @@
-```release-note:improvement
-ui: Include details on ACL policy dispositions required for unauthorized views
-```

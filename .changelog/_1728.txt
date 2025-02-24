@@ -1,3 +1,0 @@
-```release-note:bug
-usagemetrics: **(Enterprise only)** Fix a bug where Consul usage metrics stopped being reported when upgrading servers from 1.10 to 1.11 or later.
-```

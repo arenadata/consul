@@ -1,3 +1,0 @@
-```release-note:bug
-Mesh Gateways: Fix a bug where replicated and peered mesh gateways with hostname-based WAN addresses fail to initialize.
-```

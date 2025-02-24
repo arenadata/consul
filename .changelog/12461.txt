@@ -1,3 +1,0 @@
-```release-note:improvement
-ui: Move icons away from depending on a CSS preprocessor
-```

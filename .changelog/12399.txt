@@ -1,3 +1,0 @@
-```release-note:enhancement
-catalog: Add per-node indexes to reduce watchset firing for unrelated nodes and services.
-```

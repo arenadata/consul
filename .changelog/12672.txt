@@ -1,3 +1,0 @@
-```release-note:security
-connect: Properly set SNI when configured for services behind a terminating gateway.
-```

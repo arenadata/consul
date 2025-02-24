@@ -1,3 +1,0 @@
-```release-note:bug
-agent: Parse datacenter from Create/Delete requests for AuthMethods and BindingRules.
-```

@@ -1,3 +1,0 @@
-```release-note:bug
-ui: Added Tags tab to gateways(just like exists for non-gateway services)
-```

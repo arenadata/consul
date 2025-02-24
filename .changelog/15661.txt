@@ -1,3 +1,0 @@
-```release-note:bug
-connect: Fixed issue where using Vault 1.11+ as CA provider in a secondary datacenter would eventually break Intermediate CAs
-```

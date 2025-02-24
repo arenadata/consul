@@ -1,3 +1,0 @@
-```release-note:enhancement
-ui: Improve usability of Topology warning/information panels
-```

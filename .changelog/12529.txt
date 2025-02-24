@@ -1,3 +1,0 @@
-```release-note:feature
-server: Ensure that service-defaults `Meta` is returned with the response to the `ConfigEntry.ResolveServiceConfig` RPC.
-```

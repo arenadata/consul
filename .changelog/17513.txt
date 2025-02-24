@@ -1,3 +1,0 @@
-```release-note:security
-Update to UBI base image to 9.2. 
-```

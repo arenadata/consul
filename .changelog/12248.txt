@@ -1,3 +1,0 @@
-```release-note:enhancement
-ui: Exclude Service Instance Health from Health Check reporting on the Node listing page. The health icons on each individual row now only reflect Node health.
-```

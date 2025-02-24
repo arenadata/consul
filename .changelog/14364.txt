@@ -1,3 +1,0 @@
-```release-note:bug
-peering: Fix issue preventing deletion and recreation of peerings in TERMINATED state.
-```

@@ -1,3 +1,0 @@
-```release-note:enhancement
-acl: Provide fuller detail in the error messsage when an ACL denies access.
-```
