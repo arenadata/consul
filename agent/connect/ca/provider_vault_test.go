@@ -17,8 +17,6 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 	vaultapi "github.com/hashicorp/vault/api"
-	"github.com/hashicorp/vault/api/auth/gcp"
-	vaultconst "github.com/hashicorp/vault/sdk/helper/consts"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
@@ -27,6 +25,10 @@ import (
 	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
 )
+
+// NamespaceHeaderName is the header set to specify which namespace the
+// request is indented for.
+const NamespaceHeaderName = "X-Vault-Namespace"
 
 const pkiTestPolicyBase = `
 path "sys/mounts"
@@ -111,19 +113,12 @@ func TestVaultCAProvider_configureVaultAuthMethod(t *testing.T) {
 		expError     string
 		hasLDG       bool
 	}{
-		"alicloud":    {expLoginPath: "auth/alicloud/login", params: map[string]any{"role": "test-role", "region": "test-region"}, hasLDG: true},
 		"approle":     {expLoginPath: "auth/approle/login", params: map[string]any{"role_id_file_path": "test-path"}, hasLDG: true},
-		"aws":         {expLoginPath: "auth/aws/login", params: map[string]interface{}{"type": "iam"}, hasLDG: true},
-		"azure":       {expLoginPath: "auth/azure/login", params: map[string]interface{}{"role": "test-role", "resource": "test-resource"}, hasLDG: true},
-		"cf":          {expLoginPath: "auth/cf/login"},
-		"github":      {expLoginPath: "auth/github/login"},
-		"gcp":         {expLoginPath: "auth/gcp/login", params: map[string]interface{}{"type": "iam", "role": "test-role"}},
 		"jwt":         {expLoginPath: "auth/jwt/login", params: map[string]any{"role": "test-role", "path": "test-path"}, hasLDG: true},
 		"kerberos":    {expLoginPath: "auth/kerberos/login"},
 		"kubernetes":  {expLoginPath: "auth/kubernetes/login", params: map[string]interface{}{"role": "test-role"}, hasLDG: true},
 		"ldap":        {expLoginPath: "auth/ldap/login/foo", params: map[string]interface{}{"username": "foo"}},
 		"oci":         {expLoginPath: "auth/oci/login/foo", params: map[string]interface{}{"role": "foo"}},
-		"okta":        {expLoginPath: "auth/okta/login/foo", params: map[string]interface{}{"username": "foo"}},
 		"radius":      {expLoginPath: "auth/radius/login/foo", params: map[string]interface{}{"username": "foo"}},
 		"cert":        {expLoginPath: "auth/cert/login"},
 		"token":       {expError: "'token' auth method is not supported via auth method configuration; please provide the token with the 'token' parameter in the CA configuration"},
@@ -145,15 +140,10 @@ func TestVaultCAProvider_configureVaultAuthMethod(t *testing.T) {
 			require.NoError(t, err)
 			require.NotNil(t, authIF)
 
-			switch authMethodType {
-			case VaultAuthMethodTypeGCP:
-				_ = authIF.(*gcp.GCPAuth)
-			default:
-				auth := authIF.(*VaultAuthClient)
-				require.Equal(t, authMethod, auth.AuthMethod)
-				require.Equal(t, c.expLoginPath, auth.LoginPath)
-				require.Equal(t, c.hasLDG, auth.LoginDataGen != nil)
-			}
+			auth := authIF.(*VaultAuthClient)
+			require.Equal(t, authMethod, auth.AuthMethod)
+			require.Equal(t, c.expLoginPath, auth.LoginPath)
+			require.Equal(t, c.hasLDG, auth.LoginDataGen != nil)
 		})
 	}
 }
@@ -192,7 +182,7 @@ func TestVaultCAProvider_Configure(t *testing.T) {
 			},
 			expectedValue: func(t *testing.T, v *VaultProvider) {
 				headers := v.client.Headers()
-				require.Equal(t, "", headers.Get(vaultconst.NamespaceHeaderName))
+				require.Equal(t, "", headers.Get(NamespaceHeaderName))
 				require.Equal(t, "pki-root/", v.config.RootPKIPath)
 				require.Equal(t, "pki-intermediate/", v.config.IntermediatePKIPath)
 			},
@@ -206,7 +196,7 @@ func TestVaultCAProvider_Configure(t *testing.T) {
 			},
 			expectedValue: func(t *testing.T, v *VaultProvider) {
 				h := v.client.Headers()
-				require.Equal(t, "ns1", h.Get(vaultconst.NamespaceHeaderName))
+				require.Equal(t, "ns1", h.Get(NamespaceHeaderName))
 			},
 		},
 	}

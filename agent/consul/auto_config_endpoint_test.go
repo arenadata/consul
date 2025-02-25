@@ -34,7 +34,7 @@ import (
 	"github.com/shulutkov/yellow-pages/tlsutil"
 	"github.com/shulutkov/yellow-pages/types"
 
-	"gopkg.in/square/go-jose.v2/jwt"
+	"github.com/go-jose/go-jose/v3/jwt"
 )
 
 type mockAutoConfigBackend struct {

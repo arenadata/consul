@@ -1460,7 +1460,6 @@ func (b *builder) validate(rt RuntimeConfig) error {
 		"":                       true,
 		structs.ConsulCAProvider: true,
 		structs.VaultCAProvider:  true,
-		structs.AWSCAProvider:    true,
 	}
 	if _, ok := validCAProviders[rt.ConnectCAProvider]; !ok {
 		return fmt.Errorf("%s is not a valid CA provider", rt.ConnectCAProvider)
@@ -1472,10 +1471,6 @@ func (b *builder) validate(rt RuntimeConfig) error {
 			}
 		case structs.VaultCAProvider:
 			if _, err := ca.ParseVaultCAConfig(rt.ConnectCAConfig); err != nil {
-				return err
-			}
-		case structs.AWSCAProvider:
-			if _, err := ca.ParseAWSCAConfig(rt.ConnectCAConfig); err != nil {
 				return err
 			}
 		}

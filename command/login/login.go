@@ -39,8 +39,6 @@ type cmd struct {
 	tokenSinkFile   string
 	meta            map[string]string
 
-	aws AWSLogin
-
 	enterpriseCmd
 }
 
@@ -65,7 +63,6 @@ func (c *cmd) init() {
 	c.initEnterpriseFlags()
 
 	c.http = &flags.HTTPFlags{}
-	flags.Merge(c.flags, c.aws.flags())
 	flags.Merge(c.flags, c.http.ClientFlags())
 	flags.Merge(c.flags, c.http.ServerFlags())
 	flags.Merge(c.flags, c.http.MultiTenancyFlags())
@@ -94,24 +91,7 @@ func (c *cmd) Run(args []string) int {
 }
 
 func (c *cmd) bearerTokenLogin() int {
-	if err := c.aws.checkFlags(); err != nil {
-		c.UI.Error(err.Error())
-		return 1
-	}
-
-	if c.aws.autoBearerToken {
-		if c.bearerTokenFile != "" {
-			c.UI.Error("Cannot use '-bearer-token-file' flag with '-aws-auto-bearer-token'")
-			return 1
-		}
-
-		if token, err := c.aws.createAWSBearerToken(); err != nil {
-			c.UI.Error(fmt.Sprintf("Error with aws-iam auth method: %s", err))
-			return 1
-		} else {
-			c.bearerToken = token
-		}
-	} else if c.bearerTokenFile == "" {
+	if c.bearerTokenFile == "" {
 		c.UI.Error("Missing required '-bearer-token-file' flag")
 		return 1
 	} else {

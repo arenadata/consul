@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	discover "github.com/hashicorp/go-discover"
+	"github.com/hashicorp/go-discover"
 	discoverk8s "github.com/hashicorp/go-discover/provider/k8s"
 	"github.com/hashicorp/go-hclog"
 	discoverhcp "github.com/shulutkov/yellow-pages/agent/hcp/discover"

@@ -118,35 +118,6 @@ func TestStructs_CAConfiguration_MsgpackEncodeDecode(t *testing.T) {
 				return config
 			},
 		},
-		structs.AWSCAProvider: {
-			in: &structs.CAConfiguration{
-				ClusterID: "abc",
-				Provider:  structs.AWSCAProvider,
-				State: map[string]string{
-					"foo": "bar",
-				},
-				ForceWithoutCrossSigning: true,
-				RaftIndex: structs.RaftIndex{
-					CreateIndex: 5,
-					ModifyIndex: 99,
-				},
-				Config: map[string]interface{}{
-					"ExistingARN":         "arn://foo",
-					"DeleteOnExit":        true,
-					"IntermediateCertTTL": "90h",
-				},
-			},
-			expectConfig: &structs.AWSCAProviderConfig{
-				CommonCAProviderConfig: *expectCommonBase,
-				ExistingARN:            "arn://foo",
-				DeleteOnExit:           true,
-			},
-			parseFunc: func(t *testing.T, raw map[string]interface{}) interface{} {
-				config, err := ParseAWSCAConfig(raw)
-				require.NoError(t, err)
-				return config
-			},
-		},
 	}
 	// underlay common ca config stuff
 	for _, tc := range cases {

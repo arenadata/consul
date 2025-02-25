@@ -295,7 +295,6 @@ func (q *CARequest) RequestDatacenter() string {
 const (
 	ConsulCAProvider = "consul"
 	VaultCAProvider  = "vault"
-	AWSCAProvider    = "aws-pca"
 )
 
 // CAConfiguration is the configuration for the current CA plugin.

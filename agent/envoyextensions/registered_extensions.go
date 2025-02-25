@@ -9,7 +9,6 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-version"
 
-	awslambda "github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/aws-lambda"
 	extauthz "github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/ext-authz"
 	"github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/lua"
 	propertyoverride "github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/property-override"
@@ -22,7 +21,6 @@ type extensionConstructor func(api.EnvoyExtension) (extensioncommon.EnvoyExtende
 
 var extensionConstructors = map[string]extensionConstructor{
 	api.BuiltinLuaExtension:              lua.Constructor,
-	api.BuiltinAWSLambdaExtension:        awslambda.Constructor,
 	api.BuiltinPropertyOverrideExtension: propertyoverride.Constructor,
 	api.BuiltinWasmExtension:             wasm.Constructor,
 	api.BuiltinExtAuthzExtension:         extauthz.Constructor,

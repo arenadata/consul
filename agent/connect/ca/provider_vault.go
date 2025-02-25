@@ -28,23 +28,16 @@ import (
 const (
 	VaultCALeafCertRole = "leaf-cert"
 
-	VaultAuthMethodTypeAliCloud     = "alicloud"
-	VaultAuthMethodTypeAppRole      = "approle"
-	VaultAuthMethodTypeAWS          = "aws"
-	VaultAuthMethodTypeAzure        = "azure"
-	VaultAuthMethodTypeCloudFoundry = "cf"
-	VaultAuthMethodTypeGitHub       = "github"
-	VaultAuthMethodTypeGCP          = "gcp"
-	VaultAuthMethodTypeJWT          = "jwt"
-	VaultAuthMethodTypeKerberos     = "kerberos"
-	VaultAuthMethodTypeKubernetes   = "kubernetes"
-	VaultAuthMethodTypeLDAP         = "ldap"
-	VaultAuthMethodTypeOCI          = "oci"
-	VaultAuthMethodTypeOkta         = "okta"
-	VaultAuthMethodTypeRadius       = "radius"
-	VaultAuthMethodTypeTLS          = "cert"
-	VaultAuthMethodTypeToken        = "token"
-	VaultAuthMethodTypeUserpass     = "userpass"
+	VaultAuthMethodTypeAppRole    = "approle"
+	VaultAuthMethodTypeJWT        = "jwt"
+	VaultAuthMethodTypeKerberos   = "kerberos"
+	VaultAuthMethodTypeKubernetes = "kubernetes"
+	VaultAuthMethodTypeLDAP       = "ldap"
+	VaultAuthMethodTypeOCI        = "oci"
+	VaultAuthMethodTypeRadius     = "radius"
+	VaultAuthMethodTypeTLS        = "cert"
+	VaultAuthMethodTypeToken      = "token"
+	VaultAuthMethodTypeUserpass   = "userpass"
 
 	defaultK8SServiceAccountTokenPath = "/var/run/secrets/kubernetes.io/serviceaccount/token"
 )
@@ -1025,22 +1018,14 @@ func configureVaultAuthMethod(authMethod *structs.VaultAuthMethod) (VaultAuthent
 
 	loginPath := ""
 	switch authMethod.Type {
-	case VaultAuthMethodTypeAWS:
-		return NewAWSAuthClient(authMethod), nil
-	case VaultAuthMethodTypeAzure:
-		return NewAzureAuthClient(authMethod)
-	case VaultAuthMethodTypeGCP:
-		return NewGCPAuthClient(authMethod)
 	case VaultAuthMethodTypeJWT:
 		return NewJwtAuthClient(authMethod)
 	case VaultAuthMethodTypeAppRole:
 		return NewAppRoleAuthClient(authMethod)
-	case VaultAuthMethodTypeAliCloud:
-		return NewAliCloudAuthClient(authMethod)
 	case VaultAuthMethodTypeKubernetes:
 		return NewK8sAuthClient(authMethod)
 	// These auth methods require a username for the login API path.
-	case VaultAuthMethodTypeLDAP, VaultAuthMethodTypeUserpass, VaultAuthMethodTypeOkta, VaultAuthMethodTypeRadius:
+	case VaultAuthMethodTypeLDAP, VaultAuthMethodTypeUserpass, VaultAuthMethodTypeRadius:
 		// Get username from the params.
 		if username, ok := authMethod.Params["username"]; ok {
 			loginPath = fmt.Sprintf("auth/%s/login/%s", authMethod.MountPath, username)
@@ -1060,9 +1045,7 @@ func configureVaultAuthMethod(authMethod *structs.VaultAuthMethod) (VaultAuthent
 		return nil, fmt.Errorf("'token' auth method is not supported via auth method configuration; " +
 			"please provide the token with the 'token' parameter in the CA configuration")
 	// The rest of the auth methods use auth/<auth method path> login API path.
-	case VaultAuthMethodTypeCloudFoundry,
-		VaultAuthMethodTypeGitHub,
-		VaultAuthMethodTypeKerberos,
+	case VaultAuthMethodTypeKerberos,
 		VaultAuthMethodTypeTLS:
 		return NewVaultAPIAuthClient(authMethod, loginPath), nil
 	default:

@@ -10,7 +10,6 @@ import (
 	"github.com/shulutkov/yellow-pages/agent/structs"
 
 	// register these as a builtin auth method
-	_ "github.com/shulutkov/yellow-pages/agent/consul/authmethod/awsauth"
 	_ "github.com/shulutkov/yellow-pages/agent/consul/authmethod/kubeauth"
 	_ "github.com/shulutkov/yellow-pages/agent/consul/authmethod/ssoauth"
 )

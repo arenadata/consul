@@ -461,8 +461,6 @@ func (c *CAManager) newProvider(conf *structs.CAConfiguration) (ca.Provider, err
 		return ca.NewConsulProvider(c.delegate, logger), nil
 	case structs.VaultCAProvider:
 		return ca.NewVaultProvider(logger), nil
-	case structs.AWSCAProvider:
-		return ca.NewAWSProvider(logger), nil
 	default:
 		if c.providerShim != nil {
 			return c.providerShim, nil
