@@ -149,7 +149,7 @@ func (c *cmd) run(args []string) int {
 
 	// wait for signal
 	signalCh := make(chan os.Signal, 10)
-	signal.Notify(signalCh, os.Interrupt, syscall.SIGTERM, syscall.SIGHUP, syscall.SIGPIPE)
+	signal.Notify(signalCh, syscall.SIGINT, syscall.SIGTERM, syscall.SIGHUP, syscall.SIGPIPE)
 
 	ctx, cancel := context.WithCancel(context.Background())
 
@@ -258,9 +258,9 @@ func (c *cmd) run(args []string) int {
 	defer agent.ShutdownEndpoints()
 	defer agent.ShutdownAgent()
 
-	if !config.DisableUpdateCheck && !config.DevMode {
-		c.startupUpdateCheck(config)
-	}
+	//if !config.DisableUpdateCheck && !config.DevMode {
+	//	c.startupUpdateCheck(config)
+	//}
 
 	// Let the agent know we've finished registration
 	agent.StartSync()
@@ -269,7 +269,7 @@ func (c *cmd) run(args []string) int {
 
 	// wait for signal
 	signalCh = make(chan os.Signal, 10)
-	signal.Notify(signalCh, os.Interrupt, syscall.SIGTERM, syscall.SIGHUP, syscall.SIGPIPE)
+	signal.Notify(signalCh, syscall.SIGINT, syscall.SIGTERM, syscall.SIGHUP, syscall.SIGPIPE)
 
 	for {
 		var sig os.Signal
@@ -277,7 +277,7 @@ func (c *cmd) run(args []string) int {
 		case s := <-signalCh:
 			sig = s
 		case <-service_os.Shutdown_Channel():
-			sig = os.Interrupt
+			sig = syscall.SIGINT
 		case err := <-agent.RetryJoinCh():
 			c.logger.Error("Retry join failed", "error", err)
 			return 1
@@ -304,7 +304,7 @@ func (c *cmd) run(args []string) int {
 		default:
 			c.logger.Info("Caught", "signal", sig)
 
-			graceful := (sig == os.Interrupt && !config.SkipLeaveOnInt) || (sig == syscall.SIGTERM && config.LeaveOnTerm) || (sig == syscall.SIGINT && config.LeaveOnTerm)
+			graceful := (sig == syscall.SIGINT && !config.SkipLeaveOnInt) || (sig == syscall.SIGTERM && config.LeaveOnTerm) || (sig == syscall.SIGINT && config.LeaveOnTerm)
 			if !graceful {
 				c.logger.Info("Graceful shutdown disabled. Exiting")
 				return 1

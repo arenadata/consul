@@ -118,7 +118,7 @@ func Load(opts LoadOpts) (LoadResult, error) {
 	if err := b.validate(cfg); err != nil {
 		return r, err
 	}
-	watcherFiles := stringslice.CloneStringSlice(opts.ConfigFiles)
+	watcherFiles := stringslice.CloneStringSlice(b.opts.ConfigFiles)
 	return LoadResult{RuntimeConfig: &cfg, Warnings: b.Warnings, WatchedFiles: watcherFiles}, nil
 }
 
@@ -578,10 +578,76 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		serfAdvertiseAddrWAN = &net.TCPAddr{IP: advertiseAddrWAN.IP, Port: serfPortWAN}
 	}
 
+	if len(b.opts.ConfigFiles) == 0 {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_CONFIG_DIRS"); ok {
+			parts := strings.Split(v, ",")
+			for i := range parts {
+				parts[i] = strings.TrimSpace(parts[i])
+			}
+			b.opts.ConfigFiles = parts
+		}
+	}
+
+	dataDir := stringVal(c.DataDir)
+	if len(dataDir) == 0 {
+		dataDir = "/data"
+		if v, ok := os.LookupEnv("CONSUL_AGENT_DATA_DIR"); ok {
+			dataDir = strings.TrimSpace(v)
+		}
+	}
+
+	uiConfig := b.uiConfigVal(c.UIConfig)
+	if !uiConfig.Enabled {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_UI_ENABLED"); ok {
+			v = strings.ToLower(v)
+			v = strings.TrimSpace(v)
+			if len(v) > 0 {
+				uiConfig.Enabled = v[0] == 't' || v[0] == 'y' || v[0] == '1'
+			}
+		}
+	}
+
+	serverMode := boolVal(c.ServerMode)
+	if v, ok := os.LookupEnv("CONSUL_AGENT_SERVER_ENABLED"); ok && !serverMode {
+		v = strings.ToLower(v)
+		v = strings.TrimSpace(v)
+		if len(v) > 0 {
+			serverMode = v[0] == 't' || v[0] == 'y' || v[0] == '1'
+		}
+	}
+
+	bootstrapExpect := intVal(c.BootstrapExpect)
+	if serverMode && bootstrapExpect == 0 {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_SERVER_BOOTSTRAP_EXPECT"); ok {
+			v = strings.TrimSpace(v)
+			bootstrapExpect, err = strconv.Atoi(v)
+			if err != nil {
+				return RuntimeConfig{}, fmt.Errorf("CONSUL_AGENT_SERVER_BOOTSTRAP_EXPECT must be an integer: %v", err)
+			}
+		}
+	}
+
+	retryJoin := b.expandAllOptionalAddrs("retry_join", c.RetryJoinLAN)
+	if len(retryJoin) == 0 {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_RETRY_JOIN"); ok {
+			parts := strings.Split(v, ",")
+			for i := range parts {
+				parts[i] = strings.TrimSpace(parts[i])
+			}
+			retryJoin = parts
+		}
+	}
+
 	// determine client addresses
 	clientAddrs := b.expandIPs("client_addr", c.ClientAddr)
-	if len(clientAddrs) == 0 {
+	switch len(clientAddrs) {
+	case 0:
 		b.warn("client_addr is empty, client services (DNS, HTTP, HTTPS, GRPC) will not be listening for connections")
+	case 1:
+		lo := net.ParseIP("127.0.0.1")
+		if lo.Equal(clientAddrs[0].IP) && serverMode {
+			clientAddrs[0] = &net.IPAddr{IP: net.ParseIP("0.0.0.0")}
+		}
 	}
 	dnsAddrs := b.makeAddrs(b.expandAddrs("addresses.dns", c.Addresses.DNS), clientAddrs, dnsPort)
 	httpAddrs := b.makeAddrs(b.expandAddrs("addresses.http", c.Addresses.HTTP), clientAddrs, httpPort)
@@ -806,12 +872,9 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		}
 	}
 
-	serverMode := boolVal(c.ServerMode)
-
 	// ----------------------------------------------------------------
 	// build runtime config
 	//
-	dataDir := stringVal(c.DataDir)
 	rt = RuntimeConfig{
 		// non-user configurable values
 		AEInterval:                 b.durationVal("ae_interval", c.AEInterval),
@@ -960,7 +1023,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		AdvertiseReconnectTimeout: b.durationVal("advertise_reconnect_timeout", c.AdvertiseReconnectTimeout),
 		BindAddr:                  bindAddr,
 		Bootstrap:                 boolVal(c.Bootstrap),
-		BootstrapExpect:           intVal(c.BootstrapExpect),
+		BootstrapExpect:           bootstrapExpect,
 		Cache: cache.Options{
 			EntryFetchRate: limitValWithDefault(
 				c.Cache.EntryFetchRate, float64(cache.DefaultEntryFetchRate),
@@ -1070,7 +1133,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		RequestLimitsWriteRate:            limitVal(c.Limits.RequestLimits.WriteRate),
 		RetryJoinIntervalLAN:              b.durationVal("retry_interval", c.RetryJoinIntervalLAN),
 		RetryJoinIntervalWAN:              b.durationVal("retry_interval_wan", c.RetryJoinIntervalWAN),
-		RetryJoinLAN:                      b.expandAllOptionalAddrs("retry_join", c.RetryJoinLAN),
+		RetryJoinLAN:                      retryJoin,
 		RetryJoinMaxAttemptsLAN:           intVal(c.RetryJoinMaxAttemptsLAN),
 		RetryJoinMaxAttemptsWAN:           intVal(c.RetryJoinMaxAttemptsWAN),
 		RetryJoinWAN:                      b.expandAllOptionalAddrs("retry_join_wan", c.RetryJoinWAN),
@@ -1095,7 +1158,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		TaggedAddresses:                   c.TaggedAddresses,
 		TranslateWANAddrs:                 boolVal(c.TranslateWANAddrs),
 		TxnMaxReqLen:                      uint64Val(c.Limits.TxnMaxReqLen),
-		UIConfig:                          b.uiConfigVal(c.UIConfig),
+		UIConfig:                          uiConfig,
 		UnixSocketGroup:                   stringVal(c.UnixSocket.Group),
 		UnixSocketMode:                    stringVal(c.UnixSocket.Mode),
 		UnixSocketUser:                    stringVal(c.UnixSocket.User),

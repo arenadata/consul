@@ -1,0 +1,75 @@
+services:
+  consul1:
+    image: consul:latest
+    hostname: "consul1"
+    ports:
+      - "8501:8500"
+    command: "agent"
+    environment:
+      CONSUL_AGENT_SERVER_ENABLED: true
+      CONSUL_AGENT_SERVER_BOOTSTRAP_EXPECT: 3
+      CONSUL_AGENT_UI_ENABLED: true
+      CONSUL_AGENT_DATA_DIR: /main
+#      CONSUL_AGENT_CONFIG_DIRS: /configs1,/configs2
+    volumes:
+      - ./_tmp/data1:/main
+  consul2:
+    image: consul:latest
+    hostname: "consul2"
+    command: "agent"
+    ports:
+      - "8502:8500"
+    environment:
+      CONSUL_AGENT_SERVER_ENABLED: true
+      CONSUL_AGENT_UI_ENABLED: true
+      CONSUL_AGENT_RETRY_JOIN: consul1
+    volumes:
+      - ./_tmp/data2:/data
+    depends_on:
+      - consul1
+  consul3:
+    image: consul:latest
+    hostname: "consul3"
+    command: "agent"
+    ports:
+      - "8503:8500"
+    environment:
+      CONSUL_AGENT_SERVER_ENABLED: true
+      CONSUL_AGENT_UI_ENABLED: true
+      CONSUL_AGENT_RETRY_JOIN: consul1
+    volumes:
+      - ./_tmp/data3:/data
+    depends_on:
+      - consul1
+  consul-agent1:
+    image: consul:latest
+    hostname: "consul-agent1"
+    command: "agent -retry-join consul1"
+    ports:
+      - "8511:8500"
+    depends_on:
+      - consul1
+  consul-agent2:
+    image: consul:latest
+    hostname: "consul-agent2"
+    command: "agent -retry-join consul1"
+    ports:
+      - "8512:8500"
+    depends_on:
+      - consul1
+  consul-agent3:
+    image: consul:latest
+    hostname: "consul-agent3"
+    command: "agent -retry-join consul1"
+    ports:
+      - "8513:8500"
+    depends_on:
+      - consul1
+  consul-agent4:
+    image: consul:latest
+    hostname: "consul-agent4"
+    command: "agent -retry-join consul1"
+    ports:
+      - "8514:8500"
+    depends_on:
+      - consul1
