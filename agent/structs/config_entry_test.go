@@ -19,7 +19,6 @@ import (
 
 	"github.com/shulutkov/yellow-pages/acl"
 	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/api"
 	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/shulutkov/yellow-pages/types"
 )
@@ -2889,21 +2888,6 @@ func TestServiceConfigEntry(t *testing.T) {
 				},
 			},
 			validateErr: `name "not-a-builtin" is not a built-in extension`,
-		},
-		"validate: valid extension": {
-			entry: &ServiceConfigEntry{
-				Kind:     ServiceDefaults,
-				Name:     "external",
-				Protocol: "http",
-				EnvoyExtensions: []EnvoyExtension{
-					{
-						Name: api.BuiltinAWSLambdaExtension,
-						Arguments: map[string]interface{}{
-							"ARN": "some-arn",
-						},
-					},
-				},
-			},
 		},
 		"validate: invalid MutualTLSMode in service-defaults": {
 			entry: &ServiceConfigEntry{

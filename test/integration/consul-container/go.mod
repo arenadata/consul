@@ -1,8 +1,6 @@
 module github.com/shulutkov/yellow-pages/test/integration/consul-container
 
-go 1.22.12
-
-toolchain go1.23.6
+go 1.24.0
 
 require (
 	fortio.org/fortio v1.54.0

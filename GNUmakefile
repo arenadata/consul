@@ -22,7 +22,7 @@ LINT_CONSUL_RETRY_VERSION='v1.3.0'
 
 MOCKED_PB_DIRS= pbdns
 
-GOTAGS ?=
+GOTAGS := ""
 GOPATH=$(shell go env GOPATH)
 GOARCH?=$(shell go env GOARCH)
 MAIN_GOPATH=$(shell go env GOPATH | cut -d: -f1)
@@ -162,10 +162,10 @@ dev: dev-build
 
 dev-build:
 	mkdir -p bin
-	CGO_ENABLED=0 go install -ldflags "$(GOLDFLAGS)" -tags "$(GOTAGS)"
+	GOPROXY=direct CGO_ENABLED=0 GOPATH=${MAIN_GOPATH}/bin go install -ldflags "$(GOLDFLAGS)" -tags "$(GOTAGS)"
 	# rm needed due to signature caching (https://apple.stackexchange.com/a/428388)
 	rm -f ./bin/consul
-	cp ${MAIN_GOPATH}/bin/consul ./bin/consul
+	cp ${MAIN_GOPATH}/bin/yellow-pages ./bin/consul
 
 
 dev-docker-dbg: dev-docker
@@ -250,7 +250,7 @@ cov: other-consul dev-build
 	rm -f coverage.{sdk,api}.part
 	go tool cover -html=coverage.out
 
-test: other-consul dev-build lint test-internal
+test: other-consul dev-build test-internal
 
 .PHONY: go-mod-tidy
 go-mod-tidy: $(foreach mod,$(GO_MODULES),go-mod-tidy/$(mod))

@@ -8,6 +8,7 @@ import (
 	"encoding/json"
 	"errors"
 	"os"
+	"os/user"
 	"testing"
 
 	"github.com/shulutkov/yellow-pages/sdk/testutil"
@@ -157,6 +158,13 @@ func TestLogger_SetupLoggerWithInValidLogPath(t *testing.T) {
 }
 
 func TestLogger_SetupLoggerWithInValidLogPathPermission(t *testing.T) {
+	u, err := user.Current()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if u.Uid == "0" {
+		t.SkipNow()
+	}
 
 	tmpDir := "/tmp/" + t.Name()
 

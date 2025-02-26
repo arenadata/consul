@@ -1,6 +1,6 @@
 module github.com/shulutkov/yellow-pages/sdk
 
-go 1.19
+go 1.24.0
 
 require (
 	github.com/hashicorp/go-cleanhttp v0.5.2

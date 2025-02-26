@@ -305,7 +305,7 @@ func TestConfig_Apply(t *testing.T) {
 	_, err := a.srv.ConfigApply(resp, req)
 	require.NoError(t, err)
 	if resp.Code != 200 {
-		t.Fatalf(resp.Body.String())
+		t.Fatal(resp.Body.String())
 	}
 
 	// Get the remaining entry.
@@ -523,7 +523,7 @@ func TestConfig_Apply_CAS(t *testing.T) {
 	_, err := a.srv.ConfigApply(resp, req)
 	require.NoError(t, err)
 	if resp.Code != 200 {
-		t.Fatalf(resp.Body.String())
+		t.Fatal(resp.Body.String())
 	}
 
 	// Get the entry remaining entry.

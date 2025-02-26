@@ -8,6 +8,7 @@ import (
 	"io"
 	"os"
 	"os/exec"
+	"os/user"
 	"path/filepath"
 	"strings"
 	"testing"
@@ -200,6 +201,13 @@ func TestProtectDataDir(t *testing.T) {
 }
 
 func TestBadDataDirPermissions(t *testing.T) {
+	u, err := user.Current()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if u.Uid == "0" {
+		t.SkipNow()
+	}
 	t.Parallel()
 	dir := testutil.TempDir(t, "consul")
 	dataDir := filepath.Join(dir, "mdb")
@@ -209,12 +217,12 @@ func TestBadDataDirPermissions(t *testing.T) {
 
 	ui := newCaptureUI()
 	cmd := New(ui)
-	args := []string{"-data-dir=" + dataDir, "-server=true", "-bind=10.0.0.1"}
+	args := []string{"-data-dir=" + dataDir, "-server=true", "-bind=127.0.0.127"}
 	if code := cmd.Run(args); code == 0 {
 		t.Fatalf("Should fail with bad data directory permissions")
 	}
 	if out := ui.ErrorWriter.String(); !strings.Contains(out, "Permission denied") {
-		t.Fatalf("expected permission denied error, got: %s", out)
+		t.Fatalf("expected permission denied error, got: %q", out)
 	}
 }
 

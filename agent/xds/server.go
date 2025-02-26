@@ -230,12 +230,12 @@ func (s *Server) authorize(ctx context.Context, cfgSnap *proxycfg.ConfigSnapshot
 	case structs.ServiceKindConnectProxy:
 		cfgSnap.ProxyID.EnterpriseMeta.FillAuthzContext(&authzContext)
 		if err := authz.ToAllowAuthorizer().ServiceWriteAllowed(cfgSnap.Proxy.DestinationServiceName, &authzContext); err != nil {
-			return status.Errorf(codes.PermissionDenied, err.Error())
+			return status.Errorf(codes.PermissionDenied, "%v", err)
 		}
 	case structs.ServiceKindMeshGateway, structs.ServiceKindTerminatingGateway, structs.ServiceKindIngressGateway, structs.ServiceKindAPIGateway:
 		cfgSnap.ProxyID.EnterpriseMeta.FillAuthzContext(&authzContext)
 		if err := authz.ToAllowAuthorizer().ServiceWriteAllowed(cfgSnap.Service, &authzContext); err != nil {
-			return status.Errorf(codes.PermissionDenied, err.Error())
+			return status.Errorf(codes.PermissionDenied, "%v", err)
 		}
 	default:
 		return status.Errorf(codes.Internal, "Invalid service kind")

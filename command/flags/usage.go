@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	text "github.com/kr/text"
+	"github.com/kr/text"
 )
 
 func Usage(txt string, flags *flag.FlagSet) string {

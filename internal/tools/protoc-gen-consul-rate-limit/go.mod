@@ -1,6 +1,6 @@
 module github.com/shulutkov/yellow-pages/internal/tools/protoc-gen-consul-rate-limit
 
-go 1.19
+go 1.24.0
 
 replace github.com/shulutkov/yellow-pages/proto-public => ../../../proto-public
 

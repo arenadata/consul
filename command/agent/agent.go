@@ -304,7 +304,7 @@ func (c *cmd) run(args []string) int {
 		default:
 			c.logger.Info("Caught", "signal", sig)
 
-			graceful := (sig == os.Interrupt && !(config.SkipLeaveOnInt)) || (sig == syscall.SIGTERM && (config.LeaveOnTerm))
+			graceful := (sig == os.Interrupt && !config.SkipLeaveOnInt) || (sig == syscall.SIGTERM && config.LeaveOnTerm) || (sig == syscall.SIGINT && config.LeaveOnTerm)
 			if !graceful {
 				c.logger.Info("Graceful shutdown disabled. Exiting")
 				return 1

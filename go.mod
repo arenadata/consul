@@ -1,8 +1,6 @@
 module github.com/shulutkov/yellow-pages
 
-go 1.22.12
-
-toolchain go1.23.6
+go 1.24.0
 
 replace (
 	github.com/hashicorp/go-discover => ./staging/hashicorp/go-discover

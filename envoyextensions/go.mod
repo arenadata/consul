@@ -1,8 +1,6 @@
 module github.com/shulutkov/yellow-pages/envoyextensions
 
-go 1.22.12
-
-toolchain go1.23.6
+go 1.24.0
 
 replace (
 	github.com/shulutkov/yellow-pages/api => ../api

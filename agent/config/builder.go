@@ -695,7 +695,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 	for _, i := range c.AutoEncrypt.IPSAN {
 		ip := net.ParseIP(i)
 		if ip == nil {
-			b.warn(fmt.Sprintf("Cannot parse ip %q from AutoEncrypt.IPSAN", i))
+			b.warn("Cannot parse ip %q from AutoEncrypt.IPSAN", i)
 			continue
 		}
 		autoEncryptIPSAN = append(autoEncryptIPSAN, ip)
@@ -733,10 +733,6 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 			"key_file":                   "KeyFile",
 			"tls_server_name":            "TLSServerName",
 			"tls_skip_verify":            "TLSSkipVerify",
-
-			// AWS CA config
-			"existing_arn":   "ExistingARN",
-			"delete_on_exit": "DeleteOnExit",
 
 			// Common CA config
 			"leaf_cert_ttl":      "LeafCertTTL",
@@ -1532,8 +1528,7 @@ func (b *builder) validate(rt RuntimeConfig) error {
 	}
 
 	if err := validateRemoteScriptsChecks(rt); err != nil {
-		// TODO: make this an error in a future version
-		b.warn(err.Error())
+		b.warn("%s", err)
 	}
 
 	err := b.validateEnterpriseConfig(rt)
@@ -2393,7 +2388,7 @@ func (b *builder) autoConfigVal(raw AutoConfigRaw, agentPartition string) AutoCo
 	for _, i := range raw.IPSANs {
 		ip := net.ParseIP(i)
 		if ip == nil {
-			b.warn(fmt.Sprintf("Cannot parse ip %q from auto_config.ip_sans", i))
+			b.warn("Cannot parse ip %q from auto_config.ip_sans", i)
 			continue
 		}
 		val.IPSANs = append(val.IPSANs, ip)

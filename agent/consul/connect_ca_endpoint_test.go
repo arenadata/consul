@@ -911,8 +911,8 @@ func BenchmarkConnectCASign(b *testing.B) {
 	testrpc.WaitForLeader(t, s1.RPC, "dc1")
 
 	// Generate a CSR and request signing
-	spiffeID := connect.TestSpiffeIDService(b, "web")
-	csr, _ := connect.TestCSR(b, spiffeID)
+	spiffeID := connect.TestSpiffeIDService(t, "web")
+	csr, _ := connect.TestCSR(t, spiffeID)
 	args := &structs.CASignRequest{
 		Datacenter: "dc1",
 		CSR:        csr,

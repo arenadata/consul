@@ -717,7 +717,8 @@ func TestAPI_ClientTLSOptions(t *testing.T) {
 
 		// Should fail
 		_, err = client.Agent().Self()
-		if err == nil || !strings.Contains(err.Error(), "bad certificate") {
+		if err == nil || !strings.Contains(err.Error(), "certificate required") {
+			//if err == nil || !strings.Contains(err.Error(), "bad certificate") {
 			t.Fatal(err)
 		}
 	})
