@@ -37,8 +37,8 @@ func realMain() int {
 		Args:         os.Args[1:],
 		Commands:     cmds,
 		Autocomplete: true,
-		Name:         "consul",
-		HelpFunc:     mcli.FilteredHelpFunc(names, mcli.BasicHelpFunc("consul")),
+		Name:         "yp",
+		HelpFunc:     mcli.FilteredHelpFunc(names, mcli.BasicHelpFunc("yp")),
 		HelpWriter:   os.Stdout,
 		ErrorWriter:  os.Stderr,
 	}

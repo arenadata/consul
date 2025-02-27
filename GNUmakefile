@@ -234,7 +234,7 @@ endif
 
 # linux builds a linux binary compatible with the source platform
 linux:
-	CGO_ENABLED=0 GOOS=linux GOARCH=$(GOARCH) go build -o ./pkg/bin/linux_$(GOARCH)/consul -ldflags "$(GOLDFLAGS)" -tags "$(GOTAGS)"
+	CGO_ENABLED=0 GOOS=linux GOARCH=$(GOARCH) go build -o ./pkg/bin/linux_$(GOARCH)/yp -ldflags "$(GOLDFLAGS)" -tags "$(GOTAGS)"
 
 # dist builds binaries for all platforms and packages them for distribution
 dist:
@@ -568,4 +568,4 @@ help:
 .PHONY: version test-envoy-integ
 
 image: linux
-	@docker build --build-arg GOARCH=$(GOARCH) -t consul:latest -f Dockerfile .
+	@docker build --build-arg GOARCH=$(GOARCH) -t yellow-pages:latest -f Dockerfile .
