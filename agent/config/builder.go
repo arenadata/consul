@@ -106,6 +106,15 @@ type LoadOpts struct {
 //
 // The caller is responsible for handling any warnings in LoadResult.Warnings.
 func Load(opts LoadOpts) (LoadResult, error) {
+	if len(opts.ConfigFiles) == 0 {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_CONFIG_DIRS"); ok && len(v) > 0 {
+			parts := strings.Split(v, ",")
+			for _, dir := range parts {
+				opts.ConfigFiles = append(opts.ConfigFiles, strings.TrimSpace(dir))
+			}
+		}
+	}
+
 	r := LoadResult{}
 	b, err := newBuilder(opts)
 	if err != nil {
@@ -118,7 +127,7 @@ func Load(opts LoadOpts) (LoadResult, error) {
 	if err := b.validate(cfg); err != nil {
 		return r, err
 	}
-	watcherFiles := stringslice.CloneStringSlice(b.opts.ConfigFiles)
+	watcherFiles := stringslice.CloneStringSlice(opts.ConfigFiles)
 	return LoadResult{RuntimeConfig: &cfg, Warnings: b.Warnings, WatchedFiles: watcherFiles}, nil
 }
 
@@ -578,27 +587,17 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		serfAdvertiseAddrWAN = &net.TCPAddr{IP: advertiseAddrWAN.IP, Port: serfPortWAN}
 	}
 
-	if len(b.opts.ConfigFiles) == 0 {
-		if v, ok := os.LookupEnv("CONSUL_AGENT_CONFIG_DIRS"); ok {
-			parts := strings.Split(v, ",")
-			for i := range parts {
-				parts[i] = strings.TrimSpace(parts[i])
-			}
-			b.opts.ConfigFiles = parts
-		}
-	}
-
 	dataDir := stringVal(c.DataDir)
 	if len(dataDir) == 0 {
 		dataDir = "/data"
-		if v, ok := os.LookupEnv("CONSUL_AGENT_DATA_DIR"); ok {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_DATA_DIR"); ok && len(v) > 0 {
 			dataDir = strings.TrimSpace(v)
 		}
 	}
 
 	uiConfig := b.uiConfigVal(c.UIConfig)
 	if !uiConfig.Enabled {
-		if v, ok := os.LookupEnv("CONSUL_AGENT_UI_ENABLED"); ok {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_UI_ENABLED"); ok && len(v) > 0 {
 			v = strings.ToLower(v)
 			v = strings.TrimSpace(v)
 			if len(v) > 0 {
@@ -608,7 +607,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 	}
 
 	serverMode := boolVal(c.ServerMode)
-	if v, ok := os.LookupEnv("CONSUL_AGENT_SERVER_ENABLED"); ok && !serverMode {
+	if v, ok := os.LookupEnv("CONSUL_AGENT_SERVER_ENABLED"); ok && len(v) > 0 && !serverMode {
 		v = strings.ToLower(v)
 		v = strings.TrimSpace(v)
 		if len(v) > 0 {
@@ -618,7 +617,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 
 	bootstrapExpect := intVal(c.BootstrapExpect)
 	if serverMode && bootstrapExpect == 0 {
-		if v, ok := os.LookupEnv("CONSUL_AGENT_SERVER_BOOTSTRAP_EXPECT"); ok {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_SERVER_BOOTSTRAP_EXPECT"); ok && len(v) > 0 {
 			v = strings.TrimSpace(v)
 			bootstrapExpect, err = strconv.Atoi(v)
 			if err != nil {
@@ -629,7 +628,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 
 	retryJoin := b.expandAllOptionalAddrs("retry_join", c.RetryJoinLAN)
 	if len(retryJoin) == 0 {
-		if v, ok := os.LookupEnv("CONSUL_AGENT_RETRY_JOIN"); ok {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_RETRY_JOIN"); ok && len(v) > 0 {
 			parts := strings.Split(v, ",")
 			for i := range parts {
 				parts[i] = strings.TrimSpace(parts[i])

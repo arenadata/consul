@@ -567,5 +567,6 @@ help:
 .PHONY: docker-images go-build-image ui-build-image consul-docker ui-docker
 .PHONY: version test-envoy-integ
 
+GOARCH = amd64
 image: linux
-	@docker build --build-arg GOARCH=$(GOARCH) -t yellow-pages:latest -f Dockerfile .
+	docker build --platform=linux/$(GOARCH) --build-arg GOARCH=$(GOARCH) -t yellow-pages:latest -f Dockerfile .

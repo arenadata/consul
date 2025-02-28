@@ -10,7 +10,6 @@ import (
 	"io"
 	"os"
 	"os/signal"
-	"path/filepath"
 	"strings"
 	"syscall"
 	"time"
@@ -25,7 +24,6 @@ import (
 	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
 	"github.com/shulutkov/yellow-pages/command/cli"
 	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/lib"
 	"github.com/shulutkov/yellow-pages/logging"
 	"github.com/shulutkov/yellow-pages/service_os"
 	consulversion "github.com/shulutkov/yellow-pages/version"
@@ -97,28 +95,28 @@ func (c *cmd) checkpointResults(results *checkpoint.CheckResponse, err error) {
 	}
 }
 
-func (c *cmd) startupUpdateCheck(config *config.RuntimeConfig) {
-	version := config.Version
-	if config.VersionPrerelease != "" {
-		version += fmt.Sprintf("-%s", config.VersionPrerelease)
-	}
-	updateParams := &checkpoint.CheckParams{
-		Product: "consul",
-		Version: version,
-	}
-	if !config.DisableAnonymousSignature {
-		updateParams.SignatureFile = filepath.Join(config.DataDir, "checkpoint-signature")
-	}
-
-	// Schedule a periodic check with expected interval of 24 hours
-	checkpoint.CheckInterval(updateParams, 24*time.Hour, c.checkpointResults)
-
-	// Do an immediate check within the next 30 seconds
-	go func() {
-		time.Sleep(lib.RandomStagger(30 * time.Second))
-		c.checkpointResults(checkpoint.Check(updateParams))
-	}()
-}
+//func (c *cmd) startupUpdateCheck(config *config.RuntimeConfig) {
+//	version := config.Version
+//	if config.VersionPrerelease != "" {
+//		version += fmt.Sprintf("-%s", config.VersionPrerelease)
+//	}
+//	updateParams := &checkpoint.CheckParams{
+//		Product: "consul",
+//		Version: version,
+//	}
+//	if !config.DisableAnonymousSignature {
+//		updateParams.SignatureFile = filepath.Join(config.DataDir, "checkpoint-signature")
+//	}
+//
+//	// Schedule a periodic check with expected interval of 24 hours
+//	checkpoint.CheckInterval(updateParams, 24*time.Hour, c.checkpointResults)
+//
+//	// Do an immediate check within the next 30 seconds
+//	go func() {
+//		time.Sleep(lib.RandomStagger(30 * time.Second))
+//		c.checkpointResults(checkpoint.Check(updateParams))
+//	}()
+//}
 
 func (c *cmd) run(args []string) int {
 	ui := &mcli.PrefixedUi{
