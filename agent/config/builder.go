@@ -587,6 +587,26 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		serfAdvertiseAddrWAN = &net.TCPAddr{IP: advertiseAddrWAN.IP, Port: serfPortWAN}
 	}
 
+	// Handle Deprecated UI config fields
+	if c.UI != nil {
+		b.warn("The 'ui' field is deprecated. Use the 'ui_config.enabled' field instead.")
+		if c.UIConfig.Enabled == nil {
+			c.UIConfig.Enabled = c.UI
+		}
+	}
+	if c.UIDir != nil {
+		b.warn("The 'ui_dir' field is deprecated. Use the 'ui_config.dir' field instead.")
+		if c.UIConfig.Dir == nil {
+			c.UIConfig.Dir = c.UIDir
+		}
+	}
+	if c.UIContentPath != nil {
+		b.warn("The 'ui_content_path' field is deprecated. Use the 'ui_config.content_path' field instead.")
+		if c.UIConfig.ContentPath == nil {
+			c.UIConfig.ContentPath = c.UIContentPath
+		}
+	}
+
 	dataDir := stringVal(c.DataDir)
 	if len(dataDir) == 0 {
 		dataDir = "/data"
@@ -603,6 +623,12 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 			if len(v) > 0 {
 				uiConfig.Enabled = v[0] == 't' || v[0] == 'y' || v[0] == '1'
 			}
+		}
+	}
+
+	if len(uiConfig.ContentPath) == 0 {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_UI_CONTENT_PATH"); ok && len(v) > 0 {
+			uiConfig.ContentPath = strings.TrimSpace(v)
 		}
 	}
 
@@ -630,10 +656,20 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 	if len(retryJoin) == 0 {
 		if v, ok := os.LookupEnv("CONSUL_AGENT_RETRY_JOIN"); ok && len(v) > 0 {
 			parts := strings.Split(v, ",")
-			for i := range parts {
-				parts[i] = strings.TrimSpace(parts[i])
+			for i, host := range parts {
+				parts[i] = strings.TrimSpace(host)
 			}
 			retryJoin = parts
+		}
+	}
+
+	prometheusRetentionTime := b.durationVal("prometheus_retention_time", c.Telemetry.PrometheusRetentionTime)
+	if prometheusRetentionTime == 0 {
+		if v, ok := os.LookupEnv("CONSUL_AGENT_PROMETHEUS_RETENTION_TIME"); ok && len(v) > 0 {
+			prometheusRetentionTime, err = time.ParseDuration(v)
+			if err != nil {
+				return RuntimeConfig{}, fmt.Errorf("CONSUL_AGENT_PROMETHEUS_RETENTION_TIME must be a valid duration: %v", err)
+			}
 		}
 	}
 
@@ -851,26 +887,6 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 		return RuntimeConfig{}, fmt.Errorf("serf_wan_allowed_cidrs: %s", err)
 	}
 
-	// Handle Deprecated UI config fields
-	if c.UI != nil {
-		b.warn("The 'ui' field is deprecated. Use the 'ui_config.enabled' field instead.")
-		if c.UIConfig.Enabled == nil {
-			c.UIConfig.Enabled = c.UI
-		}
-	}
-	if c.UIDir != nil {
-		b.warn("The 'ui_dir' field is deprecated. Use the 'ui_config.dir' field instead.")
-		if c.UIConfig.Dir == nil {
-			c.UIConfig.Dir = c.UIDir
-		}
-	}
-	if c.UIContentPath != nil {
-		b.warn("The 'ui_content_path' field is deprecated. Use the 'ui_config.content_path' field instead.")
-		if c.UIConfig.ContentPath == nil {
-			c.UIConfig.ContentPath = c.UIContentPath
-		}
-	}
-
 	// ----------------------------------------------------------------
 	// build runtime config
 	//
@@ -1011,7 +1027,7 @@ func (b *builder) build() (rt RuntimeConfig, err error) {
 			StatsdAddr:                         stringVal(c.Telemetry.StatsdAddr),
 			StatsiteAddr:                       stringVal(c.Telemetry.StatsiteAddr),
 			PrometheusOpts: prometheus.PrometheusOpts{
-				Expiration: b.durationVal("prometheus_retention_time", c.Telemetry.PrometheusRetentionTime),
+				Expiration: prometheusRetentionTime,
 				Name:       stringVal(c.Telemetry.MetricsPrefix),
 			},
 		},
