@@ -9,10 +9,10 @@ import (
 	"github.com/hashicorp/go-bexpr"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/template"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/authmethod"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/template"
 )
 
 // Binder is responsible for collecting the ACL roles, service identities, node

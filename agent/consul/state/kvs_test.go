@@ -13,7 +13,7 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestStateStore_ReapTombstones(t *testing.T) {

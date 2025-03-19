@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 func TestConfigEntries_ListRelatedServices_AndACLs(t *testing.T) {

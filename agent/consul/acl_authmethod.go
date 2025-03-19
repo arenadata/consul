@@ -6,12 +6,12 @@ package consul
 import (
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/consul/authmethod"
+	"github.com/arenadata/consul/agent/structs"
 
 	// register these as a builtin auth method
-	_ "github.com/shulutkov/yellow-pages/agent/consul/authmethod/kubeauth"
-	_ "github.com/shulutkov/yellow-pages/agent/consul/authmethod/ssoauth"
+	_ "github.com/arenadata/consul/agent/consul/authmethod/kubeauth"
+	_ "github.com/arenadata/consul/agent/consul/authmethod/ssoauth"
 )
 
 type authMethodValidatorEntry struct {

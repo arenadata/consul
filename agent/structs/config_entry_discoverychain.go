@@ -19,10 +19,10 @@ import (
 	"github.com/mitchellh/copystructure"
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/lib/maps"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/lib/maps"
 )
 
 const (

@@ -11,10 +11,10 @@ import (
 
 	"github.com/mitchellh/cli"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/acl/policy"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/command/helpers"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/acl/policy"
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/command/helpers"
 )
 
 func New(ui cli.Ui) *cmd {

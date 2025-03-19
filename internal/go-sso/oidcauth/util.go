@@ -6,7 +6,7 @@ package oidcauth
 import (
 	"net/url"
 
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/internal/strutil"
+	"github.com/arenadata/consul/internal/go-sso/oidcauth/internal/strutil"
 )
 
 // validRedirect checks whether uri is in allowed using special handling for loopback uris.

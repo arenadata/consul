@@ -13,11 +13,11 @@ import (
 	autopilot "github.com/hashicorp/raft-autopilot"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/autopilotevents"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/consul/autopilotevents"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/types"
 )
 
 var AutopilotGauges = []prometheus.GaugeDefinition{

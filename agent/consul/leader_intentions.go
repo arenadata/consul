@@ -8,8 +8,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/logging"
 )
 
 const (

@@ -13,9 +13,9 @@ import (
 	"github.com/miekg/dns"
 	"golang.org/x/exp/slices"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/lib/stringslice"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/lib/stringslice"
+	"github.com/arenadata/consul/types"
 )
 
 const (

@@ -9,8 +9,8 @@ import (
 	"github.com/armon/go-metrics"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/lib"
 )
 
 // Sentinel errors that must be used with blockingQuery

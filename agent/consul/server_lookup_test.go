@@ -6,8 +6,8 @@ package consul
 import (
 	"testing"
 
+	"github.com/arenadata/consul/agent/metadata"
 	"github.com/hashicorp/raft"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
 	"github.com/stretchr/testify/require"
 )
 

@@ -22,12 +22,12 @@ import (
 	"google.golang.org/grpc"
 	gpeer "google.golang.org/grpc/peer"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestHTTP_Peering_Integration(t *testing.T) {

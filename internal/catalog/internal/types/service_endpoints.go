@@ -6,10 +6,10 @@ package types
 import (
 	"math"
 
+	"github.com/arenadata/consul/internal/resource"
+	pbcatalog "github.com/arenadata/consul/proto-public/pbcatalog/v1alpha1"
+	"github.com/arenadata/consul/proto-public/pbresource"
 	"github.com/hashicorp/go-multierror"
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	pbcatalog "github.com/shulutkov/yellow-pages/proto-public/pbcatalog/v1alpha1"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
 )
 
 const (

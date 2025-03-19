@@ -15,7 +15,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 func TestPeekForTLS_not_TLS(t *testing.T) {

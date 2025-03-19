@@ -18,14 +18,14 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/hashicorp/go-uuid"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/consul/auth"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/structs/aclfilter"
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/consul/auth"
+	"github.com/arenadata/consul/agent/consul/authmethod"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/structs/aclfilter"
+	"github.com/arenadata/consul/lib"
 )
 
 const (

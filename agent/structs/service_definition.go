@@ -8,8 +8,8 @@ import (
 
 	"github.com/hashicorp/go-multierror"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/lib"
 )
 
 // ServiceDefinition is used to JSON decode the Service definitions. For

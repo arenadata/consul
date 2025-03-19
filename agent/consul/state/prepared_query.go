@@ -9,8 +9,8 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/prepared_query"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/consul/prepared_query"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // preparedQueriesTableSchema returns a new table schema used for storing

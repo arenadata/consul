@@ -43,10 +43,10 @@ github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10/go.mod h1
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRIccs7FGNTlIRMkT8wgtp5eCXdBlqhYGL6U=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
-github.com/shulutkov/yellow-pages v0.0.0 h1:x9ALhGDULNYNNkMmjQ8Qlmez/K5DugCzx41dc3F+aUw=
-github.com/shulutkov/yellow-pages v0.0.0/go.mod h1:vkq6ZX/w+BcIv4crt6o2K4eMaIg68HJpjCxjMb5ElAY=
-github.com/shulutkov/yellow-pages/sdk v0.0.0 h1:vqJbNpoRXAbgDfvLat4OHmbtMRQzRVWTgCJat9oHxUo=
-github.com/shulutkov/yellow-pages/sdk v0.0.0/go.mod h1:v0pFExJta7f086w4EcT7XOS9XEXK3GMopiTj486DQZ0=
+github.com/arenadata/consul v0.0.0 h1:x9ALhGDULNYNNkMmjQ8Qlmez/K5DugCzx41dc3F+aUw=
+github.com/arenadata/consul v0.0.0/go.mod h1:vkq6ZX/w+BcIv4crt6o2K4eMaIg68HJpjCxjMb5ElAY=
+github.com/arenadata/consul/sdk v0.0.0 h1:vqJbNpoRXAbgDfvLat4OHmbtMRQzRVWTgCJat9oHxUo=
+github.com/arenadata/consul/sdk v0.0.0/go.mod h1:v0pFExJta7f086w4EcT7XOS9XEXK3GMopiTj486DQZ0=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.7.2/go.mod h1:R6va5+xMeoiuVRoj+gSkQ7d3FALtqAAGI1FQKckRals=
 github.com/stretchr/testify v1.9.0 h1:HtqpIVDClZ4nwg75+f6Lvsy/wHu+3BoSGCbBAcpTsTg=

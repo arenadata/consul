@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // handleCacheEvent is used to handle event notifications from the cache for the roots

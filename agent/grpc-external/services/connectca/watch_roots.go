@@ -14,13 +14,13 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto-public/pbconnectca"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto-public/pbconnectca"
 )
 
 // WatchRoots provides a stream on which you can receive the list of active

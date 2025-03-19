@@ -3,7 +3,7 @@
 
 package consul
 
-import "github.com/shulutkov/yellow-pages/logging"
+import "github.com/arenadata/consul/logging"
 
 func init() {
 	registerEndpoint(func(s *Server) interface{} { return &ACL{s, s.loggers.Named(logging.ACL)} })

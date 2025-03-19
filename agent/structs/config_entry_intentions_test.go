@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func generateUUID() (ret string) {

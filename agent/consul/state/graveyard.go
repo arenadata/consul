@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 // Tombstone is the internal type used to track tombstones.

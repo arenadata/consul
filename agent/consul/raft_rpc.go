@@ -11,8 +11,8 @@ import (
 
 	"github.com/hashicorp/raft"
 
-	"github.com/shulutkov/yellow-pages/agent/pool"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/agent/pool"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 // RaftLayer implements the raft.StreamLayer interface,

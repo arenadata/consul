@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/go-memdb"
 	hashstructure_v2 "github.com/mitchellh/hashstructure/v2"
 
-	"github.com/shulutkov/yellow-pages/lib/retry"
+	"github.com/arenadata/consul/lib/retry"
 )
 
 var (

@@ -10,7 +10,7 @@
 package pbconnect
 
 import (
-	pbcommon "github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	pbcommon "github.com/arenadata/consul/proto/private/pbcommon"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
@@ -29,7 +29,7 @@ const (
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IndexedCARoots
+// target=github.com/arenadata/consul/agent/structs.IndexedCARoots
 // output=connect.gen.go
 // name=StructsIndexedCARoots
 type CARoots struct {
@@ -136,7 +136,7 @@ func (x *CARoots) GetQueryMeta() *pbcommon.QueryMeta {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.CARoot
+// target=github.com/arenadata/consul/agent/structs.CARoot
 // output=connect.gen.go
 // name=StructsCARoot
 type CARoot struct {
@@ -351,7 +351,7 @@ func (x *CARoot) GetRaftIndex() *pbcommon.RaftIndex {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IssuedCert
+// target=github.com/arenadata/consul/agent/structs.IssuedCert
 // output=connect.gen.go
 // name=StructsIssuedCert
 type IssuedCert struct {

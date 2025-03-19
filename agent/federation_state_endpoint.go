@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // GET /v1/internal/federation-state/<datacenter>

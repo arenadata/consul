@@ -14,9 +14,9 @@ import (
 
 	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestRestoreFromEnterprise(t *testing.T) {

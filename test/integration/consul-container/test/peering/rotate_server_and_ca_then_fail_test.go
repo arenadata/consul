@@ -12,15 +12,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 
-	libassert "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/assert"
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
-	libtopology "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
+	libassert "github.com/arenadata/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/arenadata/consul/test/integration/consul-container/libs/service"
+	libtopology "github.com/arenadata/consul/test/integration/consul-container/libs/topology"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
 )
 
 // TestPeering_RotateServerAndCAThenFail_

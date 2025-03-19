@@ -7,11 +7,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/types"
-	"github.com/shulutkov/yellow-pages/internal/controller"
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	pbcatalog "github.com/shulutkov/yellow-pages/proto-public/pbcatalog/v1alpha1"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/catalog/internal/types"
+	"github.com/arenadata/consul/internal/controller"
+	"github.com/arenadata/consul/internal/resource"
+	pbcatalog "github.com/arenadata/consul/proto-public/pbcatalog/v1alpha1"
+	"github.com/arenadata/consul/proto-public/pbresource"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

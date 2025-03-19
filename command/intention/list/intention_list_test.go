@@ -10,9 +10,9 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 func TestIntentionListCommand_noTabs(t *testing.T) {

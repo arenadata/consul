@@ -13,8 +13,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/resource"
+	"github.com/arenadata/consul/proto-public/pbresource"
 )
 
 func TestEqualType(t *testing.T) {

@@ -14,9 +14,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/arenadata/consul/test/integration/consul-container/libs/service"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/topology"
 )
 
 func TestTroubleshootProxy(t *testing.T) {

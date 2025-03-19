@@ -14,12 +14,12 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/testrpc"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/types"
 )
 
 // MockPreparedQuery is a fake endpoint that we inject into the Consul server

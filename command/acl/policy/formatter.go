@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 const (

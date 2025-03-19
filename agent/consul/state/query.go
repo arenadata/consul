@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // Query is a type used to query any single value index that may include an

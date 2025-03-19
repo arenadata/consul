@@ -10,8 +10,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // matches valid DNS labels according to RFC 1123, should be at most 63

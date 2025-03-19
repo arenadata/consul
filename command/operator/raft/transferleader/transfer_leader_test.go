@@ -4,8 +4,8 @@
 package transferleader
 
 import (
+	"github.com/arenadata/consul/agent"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
 	"strings"
 	"testing"
 )

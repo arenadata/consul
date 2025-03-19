@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 const aclToken = "67b04fbc-e35f-494a-ad43-739f1c8b839c"

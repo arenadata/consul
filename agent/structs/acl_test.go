@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 
 	"github.com/stretchr/testify/require"
 )

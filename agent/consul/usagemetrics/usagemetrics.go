@@ -14,9 +14,9 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/version"
 )
 
 var Gauges = []prometheus.GaugeDefinition{

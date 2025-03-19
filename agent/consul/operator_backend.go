@@ -6,11 +6,11 @@ package consul
 import (
 	"context"
 
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/rpc/operator"
+	"github.com/arenadata/consul/proto/private/pboperator"
 	"github.com/hashicorp/raft"
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/rpc/operator"
-	"github.com/shulutkov/yellow-pages/proto/private/pboperator"
 )
 
 type OperatorBackend struct {

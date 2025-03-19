@@ -14,11 +14,11 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/hashicorp/go-uuid"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/structs/aclfilter"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/structs/aclfilter"
+	"github.com/arenadata/consul/logging"
 )
 
 var PreparedQuerySummaries = []prometheus.SummaryDefinition{

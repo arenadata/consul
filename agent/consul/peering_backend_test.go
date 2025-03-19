@@ -15,17 +15,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/pool"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeerstream"
-	"github.com/shulutkov/yellow-pages/sdk/freeport"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/testrpc"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/pool"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/proto/private/pbpeerstream"
+	"github.com/arenadata/consul/sdk/freeport"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/testrpc"
+	"github.com/arenadata/consul/types"
 )
 
 func TestPeeringBackend_ForwardToLeader(t *testing.T) {

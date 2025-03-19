@@ -11,10 +11,10 @@ import (
 	memdb "github.com/hashicorp/go-memdb"
 	hashstructure_v2 "github.com/mitchellh/hashstructure/v2"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/discoverychain"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/discoverychain"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 type DiscoveryChain struct {

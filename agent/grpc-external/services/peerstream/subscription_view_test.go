@@ -16,13 +16,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/submatview"
-	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/submatview"
+	"github.com/arenadata/consul/proto/private/pbservice"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // testInitialIndex is the first index that will be used in simulated updates.

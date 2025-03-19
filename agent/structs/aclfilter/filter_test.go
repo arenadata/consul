@@ -13,10 +13,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/types"
 )
 
 func TestACL_filterImported_IndexedHealthChecks(t *testing.T) {

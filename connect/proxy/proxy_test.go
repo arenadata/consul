@@ -15,14 +15,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	agConnect "github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/connect"
-	"github.com/shulutkov/yellow-pages/sdk/freeport"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent"
+	agConnect "github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/connect"
+	"github.com/arenadata/consul/sdk/freeport"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestProxy_public(t *testing.T) {

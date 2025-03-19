@@ -10,7 +10,7 @@
 package pbservice
 
 import (
-	pbcommon "github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	pbcommon "github.com/arenadata/consul/proto/private/pbcommon"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
@@ -29,7 +29,7 @@ const (
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HealthCheck
+// target=github.com/arenadata/consul/agent/structs.HealthCheck
 // output=healthcheck.gen.go
 // name=Structs
 type HealthCheck struct {
@@ -262,7 +262,7 @@ func (x *HeaderValue) GetValue() []string {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HealthCheckDefinition
+// target=github.com/arenadata/consul/agent/structs.HealthCheckDefinition
 // output=healthcheck.gen.go
 // name=Structs
 type HealthCheckDefinition struct {
@@ -519,7 +519,7 @@ func (x *HealthCheckDefinition) GetTTL() *durationpb.Duration {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.CheckType
+// target=github.com/arenadata/consul/agent/structs.CheckType
 // output=healthcheck.gen.go
 // name=Structs
 type CheckType struct {

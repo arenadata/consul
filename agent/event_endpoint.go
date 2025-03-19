@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // EventFire is used to fire a new event

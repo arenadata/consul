@@ -11,10 +11,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	libtopology "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	libtopology "github.com/arenadata/consul/test/integration/consul-container/libs/topology"
 )
 
 const (

@@ -5,9 +5,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/internal/resource"
+	"github.com/arenadata/consul/proto-public/pbresource"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/exp/slices"
 	"google.golang.org/grpc/codes"

@@ -12,13 +12,13 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/lib/maps"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/lib/maps"
+	"github.com/arenadata/consul/types"
 )
 
 const (
@@ -445,7 +445,7 @@ func (s *Store) ensureNodeTxn(tx WriteTxn, idx uint64, preserveIndexes bool, nod
 		}
 	}
 	// TODO: else Node.ID == "" should be forbidden in future Consul releases
-	// See https://github.com/shulutkov/yellow-pages/pull/3983 for context
+	// See https://github.com/arenadata/consul/pull/3983 for context
 
 	// Check for an existing node by name to support nodes with no IDs.
 	if n == nil {
@@ -463,7 +463,7 @@ func (s *Store) ensureNodeTxn(tx WriteTxn, idx uint64, preserveIndexes bool, nod
 		}
 		// WARNING, for compatibility reasons with tests, we do not check
 		// for case insensitive matches, which may lead to DB corruption
-		// See https://github.com/shulutkov/yellow-pages/pull/3983 for context
+		// See https://github.com/arenadata/consul/pull/3983 for context
 	}
 
 	// Get the indexes.
@@ -2916,7 +2916,7 @@ func checkServiceNodesTxn(tx ReadTxn, ws memdb.WatchSet, serviceName string, con
 	// thousands of watch chans for large services which may need many goroutines.
 	// It also avoids the performance cliff that is hit when watchLimit is hit
 	// (~682 service instances). See
-	// https://github.com/shulutkov/yellow-pages/issues/4984
+	// https://github.com/arenadata/consul/issues/4984
 	watchOptimized := false
 	if len(serviceNames) > 0 {
 		// Assume optimization will work since it really should at this point. For

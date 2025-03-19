@@ -6,8 +6,8 @@ package agent
 import (
 	"testing"
 
+	"github.com/arenadata/consul/agent/config"
 	"github.com/hashicorp/hcl"
-	"github.com/shulutkov/yellow-pages/agent/config"
 )
 
 // TestDefaultConfig triggers a data race in the HCL parser.

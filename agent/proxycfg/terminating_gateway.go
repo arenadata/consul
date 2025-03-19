@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"strings"
 
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 type handlerTerminatingGateway struct {

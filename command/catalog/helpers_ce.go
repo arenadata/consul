@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 func NodesHeader(isDetailed bool) string {

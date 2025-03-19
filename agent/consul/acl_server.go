@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/auth"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/auth"
+	"github.com/arenadata/consul/agent/consul/authmethod"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 var serverACLCacheConfig *structs.ACLCachesConfig = &structs.ACLCachesConfig{

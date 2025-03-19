@@ -14,17 +14,17 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/services/peerstream"
-	"github.com/shulutkov/yellow-pages/agent/rpc/peering"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/ipaddr"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/grpc-external/services/peerstream"
+	"github.com/arenadata/consul/agent/rpc/peering"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/ipaddr"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 type PeeringBackend struct {

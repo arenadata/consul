@@ -13,13 +13,13 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	resolver "github.com/shulutkov/yellow-pages/acl/resolver"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/testutils"
-	structs "github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto-public/pbdataplane"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/acl"
+	resolver "github.com/arenadata/consul/acl/resolver"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/grpc-external/testutils"
+	structs "github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto-public/pbdataplane"
+	"github.com/arenadata/consul/version"
 )
 
 const testACLToken = "acl-token"

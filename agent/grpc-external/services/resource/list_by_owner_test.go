@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/internal/resource/demo"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	"github.com/shulutkov/yellow-pages/proto/private/prototest"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/internal/resource/demo"
+	"github.com/arenadata/consul/proto-public/pbresource"
+	"github.com/arenadata/consul/proto/private/prototest"
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"

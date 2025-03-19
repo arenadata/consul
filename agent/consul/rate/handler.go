@@ -8,7 +8,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
+	"github.com/arenadata/consul/agent/metadata"
 	"net"
 	"reflect"
 	"sync/atomic"
@@ -17,7 +17,7 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/multilimiter"
+	"github.com/arenadata/consul/agent/consul/multilimiter"
 )
 
 var (

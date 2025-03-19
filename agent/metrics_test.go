@@ -17,12 +17,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/rpc/middleware"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	testretry "github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/agent/rpc/middleware"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	testretry "github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 var metricsPrefixCounter atomic.Uint64

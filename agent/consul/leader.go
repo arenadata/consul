@@ -23,14 +23,14 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/structs/aclfilter"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/structs/aclfilter"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/types"
 )
 
 var LeaderSummaries = []prometheus.SummaryDefinition{

@@ -11,13 +11,13 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/token"
-	"github.com/shulutkov/yellow-pages/lib/retry"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/token"
+	"github.com/arenadata/consul/lib/retry"
 )
 
 // DirectRPC is the interface that needs to be satisifed for AutoConfig to be able to perform

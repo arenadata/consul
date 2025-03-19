@@ -5,12 +5,12 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 	clusterv3 "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	endpointv3 "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	listenerv3 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	routev3 "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 )

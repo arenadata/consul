@@ -24,10 +24,10 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
-	"github.com/shulutkov/yellow-pages/proto/private/prototest"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/proto/private/prototest"
 )
 
 func TestHttpWasmExtension(t *testing.T) {

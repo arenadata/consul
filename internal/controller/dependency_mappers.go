@@ -3,8 +3,8 @@ package controller
 import (
 	"context"
 
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/resource"
+	"github.com/arenadata/consul/proto-public/pbresource"
 )
 
 // DependencyMapper is called when a dependency watched via WithWatch is changed

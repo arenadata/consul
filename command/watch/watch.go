@@ -13,12 +13,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/agent/exec"
+	"github.com/arenadata/consul/api"
+	consulwatch "github.com/arenadata/consul/api/watch"
+	"github.com/arenadata/consul/command/flags"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/agent/exec"
-	"github.com/shulutkov/yellow-pages/api"
-	consulwatch "github.com/shulutkov/yellow-pages/api/watch"
-	"github.com/shulutkov/yellow-pages/command/flags"
 )
 
 func New(ui cli.Ui, shutdownCh <-chan struct{}) *cmd {

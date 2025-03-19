@@ -12,7 +12,7 @@
 package pbdataplane
 
 import (
-	_ "github.com/shulutkov/yellow-pages/proto-public/annotations/ratelimit"
+	_ "github.com/arenadata/consul/proto-public/annotations/ratelimit"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	structpb "google.golang.org/protobuf/types/known/structpb"

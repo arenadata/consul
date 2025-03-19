@@ -8,13 +8,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/checks"
+	"github.com/arenadata/consul/agent/local"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/token"
+	"github.com/arenadata/consul/types"
 	"github.com/hashicorp/go-memdb"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/checks"
-	"github.com/shulutkov/yellow-pages/agent/local"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/token"
-	"github.com/shulutkov/yellow-pages/types"
 	"github.com/stretchr/testify/require"
 )
 

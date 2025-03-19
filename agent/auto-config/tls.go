@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbautoconf"
-	"github.com/shulutkov/yellow-pages/proto/private/pbconnect"
+	"github.com/arenadata/consul/agent/cache"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbautoconf"
+	"github.com/arenadata/consul/proto/private/pbconnect"
 )
 
 const (

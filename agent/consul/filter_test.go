@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestFilter_DirEnt(t *testing.T) {

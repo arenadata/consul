@@ -12,16 +12,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/api"
 
 	"github.com/hashicorp/serf/coordinate"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestCatalogRegister_PeeringRegistration(t *testing.T) {

@@ -1,9 +1,9 @@
 package resourcetest
 
 import (
+	"github.com/arenadata/consul/proto-public/pbresource"
+	"github.com/arenadata/consul/proto/private/prototest"
 	"github.com/google/go-cmp/cmp"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	"github.com/shulutkov/yellow-pages/proto/private/prototest"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/testing/protocmp"
 )

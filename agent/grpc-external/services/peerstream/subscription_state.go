@@ -13,9 +13,9 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbservice"
 )
 
 // subscriptionState is a collection of working state tied to a peerID subscription.

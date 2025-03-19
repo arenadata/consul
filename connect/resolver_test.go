@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/api"
 	"github.com/stretchr/testify/require"
 )
 

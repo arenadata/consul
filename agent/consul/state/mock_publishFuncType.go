@@ -3,7 +3,7 @@
 package state
 
 import (
-	stream "github.com/shulutkov/yellow-pages/agent/consul/stream"
+	stream "github.com/arenadata/consul/agent/consul/stream"
 	mock "github.com/stretchr/testify/mock"
 )
 

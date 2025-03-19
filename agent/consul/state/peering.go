@@ -12,12 +12,12 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/lib/maps"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/lib/maps"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 const (

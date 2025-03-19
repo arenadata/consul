@@ -16,9 +16,9 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"golang.org/x/time/rate"
 
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/logging"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/logging"
 )
 
 const (

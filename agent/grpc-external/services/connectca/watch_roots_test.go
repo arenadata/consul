@@ -17,14 +17,14 @@ import (
 
 	"github.com/hashicorp/go-uuid"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	resolver "github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/testutils"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto-public/pbconnectca"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/acl"
+	resolver "github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/connect"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/grpc-external/testutils"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto-public/pbconnectca"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 const testACLToken = "acl-token"

@@ -15,9 +15,9 @@ import (
 	metrics "github.com/armon/go-metrics"
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/connect"
-	"github.com/shulutkov/yellow-pages/ipaddr"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/connect"
+	"github.com/arenadata/consul/ipaddr"
 )
 
 const (

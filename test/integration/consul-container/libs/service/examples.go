@@ -13,10 +13,10 @@ import (
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
 )
 
 // exampleContainer

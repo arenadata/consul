@@ -10,7 +10,7 @@
 package pbconfigentry
 
 import (
-	pbcommon "github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	pbcommon "github.com/arenadata/consul/proto/private/pbcommon"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
@@ -868,7 +868,7 @@ func (*ConfigEntry_JWTProvider) isConfigEntry_Entry() {}
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.MeshConfigEntry
+// target=github.com/arenadata/consul/agent/structs.MeshConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=RaftIndex,EnterpriseMeta
@@ -969,7 +969,7 @@ func (x *MeshConfig) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.TransparentProxyMeshConfig
+// target=github.com/arenadata/consul/agent/structs.TransparentProxyMeshConfig
 // output=config_entry.gen.go
 // name=Structs
 type TransparentProxyMeshConfig struct {
@@ -1021,7 +1021,7 @@ func (x *TransparentProxyMeshConfig) GetMeshDestinationsOnly() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.MeshTLSConfig
+// target=github.com/arenadata/consul/agent/structs.MeshTLSConfig
 // output=config_entry.gen.go
 // name=Structs
 type MeshTLSConfig struct {
@@ -1081,7 +1081,7 @@ func (x *MeshTLSConfig) GetOutgoing() *MeshDirectionalTLSConfig {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.MeshDirectionalTLSConfig
+// target=github.com/arenadata/consul/agent/structs.MeshDirectionalTLSConfig
 // output=config_entry.gen.go
 // name=Structs
 type MeshDirectionalTLSConfig struct {
@@ -1152,7 +1152,7 @@ func (x *MeshDirectionalTLSConfig) GetCipherSuites() []string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.MeshHTTPConfig
+// target=github.com/arenadata/consul/agent/structs.MeshHTTPConfig
 // output=config_entry.gen.go
 // name=Structs
 type MeshHTTPConfig struct {
@@ -1204,7 +1204,7 @@ func (x *MeshHTTPConfig) GetSanitizeXForwardedClientCert() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.PeeringMeshConfig
+// target=github.com/arenadata/consul/agent/structs.PeeringMeshConfig
 // output=config_entry.gen.go
 // name=Structs
 type PeeringMeshConfig struct {
@@ -1256,7 +1256,7 @@ func (x *PeeringMeshConfig) GetPeerThroughMeshGateways() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceResolverConfigEntry
+// target=github.com/arenadata/consul/agent/structs.ServiceResolverConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -1383,7 +1383,7 @@ func (x *ServiceResolver) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceResolverSubset
+// target=github.com/arenadata/consul/agent/structs.ServiceResolverSubset
 // output=config_entry.gen.go
 // name=Structs
 type ServiceResolverSubset struct {
@@ -1443,7 +1443,7 @@ func (x *ServiceResolverSubset) GetOnlyPassing() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceResolverRedirect
+// target=github.com/arenadata/consul/agent/structs.ServiceResolverRedirect
 // output=config_entry.gen.go
 // name=Structs
 type ServiceResolverRedirect struct {
@@ -1543,7 +1543,7 @@ func (x *ServiceResolverRedirect) GetSamenessGroup() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceResolverFailover
+// target=github.com/arenadata/consul/agent/structs.ServiceResolverFailover
 // output=config_entry.gen.go
 // name=Structs
 type ServiceResolverFailover struct {
@@ -1643,7 +1643,7 @@ func (x *ServiceResolverFailover) GetSamenessGroup() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceResolverFailoverPolicy
+// target=github.com/arenadata/consul/agent/structs.ServiceResolverFailoverPolicy
 // output=config_entry.gen.go
 // name=Structs
 type ServiceResolverFailoverPolicy struct {
@@ -1703,7 +1703,7 @@ func (x *ServiceResolverFailoverPolicy) GetRegions() []string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceResolverPrioritizeByLocality
+// target=github.com/arenadata/consul/agent/structs.ServiceResolverPrioritizeByLocality
 // output=config_entry.gen.go
 // name=Structs
 type ServiceResolverPrioritizeByLocality struct {
@@ -1755,7 +1755,7 @@ func (x *ServiceResolverPrioritizeByLocality) GetMode() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceResolverFailoverTarget
+// target=github.com/arenadata/consul/agent/structs.ServiceResolverFailoverTarget
 // output=config_entry.gen.go
 // name=Structs
 type ServiceResolverFailoverTarget struct {
@@ -1847,7 +1847,7 @@ func (x *ServiceResolverFailoverTarget) GetPeer() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.LoadBalancer
+// target=github.com/arenadata/consul/agent/structs.LoadBalancer
 // output=config_entry.gen.go
 // name=Structs
 type LoadBalancer struct {
@@ -1923,7 +1923,7 @@ func (x *LoadBalancer) GetHashPolicies() []*HashPolicy {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.RingHashConfig
+// target=github.com/arenadata/consul/agent/structs.RingHashConfig
 // output=config_entry.gen.go
 // name=Structs
 type RingHashConfig struct {
@@ -1983,7 +1983,7 @@ func (x *RingHashConfig) GetMaximumRingSize() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.LeastRequestConfig
+// target=github.com/arenadata/consul/agent/structs.LeastRequestConfig
 // output=config_entry.gen.go
 // name=Structs
 type LeastRequestConfig struct {
@@ -2035,7 +2035,7 @@ func (x *LeastRequestConfig) GetChoiceCount() uint32 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HashPolicy
+// target=github.com/arenadata/consul/agent/structs.HashPolicy
 // output=config_entry.gen.go
 // name=Structs
 type HashPolicy struct {
@@ -2119,7 +2119,7 @@ func (x *HashPolicy) GetTerminal() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.CookieConfig
+// target=github.com/arenadata/consul/agent/structs.CookieConfig
 // output=config_entry.gen.go
 // name=Structs
 type CookieConfig struct {
@@ -2188,7 +2188,7 @@ func (x *CookieConfig) GetPath() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IngressGatewayConfigEntry
+// target=github.com/arenadata/consul/agent/structs.IngressGatewayConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -2273,7 +2273,7 @@ func (x *IngressGateway) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IngressServiceConfig
+// target=github.com/arenadata/consul/agent/structs.IngressServiceConfig
 // output=config_entry.gen.go
 // name=Structs
 type IngressServiceConfig struct {
@@ -2349,7 +2349,7 @@ func (x *IngressServiceConfig) GetPassiveHealthCheck() *PassiveHealthCheck {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.GatewayTLSConfig
+// target=github.com/arenadata/consul/agent/structs.GatewayTLSConfig
 // output=config_entry.gen.go
 // name=Structs
 type GatewayTLSConfig struct {
@@ -2436,7 +2436,7 @@ func (x *GatewayTLSConfig) GetCipherSuites() []string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.GatewayTLSSDSConfig
+// target=github.com/arenadata/consul/agent/structs.GatewayTLSSDSConfig
 // output=config_entry.gen.go
 // name=Structs
 type GatewayTLSSDSConfig struct {
@@ -2496,7 +2496,7 @@ func (x *GatewayTLSSDSConfig) GetCertResource() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IngressListener
+// target=github.com/arenadata/consul/agent/structs.IngressListener
 // output=config_entry.gen.go
 // name=Structs
 type IngressListener struct {
@@ -2573,7 +2573,7 @@ func (x *IngressListener) GetTLS() *GatewayTLSConfig {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IngressService
+// target=github.com/arenadata/consul/agent/structs.IngressService
 // output=config_entry.gen.go
 // name=Structs
 type IngressService struct {
@@ -2706,7 +2706,7 @@ func (x *IngressService) GetPassiveHealthCheck() *PassiveHealthCheck {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.GatewayServiceTLSConfig
+// target=github.com/arenadata/consul/agent/structs.GatewayServiceTLSConfig
 // output=config_entry.gen.go
 // name=Structs
 type GatewayServiceTLSConfig struct {
@@ -2758,7 +2758,7 @@ func (x *GatewayServiceTLSConfig) GetSDS() *GatewayTLSSDSConfig {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPHeaderModifiers
+// target=github.com/arenadata/consul/agent/structs.HTTPHeaderModifiers
 // output=config_entry.gen.go
 // name=Structs
 type HTTPHeaderModifiers struct {
@@ -2826,7 +2826,7 @@ func (x *HTTPHeaderModifiers) GetRemove() []string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceIntentionsConfigEntry
+// target=github.com/arenadata/consul/agent/structs.ServiceIntentionsConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -2903,7 +2903,7 @@ func (x *ServiceIntentions) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IntentionJWTRequirement
+// target=github.com/arenadata/consul/agent/structs.IntentionJWTRequirement
 // output=config_entry.gen.go
 // name=Structs
 type IntentionJWTRequirement struct {
@@ -2955,7 +2955,7 @@ func (x *IntentionJWTRequirement) GetProviders() []*IntentionJWTProvider {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IntentionJWTProvider
+// target=github.com/arenadata/consul/agent/structs.IntentionJWTProvider
 // output=config_entry.gen.go
 // name=Structs
 type IntentionJWTProvider struct {
@@ -3015,7 +3015,7 @@ func (x *IntentionJWTProvider) GetVerifyClaims() []*IntentionJWTClaimVerificatio
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IntentionJWTClaimVerification
+// target=github.com/arenadata/consul/agent/structs.IntentionJWTClaimVerification
 // output=config_entry.gen.go
 // name=Structs
 type IntentionJWTClaimVerification struct {
@@ -3075,7 +3075,7 @@ func (x *IntentionJWTClaimVerification) GetValue() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.SourceIntention
+// target=github.com/arenadata/consul/agent/structs.SourceIntention
 // output=config_entry.gen.go
 // name=Structs
 type SourceIntention struct {
@@ -3229,7 +3229,7 @@ func (x *SourceIntention) GetSamenessGroup() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IntentionPermission
+// target=github.com/arenadata/consul/agent/structs.IntentionPermission
 // output=config_entry.gen.go
 // name=Structs
 type IntentionPermission struct {
@@ -3298,7 +3298,7 @@ func (x *IntentionPermission) GetJWT() *IntentionJWTRequirement {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IntentionHTTPPermission
+// target=github.com/arenadata/consul/agent/structs.IntentionHTTPPermission
 // output=config_entry.gen.go
 // name=Structs
 type IntentionHTTPPermission struct {
@@ -3382,7 +3382,7 @@ func (x *IntentionHTTPPermission) GetMethods() []string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.IntentionHTTPHeaderPermission
+// target=github.com/arenadata/consul/agent/structs.IntentionHTTPHeaderPermission
 // output=config_entry.gen.go
 // name=Structs
 type IntentionHTTPHeaderPermission struct {
@@ -3482,7 +3482,7 @@ func (x *IntentionHTTPHeaderPermission) GetInvert() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ServiceConfigEntry
+// target=github.com/arenadata/consul/agent/structs.ServiceConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -3661,7 +3661,7 @@ func (x *ServiceDefaults) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.TransparentProxyConfig
+// target=github.com/arenadata/consul/agent/structs.TransparentProxyConfig
 // output=config_entry.gen.go
 // name=Structs
 type TransparentProxyConfig struct {
@@ -3722,7 +3722,7 @@ func (x *TransparentProxyConfig) GetDialedDirectly() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.MeshGatewayConfig
+// target=github.com/arenadata/consul/agent/structs.MeshGatewayConfig
 // output=config_entry.gen.go
 // name=Structs
 type MeshGatewayConfig struct {
@@ -3775,7 +3775,7 @@ func (x *MeshGatewayConfig) GetMode() MeshGatewayMode {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ExposeConfig
+// target=github.com/arenadata/consul/agent/structs.ExposeConfig
 // output=config_entry.gen.go
 // name=Structs
 type ExposeConfig struct {
@@ -3835,7 +3835,7 @@ func (x *ExposeConfig) GetPaths() []*ExposePath {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ExposePath
+// target=github.com/arenadata/consul/agent/structs.ExposePath
 // output=config_entry.gen.go
 // name=Structs
 type ExposePath struct {
@@ -3921,7 +3921,7 @@ func (x *ExposePath) GetParsedFromCheck() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.UpstreamConfiguration
+// target=github.com/arenadata/consul/agent/structs.UpstreamConfiguration
 // output=config_entry.gen.go
 // name=Structs
 type UpstreamConfiguration struct {
@@ -3981,7 +3981,7 @@ func (x *UpstreamConfiguration) GetDefaults() *UpstreamConfig {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.UpstreamConfig
+// target=github.com/arenadata/consul/agent/structs.UpstreamConfig
 // output=config_entry.gen.go
 // name=Structs
 type UpstreamConfig struct {
@@ -4115,7 +4115,7 @@ func (x *UpstreamConfig) GetPeer() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.UpstreamLimits
+// target=github.com/arenadata/consul/agent/structs.UpstreamLimits
 // output=config_entry.gen.go
 // name=Structs
 type UpstreamLimits struct {
@@ -4186,7 +4186,7 @@ func (x *UpstreamLimits) GetMaxConcurrentRequests() int32 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.PassiveHealthCheck
+// target=github.com/arenadata/consul/agent/structs.PassiveHealthCheck
 // output=config_entry.gen.go
 // name=Structs
 type PassiveHealthCheck struct {
@@ -4274,7 +4274,7 @@ func (x *PassiveHealthCheck) GetBaseEjectionTime() *durationpb.Duration {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.DestinationConfig
+// target=github.com/arenadata/consul/agent/structs.DestinationConfig
 // output=config_entry.gen.go
 // name=Structs
 type DestinationConfig struct {
@@ -4335,7 +4335,7 @@ func (x *DestinationConfig) GetPort() int32 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.APIGatewayConfigEntry
+// target=github.com/arenadata/consul/agent/structs.APIGatewayConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -4412,7 +4412,7 @@ func (x *APIGateway) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.Status
+// target=github.com/arenadata/consul/agent/structs.Status
 // output=config_entry.gen.go
 // name=Structs
 type Status struct {
@@ -4464,7 +4464,7 @@ func (x *Status) GetConditions() []*Condition {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.Condition
+// target=github.com/arenadata/consul/agent/structs.Condition
 // output=config_entry.gen.go
 // name=Structs
 type Condition struct {
@@ -4557,7 +4557,7 @@ func (x *Condition) GetLastTransitionTime() *timestamppb.Timestamp {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.APIGatewayListener
+// target=github.com/arenadata/consul/agent/structs.APIGatewayListener
 // output=config_entry.gen.go
 // name=Structs
 type APIGatewayListener struct {
@@ -4643,7 +4643,7 @@ func (x *APIGatewayListener) GetTLS() *APIGatewayTLSConfiguration {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.APIGatewayTLSConfiguration
+// target=github.com/arenadata/consul/agent/structs.APIGatewayTLSConfiguration
 // output=config_entry.gen.go
 // name=Structs
 type APIGatewayTLSConfiguration struct {
@@ -4722,7 +4722,7 @@ func (x *APIGatewayTLSConfiguration) GetCipherSuites() []string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.ResourceReference
+// target=github.com/arenadata/consul/agent/structs.ResourceReference
 // output=config_entry.gen.go
 // name=Structs
 type ResourceReference struct {
@@ -4799,7 +4799,7 @@ func (x *ResourceReference) GetEnterpriseMeta() *pbcommon.EnterpriseMeta {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.BoundAPIGatewayConfigEntry
+// target=github.com/arenadata/consul/agent/structs.BoundAPIGatewayConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -4924,7 +4924,7 @@ func (x *ListOfResourceReference) GetRef() []*ResourceReference {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.BoundAPIGatewayListener
+// target=github.com/arenadata/consul/agent/structs.BoundAPIGatewayListener
 // output=config_entry.gen.go
 // name=Structs
 type BoundAPIGatewayListener struct {
@@ -4992,7 +4992,7 @@ func (x *BoundAPIGatewayListener) GetRoutes() []*ResourceReference {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.InlineCertificateConfigEntry
+// target=github.com/arenadata/consul/agent/structs.InlineCertificateConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -5069,7 +5069,7 @@ func (x *InlineCertificate) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPRouteConfigEntry
+// target=github.com/arenadata/consul/agent/structs.HTTPRouteConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -5162,7 +5162,7 @@ func (x *HTTPRoute) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPRouteRule
+// target=github.com/arenadata/consul/agent/structs.HTTPRouteRule
 // output=config_entry.gen.go
 // name=Structs
 type HTTPRouteRule struct {
@@ -5230,7 +5230,7 @@ func (x *HTTPRouteRule) GetServices() []*HTTPService {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPMatch
+// target=github.com/arenadata/consul/agent/structs.HTTPMatch
 // output=config_entry.gen.go
 // name=Structs
 type HTTPMatch struct {
@@ -5307,7 +5307,7 @@ func (x *HTTPMatch) GetQuery() []*HTTPQueryMatch {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPHeaderMatch
+// target=github.com/arenadata/consul/agent/structs.HTTPHeaderMatch
 // output=config_entry.gen.go
 // name=Structs
 type HTTPHeaderMatch struct {
@@ -5376,7 +5376,7 @@ func (x *HTTPHeaderMatch) GetValue() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPPathMatch
+// target=github.com/arenadata/consul/agent/structs.HTTPPathMatch
 // output=config_entry.gen.go
 // name=Structs
 type HTTPPathMatch struct {
@@ -5437,7 +5437,7 @@ func (x *HTTPPathMatch) GetValue() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPQueryMatch
+// target=github.com/arenadata/consul/agent/structs.HTTPQueryMatch
 // output=config_entry.gen.go
 // name=Structs
 type HTTPQueryMatch struct {
@@ -5506,7 +5506,7 @@ func (x *HTTPQueryMatch) GetValue() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPFilters
+// target=github.com/arenadata/consul/agent/structs.HTTPFilters
 // output=config_entry.gen.go
 // name=Structs
 type HTTPFilters struct {
@@ -5566,7 +5566,7 @@ func (x *HTTPFilters) GetURLRewrite() *URLRewrite {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.URLRewrite
+// target=github.com/arenadata/consul/agent/structs.URLRewrite
 // output=config_entry.gen.go
 // name=Structs
 type URLRewrite struct {
@@ -5618,7 +5618,7 @@ func (x *URLRewrite) GetPath() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPHeaderFilter
+// target=github.com/arenadata/consul/agent/structs.HTTPHeaderFilter
 // output=config_entry.gen.go
 // name=Structs
 type HTTPHeaderFilter struct {
@@ -5686,7 +5686,7 @@ func (x *HTTPHeaderFilter) GetSet() map[string]string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.HTTPService
+// target=github.com/arenadata/consul/agent/structs.HTTPService
 // output=config_entry.gen.go
 // name=Structs
 type HTTPService struct {
@@ -5764,7 +5764,7 @@ func (x *HTTPService) GetEnterpriseMeta() *pbcommon.EnterpriseMeta {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.TCPRouteConfigEntry
+// target=github.com/arenadata/consul/agent/structs.TCPRouteConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Kind,Name,RaftIndex,EnterpriseMeta
@@ -5849,7 +5849,7 @@ func (x *TCPRoute) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.TCPService
+// target=github.com/arenadata/consul/agent/structs.TCPService
 // output=config_entry.gen.go
 // name=Structs
 type TCPService struct {
@@ -5910,7 +5910,7 @@ func (x *TCPService) GetEnterpriseMeta() *pbcommon.EnterpriseMeta {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.SamenessGroupConfigEntry
+// target=github.com/arenadata/consul/agent/structs.SamenessGroupConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=RaftIndex
@@ -6012,7 +6012,7 @@ func (x *SamenessGroup) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.SamenessGroupMember
+// target=github.com/arenadata/consul/agent/structs.SamenessGroupMember
 // output=config_entry.gen.go
 // name=Structs
 type SamenessGroupMember struct {
@@ -6072,7 +6072,7 @@ func (x *SamenessGroupMember) GetPeer() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWTProviderConfigEntry
+// target=github.com/arenadata/consul/agent/structs.JWTProviderConfigEntry
 // output=config_entry.gen.go
 // name=Structs
 // ignore-fields=Name,Kind,RaftIndex,EnterpriseMeta
@@ -6190,7 +6190,7 @@ func (x *JWTProvider) GetHash() uint64 {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JSONWebKeySet
+// target=github.com/arenadata/consul/agent/structs.JSONWebKeySet
 // output=config_entry.gen.go
 // name=Structs
 type JSONWebKeySet struct {
@@ -6250,7 +6250,7 @@ func (x *JSONWebKeySet) GetRemote() *RemoteJWKS {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.LocalJWKS
+// target=github.com/arenadata/consul/agent/structs.LocalJWKS
 // output=config_entry.gen.go
 // name=Structs
 type LocalJWKS struct {
@@ -6310,7 +6310,7 @@ func (x *LocalJWKS) GetFilename() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.RemoteJWKS
+// target=github.com/arenadata/consul/agent/structs.RemoteJWKS
 // output=config_entry.gen.go
 // name=Structs
 type RemoteJWKS struct {
@@ -6404,7 +6404,7 @@ func (x *RemoteJWKS) GetJWKSCluster() *JWKSCluster {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWKSCluster
+// target=github.com/arenadata/consul/agent/structs.JWKSCluster
 // output=config_entry.gen.go
 // name=Structs
 type JWKSCluster struct {
@@ -6473,7 +6473,7 @@ func (x *JWKSCluster) GetConnectTimeout() *durationpb.Duration {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWKSTLSCertificate
+// target=github.com/arenadata/consul/agent/structs.JWKSTLSCertificate
 // output=config_entry.gen.go
 // name=Structs
 type JWKSTLSCertificate struct {
@@ -6533,7 +6533,7 @@ func (x *JWKSTLSCertificate) GetTrustedCA() *JWKSTLSCertTrustedCA {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWKSTLSCertProviderInstance
+// target=github.com/arenadata/consul/agent/structs.JWKSTLSCertProviderInstance
 // output=config_entry.gen.go
 // name=Structs
 type JWKSTLSCertProviderInstance struct {
@@ -6593,7 +6593,7 @@ func (x *JWKSTLSCertProviderInstance) GetCertificateName() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWKSTLSCertTrustedCA
+// target=github.com/arenadata/consul/agent/structs.JWKSTLSCertTrustedCA
 // output=config_entry.gen.go
 // name=Structs
 type JWKSTLSCertTrustedCA struct {
@@ -6669,7 +6669,7 @@ func (x *JWKSTLSCertTrustedCA) GetInlineBytes() []byte {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWKSRetryPolicy
+// target=github.com/arenadata/consul/agent/structs.JWKSRetryPolicy
 // output=config_entry.gen.go
 // name=Structs
 type JWKSRetryPolicy struct {
@@ -6730,7 +6730,7 @@ func (x *JWKSRetryPolicy) GetRetryPolicyBackOff() *RetryPolicyBackOff {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.RetryPolicyBackOff
+// target=github.com/arenadata/consul/agent/structs.RetryPolicyBackOff
 // output=config_entry.gen.go
 // name=Structs
 type RetryPolicyBackOff struct {
@@ -6792,7 +6792,7 @@ func (x *RetryPolicyBackOff) GetMaxInterval() *durationpb.Duration {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWTLocation
+// target=github.com/arenadata/consul/agent/structs.JWTLocation
 // output=config_entry.gen.go
 // name=Structs
 type JWTLocation struct {
@@ -6860,7 +6860,7 @@ func (x *JWTLocation) GetCookie() *JWTLocationCookie {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWTLocationHeader
+// target=github.com/arenadata/consul/agent/structs.JWTLocationHeader
 // output=config_entry.gen.go
 // name=Structs
 type JWTLocationHeader struct {
@@ -6928,7 +6928,7 @@ func (x *JWTLocationHeader) GetForward() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWTLocationQueryParam
+// target=github.com/arenadata/consul/agent/structs.JWTLocationQueryParam
 // output=config_entry.gen.go
 // name=Structs
 type JWTLocationQueryParam struct {
@@ -6980,7 +6980,7 @@ func (x *JWTLocationQueryParam) GetName() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWTLocationCookie
+// target=github.com/arenadata/consul/agent/structs.JWTLocationCookie
 // output=config_entry.gen.go
 // name=Structs
 type JWTLocationCookie struct {
@@ -7032,7 +7032,7 @@ func (x *JWTLocationCookie) GetName() string {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWTForwardingConfig
+// target=github.com/arenadata/consul/agent/structs.JWTForwardingConfig
 // output=config_entry.gen.go
 // name=Structs
 type JWTForwardingConfig struct {
@@ -7092,7 +7092,7 @@ func (x *JWTForwardingConfig) GetPadForwardPayloadHeader() bool {
 
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.JWTCacheConfig
+// target=github.com/arenadata/consul/agent/structs.JWTCacheConfig
 // output=config_entry.gen.go
 // name=Structs
 type JWTCacheConfig struct {

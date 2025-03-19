@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
+	"github.com/arenadata/consul/agent/proxycfg"
 )
 
 func indexGenerator() func() uint64 {

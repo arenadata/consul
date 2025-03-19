@@ -27,12 +27,12 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	config "github.com/shulutkov/yellow-pages/agent/xds/config"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	config "github.com/arenadata/consul/agent/xds/config"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 const (

@@ -16,13 +16,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	ca "github.com/shulutkov/yellow-pages/agent/connect/ca"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/connect"
+	ca "github.com/arenadata/consul/agent/connect/ca"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func testParseCert(t *testing.T, pemValue string) *x509.Certificate {

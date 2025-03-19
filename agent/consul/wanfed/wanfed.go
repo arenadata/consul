@@ -14,8 +14,8 @@ import (
 
 	"github.com/hashicorp/memberlist"
 
-	"github.com/shulutkov/yellow-pages/agent/pool"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/agent/pool"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 const (

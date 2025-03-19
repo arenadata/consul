@@ -6,7 +6,7 @@ package api
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestAPI_OperatorKeyringInstallListPutRemove(t *testing.T) {

@@ -4,10 +4,10 @@
 package controllers
 
 import (
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/controllers/endpoints"
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/controllers/nodehealth"
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/controllers/workloadhealth"
-	"github.com/shulutkov/yellow-pages/internal/controller"
+	"github.com/arenadata/consul/internal/catalog/internal/controllers/endpoints"
+	"github.com/arenadata/consul/internal/catalog/internal/controllers/nodehealth"
+	"github.com/arenadata/consul/internal/catalog/internal/controllers/workloadhealth"
+	"github.com/arenadata/consul/internal/controller"
 )
 
 type Dependencies struct {

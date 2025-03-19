@@ -9,7 +9,7 @@ package consul
 import (
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func migrateIntentionsToConfigEntries(ixns structs.Intentions) []*structs.ServiceIntentionsConfigEntry {

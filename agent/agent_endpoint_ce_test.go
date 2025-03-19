@@ -13,7 +13,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestAgent_Self_VersionLacksEnt(t *testing.T) {

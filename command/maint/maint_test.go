@@ -9,8 +9,8 @@ import (
 
 	"github.com/mitchellh/cli"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestMaintCommand_noTabs(t *testing.T) {

@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/router"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/router"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 type fauxAddr struct {

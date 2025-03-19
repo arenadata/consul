@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 func indexPeeringFromQuery(q Query) ([]byte, error) {

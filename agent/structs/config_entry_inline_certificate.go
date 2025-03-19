@@ -12,8 +12,8 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/version"
 )
 
 // InlineCertificateConfigEntry manages the configuration for an inline certificate

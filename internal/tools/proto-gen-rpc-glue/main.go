@@ -127,7 +127,7 @@ func processFile(path string) error {
 import (
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

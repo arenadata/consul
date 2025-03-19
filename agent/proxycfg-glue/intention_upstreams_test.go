@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestServerIntentionUpstreams(t *testing.T) {

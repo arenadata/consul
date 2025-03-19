@@ -1,11 +1,11 @@
-module github.com/shulutkov/yellow-pages/troubleshoot
+module github.com/arenadata/consul/troubleshoot
 
 go 1.24.0
 
 replace (
-	github.com/shulutkov/yellow-pages/api => ../api
-	github.com/shulutkov/yellow-pages/envoyextensions => ../envoyextensions
-	github.com/shulutkov/yellow-pages/sdk => ../sdk
+	github.com/arenadata/consul/api => ../api
+	github.com/arenadata/consul/envoyextensions => ../envoyextensions
+	github.com/arenadata/consul/sdk => ../sdk
 )
 
 exclude (
@@ -16,9 +16,9 @@ exclude (
 require (
 	github.com/envoyproxy/go-control-plane v0.13.0
 	github.com/envoyproxy/go-control-plane/xdsmatcher v0.0.0-20230524161521-aaaacbfbe53e
-	github.com/shulutkov/yellow-pages/api v0.0.0
-	github.com/shulutkov/yellow-pages/envoyextensions v0.0.0
-	github.com/shulutkov/yellow-pages/sdk v0.0.0
+	github.com/arenadata/consul/api v0.0.0
+	github.com/arenadata/consul/envoyextensions v0.0.0
+	github.com/arenadata/consul/sdk v0.0.0
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/protobuf v1.34.2
 )

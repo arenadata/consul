@@ -11,10 +11,10 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/retry"
-	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/retry"
+	"github.com/arenadata/consul/proto/private/pbservice"
 )
 
 // This file contains direct state store functions that need additional

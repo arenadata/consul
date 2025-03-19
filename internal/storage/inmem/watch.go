@@ -7,11 +7,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/internal/storage"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/internal/storage"
+	"github.com/arenadata/consul/proto-public/pbresource"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // Watch implements the storage.Watch interface using a stream.Subscription.

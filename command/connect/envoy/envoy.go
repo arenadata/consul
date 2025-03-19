@@ -20,16 +20,16 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"google.golang.org/protobuf/encoding/protojson"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/xds"
-	"github.com/shulutkov/yellow-pages/agent/xds/accesslogs"
-	"github.com/shulutkov/yellow-pages/api"
-	proxyCmd "github.com/shulutkov/yellow-pages/command/connect/proxy"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/ipaddr"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/xds"
+	"github.com/arenadata/consul/agent/xds/accesslogs"
+	"github.com/arenadata/consul/api"
+	proxyCmd "github.com/arenadata/consul/command/connect/proxy"
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/ipaddr"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 func New(ui cli.Ui) *cmd {

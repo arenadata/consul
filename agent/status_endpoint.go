@@ -6,7 +6,7 @@ package agent
 import (
 	"net/http"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func (s *HTTPHandlers) StatusLeader(resp http.ResponseWriter, req *http.Request) (interface{}, error) {

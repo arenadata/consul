@@ -13,10 +13,10 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/internal/controller"
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	pbdemov2 "github.com/shulutkov/yellow-pages/proto/private/pbdemo/v2"
+	"github.com/arenadata/consul/internal/controller"
+	"github.com/arenadata/consul/internal/resource"
+	"github.com/arenadata/consul/proto-public/pbresource"
+	pbdemov2 "github.com/arenadata/consul/proto/private/pbdemo/v2"
 )
 
 const statusKeyArtistController = "consul.io/artist-controller"

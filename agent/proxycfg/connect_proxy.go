@@ -13,13 +13,13 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg/internal/watch"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/acl"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/proxycfg/internal/watch"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 type handlerConnectProxy struct {

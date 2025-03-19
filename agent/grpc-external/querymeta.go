@@ -7,7 +7,7 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func StringToQueryBackendDecodeHookFunc(f reflect.Type, t reflect.Type, data any) (any, error) {

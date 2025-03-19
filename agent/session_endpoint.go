@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/types"
 )
 
 // sessionCreateResponse is used to wrap the session ID

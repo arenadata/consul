@@ -4,8 +4,8 @@
 package mesh
 
 import (
-	"github.com/shulutkov/yellow-pages/internal/mesh/internal/types"
-	"github.com/shulutkov/yellow-pages/internal/resource"
+	"github.com/arenadata/consul/internal/mesh/internal/types"
+	"github.com/arenadata/consul/internal/resource"
 )
 
 var (

@@ -3,7 +3,7 @@ package leafcert
 import (
 	"context"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // NetRPC is an interface that an NetRPC client must implement. This is a helper

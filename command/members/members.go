@@ -15,9 +15,9 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/ryanuber/columnize"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	consulapi "github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/arenadata/consul/acl"
+	consulapi "github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/flags"
 )
 
 // cmd is a Command implementation that queries a running

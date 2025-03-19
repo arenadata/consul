@@ -45,13 +45,13 @@ This guide makes the following assumptions:
 
 There are quite a number of changes between releases. Notable changes
 are called out in our [Specific Version Details](/consul/docs/upgrading/upgrade-specific#consul-1-6-3)
-page. You can find more granular details in the full [changelog](https://github.com/shulutkov/yellow-pages/blob/main/CHANGELOG.md#124-november-27-2018).
+page. You can find more granular details in the full [changelog](https://github.com/arenadata/consul/blob/main/CHANGELOG.md#124-november-27-2018).
 Looking through these changes prior to upgrading is highly recommended.
 
 Two very notable items are:
 
-- 1.6.2 introduced more strict JSON decoding. Invalid JSON that was previously ignored might result in errors now (e.g., `Connect: null` in service definitions). See [[GH#6680](https://github.com/shulutkov/yellow-pages/pull/6680)].
-- 1.6.3 introduced the [http_max_conns_per_client](/consul/docs/agent/config/config-files#http_max_conns_per_client) limit. This defaults to 200. Prior to this, connections per client were unbounded. [[GH#7159](https://github.com/shulutkov/yellow-pages/issues/7159)]
+- 1.6.2 introduced more strict JSON decoding. Invalid JSON that was previously ignored might result in errors now (e.g., `Connect: null` in service definitions). See [[GH#6680](https://github.com/arenadata/consul/pull/6680)].
+- 1.6.3 introduced the [http_max_conns_per_client](/consul/docs/agent/config/config-files#http_max_conns_per_client) limit. This defaults to 200. Prior to this, connections per client were unbounded. [[GH#7159](https://github.com/arenadata/consul/issues/7159)]
 
 ## Procedure
 

@@ -11,11 +11,11 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto-public/pbconnectca"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/connect"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto-public/pbconnectca"
 )
 
 // Sign a leaf certificate for the service or agent identified by the SPIFFE

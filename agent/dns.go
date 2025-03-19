@@ -22,15 +22,15 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/miekg/dns"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	agentdns "github.com/shulutkov/yellow-pages/agent/dns"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/ipaddr"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/acl"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/config"
+	agentdns "github.com/arenadata/consul/agent/dns"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/ipaddr"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/logging"
 )
 
 var DNSCounters = []prometheus.CounterDefinition{

@@ -5,8 +5,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // rootWatcher helps let multiple requests for leaf certs to coordinate sharing

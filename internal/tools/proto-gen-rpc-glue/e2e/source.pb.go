@@ -6,7 +6,7 @@
 
 package e2e
 
-import "github.com/shulutkov/yellow-pages/proto/pbcommon"
+import "github.com/arenadata/consul/proto/pbcommon"
 
 // @consul-rpc-glue: WriteRequest,TargetDatacenter
 type ExampleWriteRequest struct {

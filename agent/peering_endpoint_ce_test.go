@@ -16,8 +16,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestHTTP_Peering_GenerateToken_CE_Failure(t *testing.T) {

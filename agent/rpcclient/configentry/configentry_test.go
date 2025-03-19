@@ -9,13 +9,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/rpcclient"
+	"github.com/arenadata/consul/agent/rpcclient"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/submatview"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/submatview"
 )
 
 func TestClient_SamenessGroup_BackendRouting(t *testing.T) {

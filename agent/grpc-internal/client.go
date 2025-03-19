@@ -16,11 +16,11 @@ import (
 
 	"github.com/armon/go-metrics"
 
-	"github.com/shulutkov/yellow-pages/agent/grpc-internal/balancer"
-	agentmiddleware "github.com/shulutkov/yellow-pages/agent/grpc-middleware"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/pool"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/agent/grpc-internal/balancer"
+	agentmiddleware "github.com/arenadata/consul/agent/grpc-middleware"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/pool"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 // grpcServiceConfig is provided as the default service config.

@@ -12,10 +12,10 @@ import (
 	mock "github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/local"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/token"
+	"github.com/arenadata/consul/agent/local"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/token"
 )
 
 func TestSync(t *testing.T) {

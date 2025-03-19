@@ -17,12 +17,12 @@ import (
 
 	fuzz "github.com/google/gofuzz"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 )
 
 func TestEncodeDecode(t *testing.T) {

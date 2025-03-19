@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // checkCoordinateDisabled will return an unauthorized error if coordinates are

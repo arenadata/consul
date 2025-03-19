@@ -11,8 +11,8 @@ import (
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/types"
 )
 
 // lanMergeDelegate is used to handle a cluster merge on the LAN gossip

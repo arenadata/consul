@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/arenadata/consul/test/integration/consul-container/libs/service"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
 )
 
 // CreateAndRegisterStaticClientSidecarWith2Upstreams creates a static-client that

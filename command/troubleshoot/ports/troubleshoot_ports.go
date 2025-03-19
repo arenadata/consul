@@ -6,11 +6,11 @@ package ports
 import (
 	"flag"
 	"fmt"
-	"github.com/shulutkov/yellow-pages/troubleshoot/ports"
+	"github.com/arenadata/consul/troubleshoot/ports"
 	"os"
 
-	"github.com/shulutkov/yellow-pages/command/cli"
-	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/arenadata/consul/command/cli"
+	"github.com/arenadata/consul/command/flags"
 )
 
 func New(ui cli.Ui) *cmd {

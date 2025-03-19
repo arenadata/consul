@@ -6,7 +6,7 @@ package api
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 func TestAPI_EventFireList(t *testing.T) {

@@ -14,8 +14,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/testrpc"
 	"github.com/stretchr/testify/require"
 )
 

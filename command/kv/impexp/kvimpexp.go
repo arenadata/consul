@@ -6,7 +6,7 @@ package impexp
 import (
 	"encoding/base64"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 type Entry struct {

@@ -10,7 +10,7 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestStateStore_PreparedQuery_isUUID(t *testing.T) {

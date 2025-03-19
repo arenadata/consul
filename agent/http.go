@@ -28,17 +28,17 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/consul"
-	"github.com/shulutkov/yellow-pages/agent/consul/rate"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/uiserver"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/consul"
+	"github.com/arenadata/consul/agent/consul/rate"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/uiserver"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/proto/private/pbcommon"
 )
 
 var HTTPSummaries = []prometheus.SummaryDefinition{

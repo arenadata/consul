@@ -10,9 +10,9 @@ import (
 	"os"
 	"testing"
 
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/testrpc"
 	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/testrpc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

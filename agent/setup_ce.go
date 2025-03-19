@@ -7,9 +7,9 @@
 package agent
 
 import (
-	autoconf "github.com/shulutkov/yellow-pages/agent/auto-config"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/consul"
+	autoconf "github.com/arenadata/consul/agent/auto-config"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/consul"
 )
 
 // initEnterpriseBaseDeps is responsible for initializing the enterprise dependencies that

@@ -10,13 +10,13 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"google.golang.org/grpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeerstream"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/proto/private/pbpeerstream"
 )
 
 // TODO(peering): fix up these interfaces to be more testable now that they are

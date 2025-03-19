@@ -5,7 +5,7 @@ package rate
 
 import (
 	"bytes"
-	"github.com/shulutkov/yellow-pages/agent/metrics"
+	"github.com/arenadata/consul/agent/metrics"
 	"github.com/stretchr/testify/require"
 	"net"
 	"net/netip"
@@ -16,7 +16,7 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/multilimiter"
+	"github.com/arenadata/consul/agent/consul/multilimiter"
 )
 
 func TestHandler(t *testing.T) {

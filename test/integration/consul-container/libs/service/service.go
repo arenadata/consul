@@ -6,7 +6,7 @@ package service
 import (
 	"context"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 // Service represents a process that will be registered with the

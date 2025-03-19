@@ -27,7 +27,7 @@ message CheckServiceNode {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.Node
+// target=github.com/arenadata/consul/agent/structs.Node
 // output=node.gen.go
 // name=Structs
 message Node {
@@ -53,7 +53,7 @@ message Node {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.NodeService
+// target=github.com/arenadata/consul/agent/structs.NodeService
 // output=node.gen.go
 // name=Structs
 message NodeService {

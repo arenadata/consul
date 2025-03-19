@@ -6,7 +6,7 @@ package pbsubscribe
 import (
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 // RequestDatacenter implements structs.RPCInfo

@@ -16,11 +16,11 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/auth"
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/testutils"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto-public/pbacl"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/auth"
+	"github.com/arenadata/consul/agent/grpc-external/testutils"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto-public/pbacl"
 )
 
 func TestServer_Logout_Success(t *testing.T) {

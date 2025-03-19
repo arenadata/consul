@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/arenadata/consul/api"
 	envoy_admin_v3 "github.com/envoyproxy/go-control-plane/envoy/admin/v3"
 	envoy_cluster_v3 "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	envoy_core_v3 "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
@@ -14,11 +15,10 @@ import (
 	envoy_route_v3 "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 	envoy_aggregate_cluster_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/clusters/aggregate/v3"
 	envoy_resource_v3 "github.com/envoyproxy/go-control-plane/pkg/resource/v3"
-	"github.com/shulutkov/yellow-pages/api"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 )
 
 // Validate contains input information about which proxy resources to validate and output information about resources it

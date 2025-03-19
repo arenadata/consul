@@ -15,13 +15,13 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/flags"
+	proxyImpl "github.com/arenadata/consul/connect/proxy"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	proxyImpl "github.com/shulutkov/yellow-pages/connect/proxy"
 
+	"github.com/arenadata/consul/logging"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/logging"
 )
 
 func New(ui cli.Ui, shutdownCh <-chan struct{}) *cmd {

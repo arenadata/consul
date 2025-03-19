@@ -33,10 +33,10 @@ export PATH := $(PWD)/bin:$(GOPATH)/bin:$(PATH)
 GIT_COMMIT?=$(shell git rev-parse --short HEAD)
 GIT_COMMIT_YEAR?=$(shell git show -s --format=%cd --date=format:%Y HEAD)
 GIT_DIRTY?=$(shell test -n "`git status --porcelain`" && echo "+CHANGES" || true)
-GIT_IMPORT=github.com/shulutkov/yellow-pages/version
+GIT_IMPORT=github.com/arenadata/consul/version
 DATE_FORMAT="%Y-%m-%dT%H:%M:%SZ" # it's tricky to do an RFC3339 format in a cross platform way, so we hardcode UTC
 GIT_DATE=$(shell $(CURDIR)/build-support/scripts/build-date.sh) # we're using this for build date because it's stable across platform builds
-GOLDFLAGS=-X $(GIT_IMPORT).GitCommit=$(GIT_COMMIT)$(GIT_DIRTY) -X $(GIT_IMPORT).BuildDate=$(GIT_DATE) -s -w
+GOLDFLAGS=-X $(GIT_IMPORT).GitCommit=$(GIT_COMMIT)$(GIT_DIRTY) -X $(GIT_IMPORT).BuildDate=$(GIT_DATE)
 
 GOTESTSUM_PATH?=$(shell command -v gotestsum)
 
@@ -161,11 +161,10 @@ noop: ;
 dev: dev-build
 
 dev-build:
-	mkdir -p bin
-	GOPROXY=direct CGO_ENABLED=0 GOPATH=${PWD}/bin go install -ldflags "$(GOLDFLAGS)" -tags "$(GOTAGS)"
+	CGO_ENABLED=0 go build -o bin/consul -ldflags "$(GOLDFLAGS)" -tags "$(GOTAGS)"
 	# rm needed due to signature caching (https://apple.stackexchange.com/a/428388)
-	rm -f ./bin/consul
-	cp ${PWD}/bin/yellow-pages ./bin/consul
+#	rm -f ${MAIN_GOPATH}/bin/consul
+#	cp ./bin/consul ${MAIN_GOPATH}/bin/consul
 
 
 dev-docker-dbg: dev-docker
@@ -234,7 +233,7 @@ endif
 
 # linux builds a linux binary compatible with the source platform
 linux:
-	CGO_ENABLED=0 GOOS=linux GOARCH=$(GOARCH) go build -o ./pkg/bin/linux_$(GOARCH)/yp -ldflags "$(GOLDFLAGS)" -tags "$(GOTAGS)"
+	CGO_ENABLED=0 GOOS=linux GOARCH=$(GOARCH) go build -trimpath -o ./pkg/bin/linux_$(GOARCH)/consul -ldflags "$(GOLDFLAGS) -s -w" -tags "$(GOTAGS)"
 
 # dist builds binaries for all platforms and packages them for distribution
 dist:
@@ -569,4 +568,4 @@ help:
 
 GOARCH = amd64
 image: linux
-	docker build --platform=linux/$(GOARCH) --build-arg GOARCH=$(GOARCH) -t yellow-pages:latest -f Dockerfile .
+	docker build --platform=linux/$(GOARCH) --build-arg GOARCH=$(GOARCH) -t consul:latest -f Dockerfile .

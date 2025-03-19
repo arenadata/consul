@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeerstream"
+	"github.com/arenadata/consul/proto/private/pbpeerstream"
 )
 
 type MockClient struct {

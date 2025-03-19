@@ -9,8 +9,8 @@ import (
 
 	"github.com/hashicorp/go-uuid"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // streamID is used in logs as a unique identifier for a subscription. The value

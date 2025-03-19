@@ -7,9 +7,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeerstream"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/proto/private/pbpeerstream"
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

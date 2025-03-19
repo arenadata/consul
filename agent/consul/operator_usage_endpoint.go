@@ -4,10 +4,10 @@
 package consul
 
 import (
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
 	"github.com/hashicorp/go-memdb"
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 // Usage returns counts for service usage within catalog.

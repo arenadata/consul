@@ -12,12 +12,12 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/token"
-	"github.com/shulutkov/yellow-pages/lib/retry"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/proto/private/pbautoconf"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/token"
+	"github.com/arenadata/consul/lib/retry"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/proto/private/pbautoconf"
 )
 
 // AutoConfig is all the state necessary for being able to parse a configuration

@@ -8,8 +8,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 )
 
 func TestConstructor(t *testing.T) {

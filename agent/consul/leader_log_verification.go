@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func (s *Server) startLogVerification(ctx context.Context) error {

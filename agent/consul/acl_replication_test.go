@@ -13,12 +13,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/testauth"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/structs/aclfilter"
-	tokenStore "github.com/shulutkov/yellow-pages/agent/token"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent/consul/authmethod/testauth"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/structs/aclfilter"
+	tokenStore "github.com/arenadata/consul/agent/token"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestACLReplication_diffACLPolicies(t *testing.T) {

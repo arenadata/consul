@@ -18,14 +18,14 @@ import (
 	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 	"github.com/hashicorp/consul-net-rpc/net/rpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/kubeauth"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/testauth"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/structs/aclfilter"
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/oidcauthtest"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/authmethod/kubeauth"
+	"github.com/arenadata/consul/agent/consul/authmethod/testauth"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/structs/aclfilter"
+	"github.com/arenadata/consul/internal/go-sso/oidcauth/oidcauthtest"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 func TestACLEndpoint_BootstrapTokens(t *testing.T) {

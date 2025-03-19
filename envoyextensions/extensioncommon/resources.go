@@ -20,8 +20,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
 )
 
 // MakeUpstreamTLSTransportSocket generates an Envoy transport socket for the given TLS context.

@@ -1,4 +1,4 @@
-module github.com/shulutkov/yellow-pages/sdk
+module github.com/arenadata/consul/sdk
 
 go 1.24.0
 

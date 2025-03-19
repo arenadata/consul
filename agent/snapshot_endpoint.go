@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"net/http"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // Snapshot handles requests to take and restore snapshots. This uses a special

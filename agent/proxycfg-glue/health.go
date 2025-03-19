@@ -6,11 +6,11 @@ package proxycfgglue
 import (
 	"context"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/rpcclient/health"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/submatview"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/rpcclient/health"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/submatview"
 )
 
 // ClientHealth satisfies the proxycfg.Health interface by sourcing data from

@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/lib"
 )
 
 // CompiledDiscoveryChain is the result from taking a set of related config

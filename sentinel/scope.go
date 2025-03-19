@@ -4,7 +4,7 @@
 package sentinel
 
 import (
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 // ScopeFn is a callback that provides a sentinel scope. This is a callback

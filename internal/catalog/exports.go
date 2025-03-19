@@ -4,12 +4,12 @@
 package catalog
 
 import (
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/controllers"
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/mappers/nodemapper"
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/mappers/selectiontracker"
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/types"
-	"github.com/shulutkov/yellow-pages/internal/controller"
-	"github.com/shulutkov/yellow-pages/internal/resource"
+	"github.com/arenadata/consul/internal/catalog/internal/controllers"
+	"github.com/arenadata/consul/internal/catalog/internal/mappers/nodemapper"
+	"github.com/arenadata/consul/internal/catalog/internal/mappers/selectiontracker"
+	"github.com/arenadata/consul/internal/catalog/internal/types"
+	"github.com/arenadata/consul/internal/controller"
+	"github.com/arenadata/consul/internal/resource"
 )
 
 var (

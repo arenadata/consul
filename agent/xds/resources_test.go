@@ -14,17 +14,17 @@ import (
 	envoy_route_v3 "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 	envoy_tls_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/transport_sockets/tls/v3"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul/discoverychain"
-	"github.com/shulutkov/yellow-pages/agent/xds/testcommon"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul/discoverychain"
+	"github.com/arenadata/consul/agent/xds/testcommon"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
 
 	testinf "github.com/mitchellh/go-testing-interface"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 var testTypeUrlToPrettyName = map[string]string{

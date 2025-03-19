@@ -13,14 +13,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/testrpc"
 	"github.com/hashicorp/raft"
 	autopilot "github.com/hashicorp/raft-autopilot"
-	"github.com/shulutkov/yellow-pages/testrpc"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 func TestOperator_RaftConfiguration(t *testing.T) {

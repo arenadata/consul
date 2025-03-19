@@ -11,9 +11,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 type intTopic int

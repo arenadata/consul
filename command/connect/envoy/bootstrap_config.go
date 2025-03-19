@@ -16,7 +16,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 const (
@@ -97,7 +97,7 @@ type BootstrapConfig struct {
 	// configure the aspects that Connect relies upon to work. It's recommended
 	// that this only be used if necessary, and that it be based on the default
 	// template in
-	// https://github.com/shulutkov/yellow-pages/blob/main/command/connect/envoy/bootstrap_tpl.go
+	// https://github.com/arenadata/consul/blob/main/command/connect/envoy/bootstrap_tpl.go
 	// for the correct version of Consul and Envoy being used.
 	OverrideJSONTpl string `mapstructure:"envoy_bootstrap_json_tpl"`
 

@@ -9,7 +9,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 type apiHandler struct{}

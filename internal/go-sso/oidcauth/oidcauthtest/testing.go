@@ -31,7 +31,7 @@ import (
 	"github.com/go-jose/go-jose/v3/jwt"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/internal/strutil"
+	"github.com/arenadata/consul/internal/go-sso/oidcauth/internal/strutil"
 )
 
 // Server is local server the mocks the endpoints used by the OIDC and

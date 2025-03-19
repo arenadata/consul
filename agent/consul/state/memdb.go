@@ -8,8 +8,8 @@ import (
 
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // ReadTxn is implemented by memdb.Txn to perform read operations.

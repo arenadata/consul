@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // preparedQueryCreateResponse is used to wrap the query ID.

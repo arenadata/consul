@@ -3,17 +3,17 @@ package propertyoverride
 import (
 	"fmt"
 
+	"github.com/arenadata/consul/lib/decode"
 	envoy_cluster_v3 "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	envoy_endpoint_v3 "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	envoy_listener_v3 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	envoy_route_v3 "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/mapstructure"
-	"github.com/shulutkov/yellow-pages/lib/decode"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 )
 
 type propertyOverride struct {

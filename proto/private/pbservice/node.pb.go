@@ -10,7 +10,7 @@
 package pbservice
 
 import (
-	pbcommon "github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	pbcommon "github.com/arenadata/consul/proto/private/pbcommon"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -149,7 +149,7 @@ func (x *CheckServiceNode) GetChecks() []*HealthCheck {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.Node
+// target=github.com/arenadata/consul/agent/structs.Node
 // output=node.gen.go
 // name=Structs
 type Node struct {
@@ -279,7 +279,7 @@ func (x *Node) GetLocality() *pbcommon.Locality {
 //
 // mog annotation:
 //
-// target=github.com/shulutkov/yellow-pages/agent/structs.NodeService
+// target=github.com/arenadata/consul/agent/structs.NodeService
 // output=node.gen.go
 // name=Structs
 type NodeService struct {

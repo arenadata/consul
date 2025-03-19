@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/structs"
 	"github.com/stretchr/testify/require"
 )
 

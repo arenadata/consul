@@ -7,9 +7,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // PBToStreamSubscribeRequest takes a protobuf subscribe request and enterprise

@@ -9,7 +9,7 @@ package authmethod
 import (
 	"sync"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 type syncCache struct {

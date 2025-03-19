@@ -4,9 +4,9 @@
 package types
 
 import (
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	pbmesh "github.com/shulutkov/yellow-pages/proto-public/pbmesh/v1alpha1"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/resource"
+	pbmesh "github.com/arenadata/consul/proto-public/pbmesh/v1alpha1"
+	"github.com/arenadata/consul/proto-public/pbresource"
 )
 
 const (

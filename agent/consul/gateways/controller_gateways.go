@@ -12,14 +12,14 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-memdb"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/controller"
-	"github.com/shulutkov/yellow-pages/agent/consul/discoverychain"
-	"github.com/shulutkov/yellow-pages/agent/consul/fsm"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/controller"
+	"github.com/arenadata/consul/agent/consul/discoverychain"
+	"github.com/arenadata/consul/agent/consul/fsm"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
 )
 
 var (

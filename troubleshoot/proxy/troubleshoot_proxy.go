@@ -9,8 +9,8 @@ import (
 
 	envoy_admin_v3 "github.com/envoyproxy/go-control-plane/envoy/admin/v3"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/troubleshoot/validate"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/troubleshoot/validate"
 )
 
 type Troubleshoot struct {

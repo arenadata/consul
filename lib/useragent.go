@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/version"
 )
 
 var (

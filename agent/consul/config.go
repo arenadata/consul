@@ -14,13 +14,13 @@ import (
 	"github.com/hashicorp/serf/serf"
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/agent/checks"
-	consulrate "github.com/shulutkov/yellow-pages/agent/consul/rate"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	libserf "github.com/shulutkov/yellow-pages/lib/serf"
-	"github.com/shulutkov/yellow-pages/tlsutil"
-	"github.com/shulutkov/yellow-pages/types"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/agent/checks"
+	consulrate "github.com/arenadata/consul/agent/consul/rate"
+	"github.com/arenadata/consul/agent/structs"
+	libserf "github.com/arenadata/consul/lib/serf"
+	"github.com/arenadata/consul/tlsutil"
+	"github.com/arenadata/consul/types"
+	"github.com/arenadata/consul/version"
 )
 
 const (

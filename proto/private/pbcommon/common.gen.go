@@ -2,7 +2,7 @@
 
 package pbcommon
 
-import "github.com/shulutkov/yellow-pages/agent/structs"
+import "github.com/arenadata/consul/agent/structs"
 
 func EnvoyExtensionToStructs(s *EnvoyExtension, t *structs.EnvoyExtension) {
 	if s == nil {

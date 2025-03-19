@@ -14,23 +14,23 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/agent/rpcclient"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/agent/rpcclient"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/grpc-internal/services/subscribe"
-	"github.com/shulutkov/yellow-pages/agent/rpcclient/health"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/submatview"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/grpc-internal/services/subscribe"
+	"github.com/arenadata/consul/agent/rpcclient/health"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/submatview"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 func TestStore_IntegrationWithBackend(t *testing.T) {

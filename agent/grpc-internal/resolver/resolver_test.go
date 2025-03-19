@@ -12,8 +12,8 @@ import (
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/types"
 )
 
 func TestServerResolverBuilder(t *testing.T) {

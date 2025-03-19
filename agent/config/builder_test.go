@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/types"
 )
 
 func TestLoad(t *testing.T) {

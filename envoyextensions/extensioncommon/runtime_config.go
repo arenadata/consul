@@ -3,7 +3,7 @@
 
 package extensioncommon
 
-import "github.com/shulutkov/yellow-pages/api"
+import "github.com/arenadata/consul/api"
 
 // UpstreamData has the SNI, EnvoyID, and OutgoingProxyKind of the upstream services for the local proxy and this data
 // is used to choose which Envoy resources to patch.

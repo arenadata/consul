@@ -11,8 +11,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
 )
 
 func (s *HTTPHandlers) KVSEndpoint(resp http.ResponseWriter, req *http.Request) (interface{}, error) {

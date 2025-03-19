@@ -18,10 +18,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/lib/ttlcache"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/lib/ttlcache"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 // Test a basic Get with no indexes (and therefore no blocking queries).
@@ -88,7 +88,7 @@ func TestCacheGet_initError(t *testing.T) {
 }
 
 // Test a cached error is replaced by a successful result. See
-// https://github.com/shulutkov/yellow-pages/issues/4480
+// https://github.com/arenadata/consul/issues/4480
 func TestCacheGet_cachedErrorsDontStick(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

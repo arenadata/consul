@@ -7,14 +7,14 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 	envoy_listener_v3 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	envoy_lua_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/http/lua/v3"
 	envoy_http_v3 "github.com/envoyproxy/go-control-plane/envoy/extensions/filters/network/http_connection_manager/v3"
 	envoy_resource_v3 "github.com/envoyproxy/go-control-plane/pkg/resource/v3"
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/mapstructure"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
 )
 
 var _ extensioncommon.BasicExtension = (*lua)(nil)

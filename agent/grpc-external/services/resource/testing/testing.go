@@ -8,13 +8,13 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	svc "github.com/shulutkov/yellow-pages/agent/grpc-external/services/resource"
-	internal "github.com/shulutkov/yellow-pages/agent/grpc-internal"
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	"github.com/shulutkov/yellow-pages/internal/storage/inmem"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/acl/resolver"
+	svc "github.com/arenadata/consul/agent/grpc-external/services/resource"
+	internal "github.com/arenadata/consul/agent/grpc-internal"
+	"github.com/arenadata/consul/internal/resource"
+	"github.com/arenadata/consul/internal/storage/inmem"
+	"github.com/arenadata/consul/proto-public/pbresource"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 // RunResourceService runs a Resource Service for the duration of the test and

@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/types"
 )
 
 func stringHashSHA256(s string) string {

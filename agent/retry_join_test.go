@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

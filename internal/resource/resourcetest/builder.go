@@ -3,8 +3,8 @@ package resourcetest
 import (
 	"context"
 
+	"github.com/arenadata/consul/proto-public/pbresource"
 	"github.com/oklog/ulid/v2"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"

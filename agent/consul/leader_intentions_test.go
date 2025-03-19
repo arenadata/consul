@@ -13,11 +13,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	tokenStore "github.com/shulutkov/yellow-pages/agent/token"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/structs"
+	tokenStore "github.com/arenadata/consul/agent/token"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestLeader_ReplicateIntentions(t *testing.T) {

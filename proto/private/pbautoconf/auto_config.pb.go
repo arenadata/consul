@@ -10,8 +10,8 @@
 package pbautoconf
 
 import (
-	pbconfig "github.com/shulutkov/yellow-pages/proto/private/pbconfig"
-	pbconnect "github.com/shulutkov/yellow-pages/proto/private/pbconnect"
+	pbconfig "github.com/arenadata/consul/proto/private/pbconfig"
+	pbconnect "github.com/arenadata/consul/proto/private/pbconnect"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

@@ -10,14 +10,14 @@ import (
 
 	"github.com/armon/go-metrics"
 
-	agentmiddleware "github.com/shulutkov/yellow-pages/agent/grpc-middleware"
+	agentmiddleware "github.com/arenadata/consul/agent/grpc-middleware"
 
 	middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/rate"
+	"github.com/arenadata/consul/agent/consul/rate"
 )
 
 var (

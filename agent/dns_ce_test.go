@@ -10,10 +10,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/testrpc"
 	"github.com/miekg/dns"
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/testrpc"
 	"github.com/stretchr/testify/require"
 )
 

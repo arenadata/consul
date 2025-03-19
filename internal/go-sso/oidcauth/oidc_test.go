@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/internal/go-sso/oidcauth/oidcauthtest"
 	"github.com/go-jose/go-jose/v3/jwt"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/oidcauthtest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

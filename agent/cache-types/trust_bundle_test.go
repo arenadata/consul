@@ -13,10 +13,10 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/agent/cache"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 func TestTrustBundle(t *testing.T) {

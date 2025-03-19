@@ -14,13 +14,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/sdk/testutil/retry"
 	"github.com/hashicorp/go-cleanhttp"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
 )
 
 // GetEnvoyListenerTCPFilters validates that proxy was configured with tcp protocol and one rbac listener filter

@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestAgent_ReloadConfig_Reporting(t *testing.T) {

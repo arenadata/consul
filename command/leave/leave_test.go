@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
 )
 
 func TestLeaveCommand_noTabs(t *testing.T) {

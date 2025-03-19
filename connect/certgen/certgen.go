@@ -29,7 +29,7 @@
 //
 // NOTE: THIS IS A QUIRK OF OPENSSL; in Connect we distribute the roots alone
 // and stable intermediates like the XC cert to the _leaf_.
-package main // import "github.com/shulutkov/yellow-pages/connect/certgen"
+package main // import "github.com/arenadata/consul/connect/certgen"
 
 import (
 	"flag"
@@ -39,8 +39,8 @@ import (
 
 	"github.com/mitchellh/go-testing-interface"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func main() {

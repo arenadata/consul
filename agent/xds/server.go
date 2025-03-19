@@ -11,7 +11,7 @@ import (
 
 	envoy_discovery_v3 "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
 
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
 
 	"github.com/armon/go-metrics"
 	"github.com/armon/go-metrics/prometheus"
@@ -20,11 +20,11 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/limiter"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/grpc-external/limiter"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 var (

@@ -11,8 +11,8 @@ import (
 	"github.com/hashicorp/hcp-sdk-go/clients/cloud-consul-telemetry-gateway/preview/2023-04-14/models"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/hcp/config"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/hcp/config"
+	"github.com/arenadata/consul/types"
 )
 
 func TestValidateAgentTelemetryConfigPayload(t *testing.T) {

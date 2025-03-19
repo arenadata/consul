@@ -10,12 +10,12 @@ import (
 	"github.com/mitchellh/go-testing-interface"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul/discoverychain"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul/discoverychain"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/types"
 )
 
 // TestConfigSnapshot returns a fully populated snapshot

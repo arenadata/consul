@@ -15,11 +15,11 @@ import (
 
 	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 )
 
 // verifySnapshot is a helper that does a snapshot and restore.
@@ -174,7 +174,7 @@ func TestSnapshot(t *testing.T) {
 	verifySnapshot(t, s1, "dc1", "")
 
 	// ensure autopilot is still running
-	// https://github.com/shulutkov/yellow-pages/issues/9626
+	// https://github.com/arenadata/consul/issues/9626
 	apstatus, _ := s1.autopilot.IsRunning()
 	require.Equal(t, autopilot.Running, apstatus)
 }

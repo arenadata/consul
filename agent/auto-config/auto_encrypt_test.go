@@ -16,15 +16,15 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/retry"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/agent/cache"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/retry"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestAutoEncrypt_generateCSR(t *testing.T) {

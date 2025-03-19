@@ -1,14 +1,14 @@
-module github.com/shulutkov/yellow-pages
+module github.com/arenadata/consul
 
 go 1.24.0
 
 replace (
 	github.com/hashicorp/go-discover => ./staging/hashicorp/go-discover
-	github.com/shulutkov/yellow-pages/api => ./api
-	github.com/shulutkov/yellow-pages/envoyextensions => ./envoyextensions
-	github.com/shulutkov/yellow-pages/proto-public => ./proto-public
-	github.com/shulutkov/yellow-pages/sdk => ./sdk
-	github.com/shulutkov/yellow-pages/troubleshoot => ./troubleshoot
+	github.com/arenadata/consul/api => ./api
+	github.com/arenadata/consul/envoyextensions => ./envoyextensions
+	github.com/arenadata/consul/proto-public => ./proto-public
+	github.com/arenadata/consul/sdk => ./sdk
+	github.com/arenadata/consul/troubleshoot => ./troubleshoot
 )
 
 exclude (
@@ -41,7 +41,7 @@ require (
 	github.com/hashicorp/go-checkpoint v0.5.0
 	github.com/hashicorp/go-cleanhttp v0.5.2
 	github.com/hashicorp/go-connlimit v0.3.0
-	github.com/hashicorp/go-discover v0.0.0
+	github.com/hashicorp/go-discover v0.0.0-20250129070739-0302a330aaa0
 	github.com/hashicorp/go-hclog v1.6.3
 	github.com/hashicorp/go-immutable-radix v1.3.1
 	github.com/hashicorp/go-memdb v1.3.4
@@ -85,11 +85,11 @@ require (
 	github.com/rboyer/safeio v0.2.3
 	github.com/ryanuber/columnize v2.1.2+incompatible
 	github.com/shirou/gopsutil/v3 v3.22.9
-	github.com/shulutkov/yellow-pages/api v0.0.0
-	github.com/shulutkov/yellow-pages/envoyextensions v0.0.0
-	github.com/shulutkov/yellow-pages/proto-public v0.0.0
-	github.com/shulutkov/yellow-pages/sdk v0.0.0
-	github.com/shulutkov/yellow-pages/troubleshoot v0.0.0
+	github.com/arenadata/consul/api v0.0.0
+	github.com/arenadata/consul/envoyextensions v0.0.0
+	github.com/arenadata/consul/proto-public v0.0.0
+	github.com/arenadata/consul/sdk v0.0.0
+	github.com/arenadata/consul/troubleshoot v0.0.0
 	github.com/stretchr/testify v1.9.0
 	go.etcd.io/bbolt v1.3.7
 	go.opentelemetry.io/otel v1.24.0

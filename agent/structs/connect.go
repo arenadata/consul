@@ -3,7 +3,7 @@
 
 package structs
 
-import "github.com/shulutkov/yellow-pages/acl"
+import "github.com/arenadata/consul/acl"
 
 // ConnectAuthorizeRequest is the structure of a request to authorize
 // a connection.

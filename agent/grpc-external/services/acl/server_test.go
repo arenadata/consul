@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	structs "github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	structs "github.com/arenadata/consul/agent/structs"
 )
 
 func generateID(t *testing.T) string {

@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestLoggerStore_Named(t *testing.T) {

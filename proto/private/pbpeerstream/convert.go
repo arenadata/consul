@@ -6,8 +6,8 @@ package pbpeerstream
 import (
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	pbservice "github.com/shulutkov/yellow-pages/proto/private/pbservice"
+	"github.com/arenadata/consul/agent/structs"
+	pbservice "github.com/arenadata/consul/proto/private/pbservice"
 )
 
 // CheckServiceNodesToStruct converts the contained CheckServiceNodes to their structs equivalent.

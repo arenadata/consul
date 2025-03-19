@@ -9,12 +9,12 @@ import (
 	"github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/go-version"
 
-	extauthz "github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/ext-authz"
-	"github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/lua"
-	propertyoverride "github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/property-override"
-	"github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/wasm"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
+	extauthz "github.com/arenadata/consul/agent/envoyextensions/builtin/ext-authz"
+	"github.com/arenadata/consul/agent/envoyextensions/builtin/lua"
+	propertyoverride "github.com/arenadata/consul/agent/envoyextensions/builtin/property-override"
+	"github.com/arenadata/consul/agent/envoyextensions/builtin/wasm"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 )
 
 type extensionConstructor func(api.EnvoyExtension) (extensioncommon.EnvoyExtender, error)

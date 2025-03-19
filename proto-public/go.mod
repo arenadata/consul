@@ -1,4 +1,4 @@
-module github.com/shulutkov/yellow-pages/proto-public
+module github.com/arenadata/consul/proto-public
 
 go 1.24.0
 

@@ -4,7 +4,7 @@
 package intention
 
 import (
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 // FormatSource returns the namespace/name format for the source. This is

@@ -14,11 +14,11 @@ import (
 	osexec "os/exec"
 	"strconv"
 
+	"github.com/arenadata/consul/agent/exec"
+	"github.com/arenadata/consul/api/watch"
 	"github.com/armon/circbuf"
 	"github.com/hashicorp/go-cleanhttp"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/agent/exec"
-	"github.com/shulutkov/yellow-pages/api/watch"
 	"golang.org/x/net/context"
 )
 

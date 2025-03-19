@@ -5,7 +5,7 @@ package acl
 import (
 	context "context"
 
-	authmethod "github.com/shulutkov/yellow-pages/agent/consul/authmethod"
+	authmethod "github.com/arenadata/consul/agent/consul/authmethod"
 
 	mock "github.com/stretchr/testify/mock"
 )

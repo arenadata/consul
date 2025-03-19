@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 // Request contains the information necessary to reconcile a config entry.

@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 type indexerTestCase struct {

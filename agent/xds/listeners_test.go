@@ -10,19 +10,19 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/shulutkov/yellow-pages/agent/xds/testcommon"
+	"github.com/arenadata/consul/agent/xds/testcommon"
 	"github.com/stretchr/testify/assert"
 
 	envoy_listener_v3 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	testinf "github.com/mitchellh/go-testing-interface"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 )
 
 type listenerTestCase struct {

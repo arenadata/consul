@@ -24,8 +24,8 @@ import (
 	"github.com/mitchellh/cli"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/flags"
 
 	"github.com/hashicorp/hcdiag/command"
 )

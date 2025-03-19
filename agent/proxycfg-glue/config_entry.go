@@ -7,13 +7,13 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/rpcclient/configentry"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/submatview"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/agent/cache"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/rpcclient/configentry"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/submatview"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // CacheConfigEntry satisfies the proxycfg.ConfigEntry interface by sourcing

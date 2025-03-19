@@ -8,12 +8,12 @@ import (
 	"fmt"
 	"time"
 
+	hcpclient "github.com/arenadata/consul/agent/hcp/client"
+	"github.com/arenadata/consul/agent/hcp/config"
+	"github.com/arenadata/consul/agent/hcp/scada"
+	"github.com/arenadata/consul/agent/hcp/telemetry"
 	"github.com/armon/go-metrics"
 	"github.com/hashicorp/go-hclog"
-	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
-	"github.com/shulutkov/yellow-pages/agent/hcp/config"
-	"github.com/shulutkov/yellow-pages/agent/hcp/scada"
-	"github.com/shulutkov/yellow-pages/agent/hcp/telemetry"
 )
 
 // Deps contains the interfaces that the rest of Consul core depends on for HCP integration.

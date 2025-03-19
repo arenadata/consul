@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 	"github.com/stretchr/testify/require"
 )
 

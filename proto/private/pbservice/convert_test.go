@@ -14,7 +14,7 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	fuzz "github.com/google/gofuzz"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestNewCheckServiceNodeFromStructs_RoundTrip(t *testing.T) {

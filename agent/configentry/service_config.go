@@ -4,7 +4,7 @@
 package configentry
 
 import (
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // ResolvedServiceConfigSet is a wrapped set of raw cross-referenced config

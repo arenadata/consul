@@ -20,10 +20,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 // NamespaceHeaderName is the header set to specify which namespace the
@@ -251,7 +251,7 @@ func TestVaultCAProvider_ConfigureFailureGoroutineLeakCheck(t *testing.T) {
 			sb := strings.Builder{}
 			require.NoError(r, profile.WriteTo(&sb, 2))
 			require.NotContains(r, sb.String(),
-				"created by github.com/shulutkov/yellow-pages/agent/connect/ca.(*VaultProvider).Configure",
+				"created by github.com/arenadata/consul/agent/connect/ca.(*VaultProvider).Configure",
 				"found renewal goroutine leak")
 			// If this test is failing because you added a new goroutine to
 			// (*VaultProvider).Configure AND that goroutine should persist
@@ -275,7 +275,7 @@ func TestVaultCAProvider_ConfigureFailureGoroutineLeakCheck(t *testing.T) {
 			require.NoError(r, profile.WriteTo(&sb, 2))
 			t.Log(sb.String())
 			require.Contains(r, sb.String(),
-				"created by github.com/shulutkov/yellow-pages/agent/connect/ca.(*VaultProvider).Configure",
+				"created by github.com/arenadata/consul/agent/connect/ca.(*VaultProvider).Configure",
 				"expected renewal goroutine, got none")
 		})
 	})

@@ -4,10 +4,10 @@ package proxycfg
 
 import (
 	"context"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	xds "github.com/shulutkov/yellow-pages/agent/xds/config"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/structs"
+	xds "github.com/arenadata/consul/agent/xds/config"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/types"
 	"time"
 )
 

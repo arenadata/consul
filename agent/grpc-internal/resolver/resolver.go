@@ -10,8 +10,8 @@ import (
 
 	"google.golang.org/grpc/resolver"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/types"
 )
 
 // ServerResolverBuilder tracks the current server list and keeps any

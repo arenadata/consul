@@ -10,12 +10,12 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/types"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-uuid"
 	"github.com/shirou/gopsutil/v3/host"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/types"
 )
 
 // newNodeIDFromConfig will pull the persisted node ID, if any, or create a random one

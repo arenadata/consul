@@ -21,17 +21,17 @@ import (
 	"github.com/hashicorp/go-hclog"
 	uuid "github.com/hashicorp/go-uuid"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/sdk/freeport"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/sdk/freeport"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 // TestAgent encapsulates an Agent with a default configuration and

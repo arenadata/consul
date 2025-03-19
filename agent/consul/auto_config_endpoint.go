@@ -10,19 +10,19 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 
 	bexpr "github.com/hashicorp/go-bexpr"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/ssoauth"
-	"github.com/shulutkov/yellow-pages/agent/dns"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/template"
-	"github.com/shulutkov/yellow-pages/proto/private/pbautoconf"
-	"github.com/shulutkov/yellow-pages/proto/private/pbconfig"
-	"github.com/shulutkov/yellow-pages/proto/private/pbconnect"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul/authmethod/ssoauth"
+	"github.com/arenadata/consul/agent/dns"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/template"
+	"github.com/arenadata/consul/proto/private/pbautoconf"
+	"github.com/arenadata/consul/proto/private/pbconfig"
+	"github.com/arenadata/consul/proto/private/pbconnect"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 type AutoConfigOptions struct {

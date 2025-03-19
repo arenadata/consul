@@ -1,11 +1,11 @@
-module github.com/shulutkov/yellow-pages/internal/tools/protoc-gen-consul-rate-limit
+module github.com/arenadata/consul/internal/tools/protoc-gen-consul-rate-limit
 
 go 1.24.0
 
-replace github.com/shulutkov/yellow-pages/proto-public => ../../../proto-public
+replace github.com/arenadata/consul/proto-public => ../../../proto-public
 
 require (
-	github.com/shulutkov/yellow-pages/proto-public v0.0.0
+	github.com/arenadata/consul/proto-public v0.0.0
 	google.golang.org/protobuf v1.34.2
 )
 

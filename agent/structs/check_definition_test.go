@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/api"
 	fuzz "github.com/google/gofuzz"
 	"github.com/mitchellh/reflectwalk"
-	"github.com/shulutkov/yellow-pages/api"
 	"github.com/stretchr/testify/require"
 )
 

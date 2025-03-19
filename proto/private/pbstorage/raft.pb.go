@@ -13,8 +13,8 @@
 package pbstorage
 
 import (
-	_ "github.com/shulutkov/yellow-pages/proto-public/annotations/ratelimit"
-	pbresource "github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	_ "github.com/arenadata/consul/proto-public/annotations/ratelimit"
+	pbresource "github.com/arenadata/consul/proto-public/pbresource"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	emptypb "google.golang.org/protobuf/types/known/emptypb"

@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib"
 )
 
 const (

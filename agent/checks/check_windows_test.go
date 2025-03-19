@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/mock"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/agent/mock"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc"
 )

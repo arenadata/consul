@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/lib"
 )
 
 // Notify registers a desire to be updated about changes to a cache result.

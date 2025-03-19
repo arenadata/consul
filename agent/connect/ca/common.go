@@ -8,7 +8,7 @@ import (
 	"crypto/x509"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
+	"github.com/arenadata/consul/agent/connect"
 )
 
 func validateSetIntermediate(intermediatePEM, rootPEM string, spiffeID *connect.SpiffeIDSigning) error {

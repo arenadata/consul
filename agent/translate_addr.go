@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 type TranslateAddressAccept int

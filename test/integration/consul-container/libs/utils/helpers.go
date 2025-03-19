@@ -11,9 +11,9 @@ import (
 	"encoding/pem"
 	"fmt"
 
+	"github.com/arenadata/consul/api"
 	"github.com/go-jose/go-jose/v3"
 	"github.com/go-jose/go-jose/v3/jwt"
-	"github.com/shulutkov/yellow-pages/api"
 )
 
 func ApplyDefaultProxySettings(c *api.Client) (bool, error) {

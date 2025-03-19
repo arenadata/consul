@@ -4,11 +4,11 @@
 package extensionruntime
 
 import (
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 )
 
 func GetRuntimeConfigurations(cfgSnap *proxycfg.ConfigSnapshot) map[api.CompoundServiceName][]extensioncommon.RuntimeConfig {

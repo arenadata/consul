@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/consul"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/consul"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // /v1/connect/intentions

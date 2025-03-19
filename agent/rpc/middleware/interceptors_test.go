@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/agent/consul/rate"
 	"github.com/armon/go-metrics"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/agent/consul/rate"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

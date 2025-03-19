@@ -7,7 +7,7 @@
 package consul
 
 import (
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // Consul-enterprise only

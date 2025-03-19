@@ -4,7 +4,7 @@
 package types
 
 import (
-	"github.com/shulutkov/yellow-pages/internal/resource"
+	"github.com/arenadata/consul/internal/resource"
 )
 
 const (

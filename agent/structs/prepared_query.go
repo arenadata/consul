@@ -8,9 +8,9 @@ import (
 
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/types"
 )
 
 // QueryFailoverOptions sets options about how we fail over if there are no

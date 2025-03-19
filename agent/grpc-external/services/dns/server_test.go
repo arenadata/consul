@@ -15,8 +15,8 @@ import (
 	"github.com/stretchr/testify/suite"
 	"google.golang.org/grpc"
 
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/testutils"
-	"github.com/shulutkov/yellow-pages/proto-public/pbdns"
+	"github.com/arenadata/consul/agent/grpc-external/testutils"
+	"github.com/arenadata/consul/proto-public/pbdns"
 )
 
 var txtRR = []string{"Hello world"}

@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
+	"github.com/arenadata/consul/api"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
 )
 
 const (

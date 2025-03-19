@@ -6,8 +6,8 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/ttlcache"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/ttlcache"
 )
 
 // certData tracks all of the metadata about a leaf cert.
@@ -76,7 +76,7 @@ func (c *certData) Update(
 	// is _newer_ than the last good value. So if the err is nil then we need to
 	// reset to replace any _older_ errors and avoid them bubbling up. If the
 	// error is non-nil then we need to set it anyway and used to do it in the
-	// code below. See https://github.com/shulutkov/yellow-pages/issues/4480.
+	// code below. See https://github.com/arenadata/consul/issues/4480.
 	c.lastFetchErr = err
 
 	c.state = newState

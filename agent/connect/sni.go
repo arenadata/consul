@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 const (

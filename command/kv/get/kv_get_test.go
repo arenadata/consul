@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
 )
 
 func TestKVGetCommand_noTabs(t *testing.T) {

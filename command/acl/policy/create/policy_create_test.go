@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/testrpc"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/testrpc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

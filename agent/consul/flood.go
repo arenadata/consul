@@ -6,8 +6,8 @@ package consul
 import (
 	"time"
 
+	"github.com/arenadata/consul/agent/router"
 	"github.com/hashicorp/serf/serf"
-	"github.com/shulutkov/yellow-pages/agent/router"
 )
 
 // FloodNotify lets all the waiting Flood goroutines know that some change may

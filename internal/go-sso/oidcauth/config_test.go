@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/internal/go-sso/oidcauth/oidcauthtest"
 	"github.com/coreos/go-oidc/v3/oidc"
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/oidcauthtest"
 	"github.com/stretchr/testify/require"
 )
 

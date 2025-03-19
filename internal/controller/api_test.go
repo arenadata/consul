@@ -11,12 +11,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	svctest "github.com/shulutkov/yellow-pages/agent/grpc-external/services/resource/testing"
-	"github.com/shulutkov/yellow-pages/internal/controller"
-	"github.com/shulutkov/yellow-pages/internal/resource/demo"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	"github.com/shulutkov/yellow-pages/proto/private/prototest"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	svctest "github.com/arenadata/consul/agent/grpc-external/services/resource/testing"
+	"github.com/arenadata/consul/internal/controller"
+	"github.com/arenadata/consul/internal/resource/demo"
+	"github.com/arenadata/consul/proto-public/pbresource"
+	"github.com/arenadata/consul/proto/private/prototest"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestController_API(t *testing.T) {

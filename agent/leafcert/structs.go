@@ -7,9 +7,9 @@ import (
 
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // ConnectCALeafRequest is the cache.Request implementation for the

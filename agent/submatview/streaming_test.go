@@ -8,13 +8,13 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	"github.com/arenadata/consul/proto/private/pbcommon"
 
 	"google.golang.org/grpc"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/proto/private/pbservice"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/types"
 )
 
 // TestStreamingClient is a mock StreamingClient for testing that allows

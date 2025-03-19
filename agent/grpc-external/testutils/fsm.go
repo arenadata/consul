@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
 	"github.com/stretchr/testify/require"
 )
 

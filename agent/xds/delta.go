@@ -26,16 +26,16 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/shulutkov/yellow-pages/agent/envoyextensions"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/limiter"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/xds/extensionruntime"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/agent/envoyextensions"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/grpc-external/limiter"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/xds/extensionruntime"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/version"
 )
 
 var errOverwhelmed = status.Error(codes.ResourceExhausted, "this server has too many xDS streams open, please try another")

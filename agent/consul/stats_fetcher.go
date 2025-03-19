@@ -12,8 +12,8 @@ import (
 	"github.com/hashicorp/raft"
 	autopilot "github.com/hashicorp/raft-autopilot"
 
-	"github.com/shulutkov/yellow-pages/agent/pool"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/pool"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // StatsFetcher has two functions for autopilot. First, lets us fetch all the

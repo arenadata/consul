@@ -10,9 +10,9 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/iptables"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/iptables"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestRun_FlagValidation(t *testing.T) {

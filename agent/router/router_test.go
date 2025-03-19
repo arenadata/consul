@@ -15,10 +15,10 @@ import (
 	"github.com/hashicorp/serf/coordinate"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 
 	"github.com/stretchr/testify/require"
 )

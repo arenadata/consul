@@ -23,8 +23,8 @@ import (
 
 	"github.com/armon/go-metrics"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/version"
 
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-uuid"
@@ -34,23 +34,23 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/connect/ca"
-	"github.com/shulutkov/yellow-pages/agent/consul"
-	"github.com/shulutkov/yellow-pages/agent/debug"
-	"github.com/shulutkov/yellow-pages/agent/local"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/token"
-	tokenStore "github.com/shulutkov/yellow-pages/agent/token"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/connect/ca"
+	"github.com/arenadata/consul/agent/consul"
+	"github.com/arenadata/consul/agent/debug"
+	"github.com/arenadata/consul/agent/local"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/token"
+	tokenStore "github.com/arenadata/consul/agent/token"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
+	"github.com/arenadata/consul/types"
 )
 
 func createACLTokenWithAgentReadPolicy(t *testing.T, srv *HTTPHandlers) string {
@@ -1773,7 +1773,7 @@ func (s *delegateConfigReloadShim) ReloadConfig(cfg consul.ReloadableConfig) err
 }
 
 // TestAgent_ReloadDoesNotTriggerWatch Ensure watches not triggered after reload
-// see https://github.com/shulutkov/yellow-pages/issues/7446
+// see https://github.com/arenadata/consul/issues/7446
 func TestAgent_ReloadDoesNotTriggerWatch(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")
@@ -2611,7 +2611,7 @@ func TestAgent_RegisterCheck_UDP(t *testing.T) {
 }
 
 // This verifies all the forms of the new args-style check that we need to
-// support as a result of https://github.com/shulutkov/yellow-pages/issues/3587.
+// support as a result of https://github.com/arenadata/consul/issues/3587.
 func TestAgent_RegisterCheck_Scripts(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")
@@ -7062,7 +7062,7 @@ func TestAgentConnectCALeafCert_goodNotLocal(t *testing.T) {
 		require.Equal(t, issued, issued2)
 	}
 
-	// Test Blocking - see https://github.com/shulutkov/yellow-pages/issues/4462
+	// Test Blocking - see https://github.com/arenadata/consul/issues/4462
 	{
 		// Fetch it again
 		resp := httptest.NewRecorder()
@@ -7114,7 +7114,7 @@ func TestAgentConnectCALeafCert_goodNotLocal(t *testing.T) {
 }
 
 func TestAgentConnectCALeafCert_nonBlockingQuery_after_blockingQuery_shouldNotBlock(t *testing.T) {
-	// see: https://github.com/shulutkov/yellow-pages/issues/12048
+	// see: https://github.com/arenadata/consul/issues/12048
 
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

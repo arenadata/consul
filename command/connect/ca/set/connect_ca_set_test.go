@@ -13,10 +13,10 @@ import (
 
 	"github.com/mitchellh/cli"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/agent/connect/ca"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/agent/connect/ca"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestConnectCASetConfigCommand_noTabs(t *testing.T) {

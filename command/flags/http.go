@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 type HTTPFlags struct {

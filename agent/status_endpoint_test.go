@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
 	"github.com/stretchr/testify/require"
 )
 

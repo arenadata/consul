@@ -6,7 +6,7 @@ package pbcommon
 import (
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // IsRead is always true for QueryOption

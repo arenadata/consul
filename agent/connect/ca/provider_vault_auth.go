@@ -9,7 +9,7 @@ import (
 
 	"github.com/hashicorp/vault/api"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // VaultAuthenticator defines the interface for logging into Vault using an auth method.

@@ -10,7 +10,7 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 // BoundRoute indicates a route that has parent gateways which

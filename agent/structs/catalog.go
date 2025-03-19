@@ -4,9 +4,9 @@
 package structs
 
 import (
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/types"
 )
 
 // These are used to manage the built-in "serfHealth" check that's attached

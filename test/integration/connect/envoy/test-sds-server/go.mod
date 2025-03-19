@@ -5,7 +5,7 @@ go 1.24.0
 require (
 	github.com/envoyproxy/go-control-plane v0.13.0
 	github.com/hashicorp/go-hclog v1.6.3
-	github.com/shulutkov/yellow-pages v0.0.0
+	github.com/arenadata/consul v0.0.0
 	google.golang.org/grpc v1.65.0
 )
 

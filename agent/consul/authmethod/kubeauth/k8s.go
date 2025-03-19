@@ -20,8 +20,8 @@ import (
 	client_rest "k8s.io/client-go/rest"
 	cert "k8s.io/client-go/util/cert"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/consul/authmethod"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func init() {

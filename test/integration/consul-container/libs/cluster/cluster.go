@@ -15,10 +15,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
 	"github.com/hashicorp/serf/serf"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
 
 	goretry "github.com/avast/retry-go"
 	"github.com/stretchr/testify/require"

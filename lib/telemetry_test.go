@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/logging"
 
 	"github.com/armon/go-metrics"
 	"github.com/hashicorp/go-multierror"

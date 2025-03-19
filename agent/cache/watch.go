@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/lib"
 	"google.golang.org/protobuf/proto"
 )
 

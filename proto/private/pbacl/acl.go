@@ -4,7 +4,7 @@
 package pbacl
 
 import (
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 )
 
 func (a *ACLLink) ToAPI() api.ACLLink {

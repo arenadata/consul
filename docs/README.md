@@ -58,16 +58,16 @@ contain other important source related to Consul.
 * [grafana] contains the source for a [Grafana dashboard] that can be used to
   monitor Consul.
 
-[ui]: https://github.com/shulutkov/yellow-pages/tree/main/ui
-[website]: https://github.com/shulutkov/yellow-pages/tree/main/website
-[.github]: https://github.com/shulutkov/yellow-pages/tree/main/.github
-[.changelog]: https://github.com/shulutkov/yellow-pages/tree/main/.changelog
+[ui]: https://github.com/arenadata/consul/tree/main/ui
+[website]: https://github.com/arenadata/consul/tree/main/website
+[.github]: https://github.com/arenadata/consul/tree/main/.github
+[.changelog]: https://github.com/arenadata/consul/tree/main/.changelog
 [hashicorp/go-changelog]: https://github.com/hashicorp/go-changelog
-[CHANGELOG.md]: https://github.com/shulutkov/yellow-pages/blob/main/CHANGELOG.md
-[build-support]: https://github.com/shulutkov/yellow-pages/tree/main/build-support
-[GNUmakefile]: https://github.com/shulutkov/yellow-pages/tree/main/GNUmakefile
+[CHANGELOG.md]: https://github.com/arenadata/consul/blob/main/CHANGELOG.md
+[build-support]: https://github.com/arenadata/consul/tree/main/build-support
+[GNUmakefile]: https://github.com/arenadata/consul/tree/main/GNUmakefile
 [Grafana dashboard]: https://grafana.com/grafana/dashboards
-[grafana]: https://github.com/shulutkov/yellow-pages/tree/main/grafana
+[grafana]: https://github.com/arenadata/consul/tree/main/grafana
 
 
 ## Contributing to these docs

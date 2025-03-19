@@ -7,9 +7,9 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/hashicorp/raft"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -14,8 +14,8 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestAE_scaleFactor(t *testing.T) {

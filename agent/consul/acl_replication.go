@@ -13,7 +13,7 @@ import (
 	metrics "github.com/armon/go-metrics"
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 const (

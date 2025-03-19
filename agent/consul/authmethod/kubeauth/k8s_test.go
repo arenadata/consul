@@ -8,10 +8,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul/authmethod"
+	"github.com/arenadata/consul/agent/structs"
 	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
-	"github.com/shulutkov/yellow-pages/agent/structs"
 	"github.com/stretchr/testify/require"
 )
 

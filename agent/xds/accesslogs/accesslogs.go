@@ -13,8 +13,8 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/structpb"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib"
 )
 
 const (

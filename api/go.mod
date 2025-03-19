@@ -1,8 +1,8 @@
-module github.com/shulutkov/yellow-pages/api
+module github.com/arenadata/consul/api
 
 go 1.24.0
 
-replace github.com/shulutkov/yellow-pages/sdk => ../sdk
+replace github.com/arenadata/consul/sdk => ../sdk
 
 require (
 	github.com/google/go-cmp v0.5.9
@@ -13,7 +13,7 @@ require (
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/hashicorp/serf v0.10.1
 	github.com/mitchellh/mapstructure v1.5.0
-	github.com/shulutkov/yellow-pages/sdk v0.0.0
+	github.com/arenadata/consul/sdk v0.0.0
 	github.com/stretchr/testify v1.8.3
 	golang.org/x/exp v0.0.0-20230321023759-10a507213a29
 )

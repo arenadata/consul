@@ -6,9 +6,9 @@ package read
 import (
 	"testing"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
 	"github.com/stretchr/testify/require"
 )
 

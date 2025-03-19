@@ -18,8 +18,8 @@ import (
 	"golang.org/x/oauth2"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/agent/hcp/telemetry"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/agent/hcp/telemetry"
+	"github.com/arenadata/consul/version"
 )
 
 const (

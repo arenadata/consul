@@ -14,11 +14,11 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/agent/exec"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/flags"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/agent/exec"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/flags"
 )
 
 const (

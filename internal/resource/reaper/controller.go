@@ -7,9 +7,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/internal/controller"
-	"github.com/shulutkov/yellow-pages/internal/resource"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/controller"
+	"github.com/arenadata/consul/internal/resource"
+	"github.com/arenadata/consul/proto-public/pbresource"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

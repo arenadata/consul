@@ -8,11 +8,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestAgent_sidecarServiceFromNodeService(t *testing.T) {

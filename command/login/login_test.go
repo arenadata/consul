@@ -14,14 +14,14 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/kubeauth"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/testauth"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/acl"
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/oidcauthtest"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/agent/consul/authmethod/kubeauth"
+	"github.com/arenadata/consul/agent/consul/authmethod/testauth"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/acl"
+	"github.com/arenadata/consul/internal/go-sso/oidcauth/oidcauthtest"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestLoginCommand_noTabs(t *testing.T) {

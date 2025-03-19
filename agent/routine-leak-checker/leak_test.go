@@ -12,10 +12,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/testrpc"
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/testrpc"
+	"github.com/arenadata/consul/tlsutil"
 )
 
 func testTLSCertificates(serverName string) (cert string, key string, cacert string, err error) {
@@ -109,7 +109,7 @@ func TestAgentLeaks_Server(t *testing.T) {
 			goleak.VerifyTestMain(m,
 				goleak.IgnoreTopFunction("k8s.io/klog.(*loggingT).flushDaemon"),
 				goleak.IgnoreTopFunction("go.opencensus.io/stats/view.(*worker).start"),
-				goleak.IgnoreTopFunction("github.com/shulutkov/yellow-pages/sdk/freeport.checkFreedPorts"),
+				goleak.IgnoreTopFunction("github.com/arenadata/consul/sdk/freeport.checkFreedPorts"),
 			)
 		}
 	*/
@@ -117,7 +117,7 @@ func TestAgentLeaks_Server(t *testing.T) {
 	defer goleak.VerifyNone(t,
 		goleak.IgnoreTopFunction("k8s.io/klog.(*loggingT).flushDaemon"),
 		goleak.IgnoreTopFunction("go.opencensus.io/stats/view.(*worker).start"),
-		goleak.IgnoreTopFunction("github.com/shulutkov/yellow-pages/sdk/freeport.checkFreedPorts"),
+		goleak.IgnoreTopFunction("github.com/arenadata/consul/sdk/freeport.checkFreedPorts"),
 	)
 
 	primaryServer := setupPrimaryServer(t)

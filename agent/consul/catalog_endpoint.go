@@ -18,13 +18,13 @@ import (
 	"github.com/hashicorp/go-uuid"
 	hashstructure_v2 "github.com/mitchellh/hashstructure/v2"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/ipaddr"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/ipaddr"
+	"github.com/arenadata/consul/types"
 )
 
 var CatalogCounters = []prometheus.CounterDefinition{

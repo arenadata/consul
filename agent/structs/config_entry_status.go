@@ -8,8 +8,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/api"
 )
 
 // ResourceReference is a reference to a ConfigEntry

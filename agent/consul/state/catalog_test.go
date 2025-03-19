@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
@@ -22,11 +22,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib/stringslice"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib/stringslice"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 )
 
 func makeRandomNodeID(t *testing.T) types.NodeID {
@@ -1266,7 +1266,7 @@ func TestStateStore_EnsureNode(t *testing.T) {
 	}
 
 	// All the remaining tests are deprecated, please remove them on next Consul major release
-	// See https://github.com/shulutkov/yellow-pages/pull/3983 for context
+	// See https://github.com/arenadata/consul/pull/3983 for context
 
 	// Deprecated behavior is following
 	deprecatedEnsureNodeWithoutIDCanRegister(t, s, "new-node-without-id", 13)
@@ -3978,7 +3978,7 @@ func TestStateStore_ConnectQueryBlocking(t *testing.T) {
 			wantAfterWatchSetSize: 3,
 		},
 		{
-			// See https://github.com/shulutkov/yellow-pages/issues/5506. The issue is cause
+			// See https://github.com/arenadata/consul/issues/5506. The issue is cause
 			// if the target service exists and is registered meaning it has a
 			// service-specific index. This index is then used for the connect query
 			// even though it is not updated by changes to the actual proxy or it's
@@ -4008,7 +4008,7 @@ func TestStateStore_ConnectQueryBlocking(t *testing.T) {
 			wantAfterWatchSetSize: 3,
 		},
 		{
-			// See https://github.com/shulutkov/yellow-pages/issues/5506. This is the edge
+			// See https://github.com/arenadata/consul/issues/5506. This is the edge
 			// case that the simple solution wouldn't catch.
 			name: "unblocks on different service name proxy-service registration when service is present",
 			setupFn: func(s *Store) {

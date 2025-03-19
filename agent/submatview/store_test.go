@@ -12,13 +12,13 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/lib/ttlcache"
-	"github.com/shulutkov/yellow-pages/proto/private/pbcommon"
-	"github.com/shulutkov/yellow-pages/proto/private/pbservice"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/lib/ttlcache"
+	"github.com/arenadata/consul/proto/private/pbcommon"
+	"github.com/arenadata/consul/proto/private/pbservice"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 func TestStore_Get(t *testing.T) {

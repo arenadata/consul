@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"fortio.org/fortio/fgrpc"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"

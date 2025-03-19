@@ -4,7 +4,7 @@ WORKDIR /data
 
 ARG GOARCH=amd64
 
-ENTRYPOINT ["/yp"]
+ENTRYPOINT ["/consul"]
 CMD ["agent"]
 
-COPY pkg/bin/linux_${GOARCH}/yp /
+COPY pkg/bin/linux_${GOARCH}/consul /

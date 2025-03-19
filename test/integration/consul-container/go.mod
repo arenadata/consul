@@ -1,4 +1,4 @@
-module github.com/shulutkov/yellow-pages/test/integration/consul-container
+module github.com/arenadata/consul/test/integration/consul-container
 
 go 1.24.0
 
@@ -17,9 +17,9 @@ require (
 	github.com/mitchellh/copystructure v1.2.0
 	github.com/otiai10/copy v1.10.0
 	github.com/pkg/errors v0.9.1
-	github.com/shulutkov/yellow-pages/api v0.0.0
-	github.com/shulutkov/yellow-pages/envoyextensions v0.0.0
-	github.com/shulutkov/yellow-pages/sdk v0.0.0
+	github.com/arenadata/consul/api v0.0.0
+	github.com/arenadata/consul/envoyextensions v0.0.0
+	github.com/arenadata/consul/sdk v0.0.0
 	github.com/stretchr/testify v1.9.0
 	github.com/teris-io/shortid v0.0.0-20220617161101-71ec9f2aa569
 	github.com/testcontainers/testcontainers-go v0.22.0
@@ -106,9 +106,9 @@ require (
 
 replace (
 	github.com/hashicorp/consul => ../../..
-	github.com/shulutkov/yellow-pages/api => ../../../api
-	github.com/shulutkov/yellow-pages/envoyextensions => ../../../envoyextensions
-	github.com/shulutkov/yellow-pages/proto-public => ../../../proto-public
-	github.com/shulutkov/yellow-pages/sdk => ../../../sdk
-	github.com/shulutkov/yellow-pages/testing/deployer => ../../../testing/deployer
+	github.com/arenadata/consul/api => ../../../api
+	github.com/arenadata/consul/envoyextensions => ../../../envoyextensions
+	github.com/arenadata/consul/proto-public => ../../../proto-public
+	github.com/arenadata/consul/sdk => ../../../sdk
+	github.com/arenadata/consul/testing/deployer => ../../../testing/deployer
 )

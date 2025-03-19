@@ -17,10 +17,10 @@ import (
 
 	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 )
 
 func TestNormalizeGenerateHash(t *testing.T) {

@@ -6,7 +6,7 @@ package token
 import (
 	"github.com/mitchellh/cli"
 
-	"github.com/shulutkov/yellow-pages/command/flags"
+	"github.com/arenadata/consul/command/flags"
 )
 
 func New() *cmd {

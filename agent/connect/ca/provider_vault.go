@@ -18,11 +18,11 @@ import (
 	vaultapi "github.com/hashicorp/vault/api"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/lib/decode"
-	"github.com/shulutkov/yellow-pages/lib/retry"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/lib/decode"
+	"github.com/arenadata/consul/lib/retry"
 )
 
 const (

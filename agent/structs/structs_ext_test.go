@@ -6,8 +6,8 @@ package structs_test
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 	"github.com/stretchr/testify/require"
 )
 

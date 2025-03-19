@@ -10,8 +10,8 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/internal/storage"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/storage"
+	"github.com/arenadata/consul/proto-public/pbresource"
 )
 
 // NewBackend returns a purely in-memory storage backend. It's suitable for

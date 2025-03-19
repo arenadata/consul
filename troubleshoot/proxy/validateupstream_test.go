@@ -8,8 +8,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
 	envoy_admin_v3 "github.com/envoyproxy/go-control-plane/envoy/admin/v3"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
 	"github.com/stretchr/testify/require"
 )
 

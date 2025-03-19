@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	libassert "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/assert"
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	libtopology "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
+	libassert "github.com/arenadata/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	libtopology "github.com/arenadata/consul/test/integration/consul-container/libs/topology"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
 )
 
 // TestACL_NodeToken test verifies the following after upgrade

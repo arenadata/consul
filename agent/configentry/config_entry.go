@@ -4,8 +4,8 @@
 package configentry
 
 import (
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // KindName is a value type useful for maps. You can use:

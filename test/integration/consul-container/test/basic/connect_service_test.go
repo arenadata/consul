@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"testing"
 
-	libassert "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/assert"
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
+	libassert "github.com/arenadata/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/topology"
 )
 
 // TestBasicConnectService Summary

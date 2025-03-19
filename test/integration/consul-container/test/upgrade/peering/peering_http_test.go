@@ -11,13 +11,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	libassert "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/assert"
-	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
-	libtopology "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/utils"
-	"github.com/shulutkov/yellow-pages/test/integration/consul-container/test/upgrade"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	libassert "github.com/arenadata/consul/test/integration/consul-container/libs/assert"
+	libservice "github.com/arenadata/consul/test/integration/consul-container/libs/service"
+	libtopology "github.com/arenadata/consul/test/integration/consul-container/libs/topology"
+	"github.com/arenadata/consul/test/integration/consul-container/libs/utils"
+	"github.com/arenadata/consul/test/integration/consul-container/test/upgrade"
 )
 
 func TestPeering_Basic(t *testing.T) {

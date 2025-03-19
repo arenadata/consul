@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/hcl"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/shulutkov/yellow-pages/lib/decode"
+	"github.com/arenadata/consul/lib/decode"
 )
 
 // Source parses configuration from some source.

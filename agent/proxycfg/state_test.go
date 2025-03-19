@@ -14,16 +14,16 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/consul/discoverychain"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	apimod "github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
-	"github.com/shulutkov/yellow-pages/proto/private/prototest"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/acl"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/consul/discoverychain"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/structs"
+	apimod "github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/proto/private/pbpeering"
+	"github.com/arenadata/consul/proto/private/prototest"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestStateChanged(t *testing.T) {

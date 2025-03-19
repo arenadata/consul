@@ -19,8 +19,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/logging"
 )
 
 const (

@@ -6,9 +6,9 @@ package config
 import (
 	"crypto/tls"
 
+	"github.com/arenadata/consul/types"
 	hcpcfg "github.com/hashicorp/hcp-sdk-go/config"
 	"github.com/hashicorp/hcp-sdk-go/resource"
-	"github.com/shulutkov/yellow-pages/types"
 )
 
 // CloudConfig defines configuration for connecting to HCP services

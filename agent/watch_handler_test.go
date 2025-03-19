@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/api/watch"
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/api/watch"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

@@ -28,17 +28,17 @@ import (
 
 	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/blockingquery"
-	"github.com/shulutkov/yellow-pages/agent/consul/rate"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/wanfed"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/pool"
-	"github.com/shulutkov/yellow-pages/agent/rpc/middleware"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/blockingquery"
+	"github.com/arenadata/consul/agent/consul/rate"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/wanfed"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/pool"
+	"github.com/arenadata/consul/agent/rpc/middleware"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/logging"
 )
 
 var RPCCounters = []prometheus.CounterDefinition{

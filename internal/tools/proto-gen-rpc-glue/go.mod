@@ -1,4 +1,4 @@
-module github.com/shulutkov/yellow-pages/internal/tools/proto-gen-rpc-glue
+module github.com/arenadata/consul/internal/tools/proto-gen-rpc-glue
 
 go 1.24.0
 

@@ -13,11 +13,11 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/mitchellh/mapstructure"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/config"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/command/helpers"
-	"github.com/shulutkov/yellow-pages/lib/decode"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/config"
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/command/helpers"
+	"github.com/arenadata/consul/lib/decode"
 )
 
 func New(ui cli.Ui) *cmd {

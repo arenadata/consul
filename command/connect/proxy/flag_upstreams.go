@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/connect/proxy"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/connect/proxy"
 )
 
 // FlagUpstreams implements the flag.Value interface and allows specifying

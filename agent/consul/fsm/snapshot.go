@@ -12,10 +12,10 @@ import (
 	"github.com/hashicorp/go-raftchunking"
 	"github.com/hashicorp/raft"
 
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
+	raftstorage "github.com/arenadata/consul/internal/storage/raft"
 	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	raftstorage "github.com/shulutkov/yellow-pages/internal/storage/raft"
 )
 
 var cePersister, entPersister persister

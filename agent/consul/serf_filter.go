@@ -6,7 +6,7 @@ package consul
 import (
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 type LANMemberFilter struct {

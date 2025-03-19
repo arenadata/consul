@@ -9,17 +9,17 @@ import (
 	"strconv"
 	"time"
 
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/proto/private/pboperator"
 	"github.com/armon/go-metrics"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/proto/private/pboperator"
 
 	multierror "github.com/hashicorp/go-multierror"
 	"github.com/hashicorp/raft"
 	autopilot "github.com/hashicorp/raft-autopilot"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
 )
 
 // OperatorRaftConfiguration is used to inspect the current Raft configuration.

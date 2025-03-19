@@ -9,9 +9,9 @@ import (
 	"math/rand"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/ipaddr"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/ipaddr"
 )
 
 // Resolver is the interface implemented by a service discovery mechanism to get

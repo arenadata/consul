@@ -14,11 +14,11 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/internal/storage"
-	"github.com/shulutkov/yellow-pages/internal/storage/inmem"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/storage"
+	"github.com/arenadata/consul/internal/storage/inmem"
+	"github.com/arenadata/consul/proto-public/pbresource"
 
-	pbstorage "github.com/shulutkov/yellow-pages/proto/private/pbstorage"
+	pbstorage "github.com/arenadata/consul/proto/private/pbstorage"
 )
 
 // NewBackend returns a storage backend that uses Raft for durable persistence
@@ -45,7 +45,7 @@ import (
 // TLS).
 //
 // For more information, see here:
-// https://github.com/shulutkov/yellow-pages/tree/main/docs/resources#raft-storage-backend
+// https://github.com/arenadata/consul/tree/main/docs/resources#raft-storage-backend
 //
 // You must call Run before using the backend.
 func NewBackend(h Handle, l hclog.Logger) (*Backend, error) {

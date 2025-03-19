@@ -4,7 +4,7 @@
 package pbcommon
 
 import (
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 	"google.golang.org/protobuf/types/known/structpb"
 )
 

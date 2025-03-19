@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 	"github.com/stretchr/testify/require"
 )
 

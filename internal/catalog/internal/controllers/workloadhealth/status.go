@@ -1,9 +1,9 @@
 package workloadhealth
 
 import (
-	"github.com/shulutkov/yellow-pages/internal/catalog/internal/controllers/nodehealth"
-	pbcatalog "github.com/shulutkov/yellow-pages/proto-public/pbcatalog/v1alpha1"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/internal/catalog/internal/controllers/nodehealth"
+	pbcatalog "github.com/arenadata/consul/proto-public/pbcatalog/v1alpha1"
+	"github.com/arenadata/consul/proto-public/pbresource"
 )
 
 const (

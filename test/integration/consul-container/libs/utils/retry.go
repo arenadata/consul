@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-// NOTE: copied from github.com/shulutkov/yellow-pages/lib/retry to avoid a heavy dependency
+// NOTE: copied from github.com/arenadata/consul/lib/retry to avoid a heavy dependency
 // NOTE2: Jitter was removed
 
 // Waiter records the number of failures and performs exponential backoff when

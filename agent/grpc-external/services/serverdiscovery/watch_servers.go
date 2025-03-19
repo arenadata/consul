@@ -11,11 +11,11 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/autopilotevents"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto-public/pbserverdiscovery"
+	"github.com/arenadata/consul/agent/consul/autopilotevents"
+	"github.com/arenadata/consul/agent/consul/stream"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto-public/pbserverdiscovery"
 )
 
 // WatchServers provides a stream on which you can receive the list of servers

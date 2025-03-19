@@ -4,12 +4,12 @@
 package autoconf
 
 import (
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbautoconf"
-	"github.com/shulutkov/yellow-pages/proto/private/pbconfig"
-	"github.com/shulutkov/yellow-pages/proto/private/pbconnect"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbautoconf"
+	"github.com/arenadata/consul/proto/private/pbconfig"
+	"github.com/arenadata/consul/proto/private/pbconnect"
+	"github.com/arenadata/consul/types"
 )
 
 // translateAgentConfig is meant to take in a proto/pbconfig.Config type

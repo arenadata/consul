@@ -7,7 +7,7 @@
 package structs
 
 import (
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 func (ixn *Intention) SourceEnterpriseMeta() *acl.EnterpriseMeta {

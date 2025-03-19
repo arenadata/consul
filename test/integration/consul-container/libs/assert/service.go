@@ -16,9 +16,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	libservice "github.com/arenadata/consul/test/integration/consul-container/libs/service"
 )
 
 const (

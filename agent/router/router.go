@@ -12,11 +12,11 @@ import (
 	"github.com/hashicorp/serf/coordinate"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/types"
 )
 
 // Router keeps track of a set of network areas and their associated Serf

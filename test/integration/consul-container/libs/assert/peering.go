@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 // PeeringStatus verifies the peering connection is the specified state with a default retry.

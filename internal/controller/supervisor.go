@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/lib/retry"
+	"github.com/arenadata/consul/lib/retry"
 )
 
 // flapThreshold is the minimum amount of time between restarts for us *not* to

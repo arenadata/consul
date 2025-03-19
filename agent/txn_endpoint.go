@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/types"
 )
 
 const (
@@ -276,7 +276,7 @@ func (s *HTTPHandlers) convertOps(resp http.ResponseWriter, req *http.Request) (
 			// Check if the internal duration fields are set as well as the normal ones. This is
 			// to be backwards compatible with a bug where the internal duration fields were being
 			// deserialized from instead of the correct fields.
-			// See https://github.com/shulutkov/yellow-pages/issues/5477 for more details.
+			// See https://github.com/arenadata/consul/issues/5477 for more details.
 			interval := check.Definition.IntervalDuration
 			if dur := time.Duration(check.Definition.Interval); dur != 0 {
 				interval = dur

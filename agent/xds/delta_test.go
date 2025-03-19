@@ -25,16 +25,16 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/limiter"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/grpc-external/limiter"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/version"
 )
 
 // NOTE: For these tests, prefer not using xDS protobuf "factory" methods if
@@ -539,7 +539,7 @@ func TestServer_DeltaAggregatedResources_v3_BasicProtocol_HTTP2(t *testing.T) {
 }
 
 func TestServer_DeltaAggregatedResources_v3_SlowEndpointPopulation(t *testing.T) {
-	// This illustrates a scenario related to https://github.com/shulutkov/yellow-pages/issues/10563
+	// This illustrates a scenario related to https://github.com/arenadata/consul/issues/10563
 
 	aclResolve := func(id string) (acl.Authorizer, error) {
 		// Allow all

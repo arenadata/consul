@@ -12,6 +12,7 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/arenadata/consul/logging"
 	core "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	tls "github.com/envoyproxy/go-control-plane/envoy/extensions/transport_sockets/tls/v3"
 	discovery "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
@@ -20,7 +21,6 @@ import (
 	cache "github.com/envoyproxy/go-control-plane/pkg/cache/v3"
 	xds "github.com/envoyproxy/go-control-plane/pkg/server/v3"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/logging"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/grpclog"
 )

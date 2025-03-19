@@ -8,7 +8,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/proto-public/pbresource"
 )
 
 // Wildcard can be given as Tenancy fields in List and Watch calls, to enumerate

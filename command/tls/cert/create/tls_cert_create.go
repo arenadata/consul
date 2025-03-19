@@ -11,11 +11,11 @@ import (
 	"os"
 	"strings"
 
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/command/tls"
+	"github.com/arenadata/consul/lib/file"
+	"github.com/arenadata/consul/tlsutil"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/command/tls"
-	"github.com/shulutkov/yellow-pages/lib/file"
-	"github.com/shulutkov/yellow-pages/tlsutil"
 )
 
 func New(ui cli.Ui) *cmd {

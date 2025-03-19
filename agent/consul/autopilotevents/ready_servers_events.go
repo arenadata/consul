@@ -14,11 +14,11 @@ import (
 	"github.com/hashicorp/go-memdb"
 	autopilot "github.com/hashicorp/raft-autopilot"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/types"
 )
 
 const (

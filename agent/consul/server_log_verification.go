@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/raft"
 	"github.com/hashicorp/raft-wal/verifier"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 var _ verifier.IsCheckpointFn = isLogVerifyCheckpoint

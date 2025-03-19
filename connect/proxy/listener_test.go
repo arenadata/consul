@@ -8,15 +8,15 @@ import (
 	"net"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/connect"
+	"github.com/arenadata/consul/connect"
 
 	"github.com/stretchr/testify/require"
 
-	agConnect "github.com/shulutkov/yellow-pages/agent/connect"
-	agMetrics "github.com/shulutkov/yellow-pages/agent/metrics"
-	"github.com/shulutkov/yellow-pages/ipaddr"
-	"github.com/shulutkov/yellow-pages/sdk/freeport"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	agConnect "github.com/arenadata/consul/agent/connect"
+	agMetrics "github.com/arenadata/consul/agent/metrics"
+	"github.com/arenadata/consul/ipaddr"
+	"github.com/arenadata/consul/sdk/freeport"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestPublicListener(t *testing.T) {

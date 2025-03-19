@@ -14,15 +14,15 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg/internal/watch"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/maps"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/proxycfg/internal/watch"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/maps"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 type handlerMeshGateway struct {

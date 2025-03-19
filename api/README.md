@@ -2,7 +2,7 @@
 
 This package provides the `api` package which provides programmatic access to the full Consul API.
 
-The full documentation is available on [Godoc](https://godoc.org/github.com/shulutkov/yellow-pages/api).
+The full documentation is available on [Godoc](https://godoc.org/github.com/arenadata/consul/api).
 
 ## Usage
 
@@ -25,7 +25,7 @@ package main
 import (
 	"fmt"
 
-	capi "github.com/shulutkov/yellow-pages/api"
+	capi "github.com/arenadata/consul/api"
 )
 
 func main() {

@@ -22,8 +22,8 @@ import (
 	"github.com/hashicorp/yamux"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 )
 
 func TestConfigurator_IncomingConfig_Common(t *testing.T) {

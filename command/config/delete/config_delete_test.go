@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

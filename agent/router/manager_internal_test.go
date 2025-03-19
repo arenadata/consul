@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
+	"github.com/arenadata/consul/agent/metadata"
 )
 
 var (

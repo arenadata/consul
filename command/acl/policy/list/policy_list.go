@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/arenadata/consul/command/acl/policy"
+	"github.com/arenadata/consul/command/flags"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/command/acl/policy"
-	"github.com/shulutkov/yellow-pages/command/flags"
 )
 
 func New(ui cli.Ui) *cmd {

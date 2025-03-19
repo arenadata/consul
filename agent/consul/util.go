@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/go-version"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
+	"github.com/arenadata/consul/agent/metadata"
 )
 
 // CanServersUnderstandProtocol checks to see if all the servers in the given

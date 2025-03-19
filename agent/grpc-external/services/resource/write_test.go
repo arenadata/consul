@@ -15,12 +15,12 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/internal/resource/demo"
-	"github.com/shulutkov/yellow-pages/internal/storage"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
-	pbdemov1 "github.com/shulutkov/yellow-pages/proto/private/pbdemo/v1"
-	pbdemov2 "github.com/shulutkov/yellow-pages/proto/private/pbdemo/v2"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/internal/resource/demo"
+	"github.com/arenadata/consul/internal/storage"
+	"github.com/arenadata/consul/proto-public/pbresource"
+	pbdemov1 "github.com/arenadata/consul/proto/private/pbdemo/v1"
+	pbdemov2 "github.com/arenadata/consul/proto/private/pbdemo/v2"
 )
 
 func TestWrite_InputValidation(t *testing.T) {

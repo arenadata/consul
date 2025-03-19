@@ -20,7 +20,7 @@ import (
 
 	"net/url"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
+	"github.com/arenadata/consul/agent/connect"
 )
 
 // GenerateSerialNumber returns random bigint generated with crypto/rand

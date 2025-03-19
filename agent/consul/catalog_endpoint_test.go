@@ -18,16 +18,16 @@ import (
 	msgpackrpc "github.com/hashicorp/consul-net-rpc/net-rpc-msgpackrpc"
 	"github.com/hashicorp/consul-net-rpc/net/rpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/acl/resolver"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/lib/stringslice"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
-	"github.com/shulutkov/yellow-pages/testrpc"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/acl/resolver"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/lib/stringslice"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
+	"github.com/arenadata/consul/testrpc"
+	"github.com/arenadata/consul/types"
 )
 
 func TestCatalog_Register(t *testing.T) {
@@ -1905,7 +1905,7 @@ func TestCatalog_ListServiceNodes_ByAddress(t *testing.T) {
 }
 
 // TestCatalog_ListServiceNodes_ServiceTags_V1_2_3Compat asserts the compatibility between <=v1.2.3 agents and >=v1.3.0 servers
-// see https://github.com/shulutkov/yellow-pages/issues/4922
+// see https://github.com/arenadata/consul/issues/4922
 func TestCatalog_ListServiceNodes_ServiceTags_V1_2_3Compat(t *testing.T) {
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

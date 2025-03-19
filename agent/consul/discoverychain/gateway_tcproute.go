@@ -3,7 +3,7 @@
 
 package discoverychain
 
-import "github.com/shulutkov/yellow-pages/agent/structs"
+import "github.com/arenadata/consul/agent/structs"
 
 func synthesizeTCPRouteDiscoveryChain(route structs.TCPRouteConfigEntry) []structs.IngressService {
 	services := make([]structs.IngressService, 0, len(route.Services))

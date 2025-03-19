@@ -15,9 +15,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/exec"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/agent/exec"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
 )
 
 const (

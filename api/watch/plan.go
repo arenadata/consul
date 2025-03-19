@@ -13,7 +13,7 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	consulapi "github.com/shulutkov/yellow-pages/api"
+	consulapi "github.com/arenadata/consul/api"
 )
 
 const (

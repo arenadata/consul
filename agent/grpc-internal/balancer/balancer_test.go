@@ -26,9 +26,9 @@ import (
 
 	"github.com/hashicorp/go-uuid"
 
-	"github.com/shulutkov/yellow-pages/agent/grpc-middleware/testutil/testservice"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/agent/grpc-middleware/testutil/testservice"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 func TestBalancer(t *testing.T) {

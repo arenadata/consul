@@ -9,7 +9,7 @@ package state
 import (
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func (nst nodeServiceTuple) nodeTuple() nodeTuple {

@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/hil/ast"
 	"github.com/mitchellh/copystructure"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // IsTemplate returns true if the given query is a template.

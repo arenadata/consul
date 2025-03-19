@@ -10,8 +10,8 @@
 package meshv1alpha1
 
 import (
-	v1alpha1 "github.com/shulutkov/yellow-pages/proto-public/pbcatalog/v1alpha1"
-	pbresource "github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	v1alpha1 "github.com/arenadata/consul/proto-public/pbcatalog/v1alpha1"
+	pbresource "github.com/arenadata/consul/proto-public/pbresource"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"

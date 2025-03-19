@@ -11,8 +11,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestSnapshot(t *testing.T) {

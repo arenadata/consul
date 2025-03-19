@@ -7,10 +7,10 @@
 package state
 
 import (
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/structs"
 	"github.com/hashicorp/go-memdb"
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 func getSimplifiedExportedServices(

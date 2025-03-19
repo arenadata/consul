@@ -6,10 +6,10 @@ package consul
 import (
 	"google.golang.org/grpc"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/grpc-internal/services/subscribe"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/grpc-internal/services/subscribe"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 type subscribeBackend struct {

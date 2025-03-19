@@ -6,7 +6,7 @@ package lib_test
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/lib"
+	"github.com/arenadata/consul/lib"
 )
 
 func TestMathAbsInt(t *testing.T) {

@@ -21,17 +21,17 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/agent/xds/testcommon"
+	"github.com/arenadata/consul/agent/xds/testcommon"
 
-	propertyoverride "github.com/shulutkov/yellow-pages/agent/envoyextensions/builtin/property-override"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/xds/extensionruntime"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/version"
+	propertyoverride "github.com/arenadata/consul/agent/envoyextensions/builtin/property-override"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/xds/extensionruntime"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/version"
 )
 
 func TestEnvoyExtenderWithSnapshot(t *testing.T) {

@@ -14,7 +14,7 @@ import (
 	"github.com/mitchellh/go-testing-interface"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/connect"
+	"github.com/arenadata/consul/connect"
 )
 
 // TestLocalAddr makes a localhost address on the given port

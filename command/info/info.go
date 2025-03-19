@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"sort"
 
+	"github.com/arenadata/consul/command/flags"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/command/flags"
 )
 
 func New(ui cli.Ui) *cmd {

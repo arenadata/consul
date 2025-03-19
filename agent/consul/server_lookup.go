@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/arenadata/consul/agent/metadata"
 	"github.com/hashicorp/raft"
-	"github.com/shulutkov/yellow-pages/agent/metadata"
 )
 
 // ServerLookup encapsulates looking up servers by id and address

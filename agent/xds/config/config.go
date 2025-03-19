@@ -13,8 +13,8 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/decode"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/decode"
 )
 
 func parseConfig[T any](m map[string]any, cfg *T) error {

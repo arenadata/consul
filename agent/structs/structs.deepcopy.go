@@ -3,7 +3,7 @@
 package structs
 
 import (
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/types"
 	"time"
 )
 

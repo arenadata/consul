@@ -11,10 +11,10 @@ import (
 	"sort"
 	"time"
 
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/command/intention"
 	"github.com/mitchellh/cli"
 	"github.com/ryanuber/columnize"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/command/intention"
 )
 
 func New(ui cli.Ui) *cmd {

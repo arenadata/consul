@@ -18,12 +18,12 @@ import (
 	"github.com/hashicorp/go-uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod/testauth"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth/oidcauthtest"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/authmethod/testauth"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/internal/go-sso/oidcauth/oidcauthtest"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/testrpc"
 )
 
 // NOTE: The tests contained herein are designed to test the HTTP API

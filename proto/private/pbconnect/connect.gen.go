@@ -2,7 +2,7 @@
 
 package pbconnect
 
-import "github.com/shulutkov/yellow-pages/agent/structs"
+import "github.com/arenadata/consul/agent/structs"
 
 func CARootToStructsCARoot(s *CARoot, t *structs.CARoot) {
 	if s == nil {

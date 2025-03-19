@@ -10,13 +10,13 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/hcp"
+	hcpclient "github.com/arenadata/consul/agent/hcp/client"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/tlsutil"
 	"github.com/hashicorp/go-uuid"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/hcp"
-	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/tlsutil"
 	"github.com/stretchr/testify/require"
 )
 

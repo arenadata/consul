@@ -159,9 +159,9 @@ To write tests for bugs found during upgrades, see example on how to add a testc
 
 **Q.** Are containers' ports (e.g., consul's 8500, envoy sidecar's admin port
 or local upstream port) exposed on the docker host? \
-**A.** Yes, they are exposed. However, they are exposed through a [pod container](https://github.com/shulutkov/yellow-pages/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/container.go#L132).
+**A.** Yes, they are exposed. However, they are exposed through a [pod container](https://github.com/arenadata/consul/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/container.go#L132).
 That is, a consul agent and the envoy proxy containers registered with the agent
-share the [same Linux network namespace (i.e., they share `localhost`)](https://github.com/shulutkov/yellow-pages/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/app.go#L23-L30) as the pod container.
+share the [same Linux network namespace (i.e., they share `localhost`)](https://github.com/arenadata/consul/blob/57e034b74621180861226a01efeb3e9cedc74d3a/test/integration/consul-container/libs/cluster/app.go#L23-L30) as the pod container.
 The pod container use the same prefix as the consul agent in its name.
 
 **Q.** To troubleshoot, how can I send API request or consul command to the deployed cluster? \

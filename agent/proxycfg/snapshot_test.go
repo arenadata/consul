@@ -8,10 +8,10 @@ import (
 	"regexp"
 	"testing"
 
+	"github.com/arenadata/consul/proto/private/pbpeering"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	fuzz "github.com/google/gofuzz"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
 )
 
 func TestConfigSnapshot_Clone(t *testing.T) {

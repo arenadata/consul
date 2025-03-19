@@ -19,11 +19,11 @@ import (
 
 	"github.com/hashicorp/consul-net-rpc/go-msgpack/codec"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/envoyextensions"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/lib/decode"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/envoyextensions"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/lib/decode"
 )
 
 const (

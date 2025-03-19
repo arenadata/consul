@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg/internal/watch"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/proxycfg/internal/watch"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 type handlerIngressGateway struct {

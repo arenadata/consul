@@ -15,8 +15,8 @@ import (
 	"github.com/armon/go-metrics/prometheus"
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/logging"
 )
 
 var (

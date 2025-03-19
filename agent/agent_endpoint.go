@@ -15,8 +15,8 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/version"
 
 	"github.com/hashicorp/go-bexpr"
 	"github.com/hashicorp/serf/coordinate"
@@ -24,19 +24,19 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/consul"
-	"github.com/shulutkov/yellow-pages/agent/debug"
-	"github.com/shulutkov/yellow-pages/agent/leafcert"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	token_store "github.com/shulutkov/yellow-pages/agent/token"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/ipaddr"
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/logging/monitor"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/consul"
+	"github.com/arenadata/consul/agent/debug"
+	"github.com/arenadata/consul/agent/leafcert"
+	"github.com/arenadata/consul/agent/structs"
+	token_store "github.com/arenadata/consul/agent/token"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/ipaddr"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/logging/monitor"
+	"github.com/arenadata/consul/types"
 )
 
 type Self struct {

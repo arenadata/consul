@@ -13,11 +13,11 @@ import (
 	mock "github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	structs "github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
-	types "github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/consul/stream"
+	structs "github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
+	types "github.com/arenadata/consul/types"
 )
 
 var testTime = time.Date(2022, 4, 14, 10, 56, 00, 0, time.UTC)

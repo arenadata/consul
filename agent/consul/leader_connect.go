@@ -12,9 +12,9 @@ import (
 
 	"github.com/hashicorp/go-version"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/gateways"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/agent/consul/gateways"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/logging"
 )
 
 const (

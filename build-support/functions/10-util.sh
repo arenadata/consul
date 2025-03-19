@@ -363,7 +363,7 @@ function update_git_env {
 
    export GIT_COMMIT=$(git rev-parse --short HEAD)
    export GIT_DIRTY=$(test -n "$(git status --porcelain)" && echo "+CHANGES")
-   export GIT_IMPORT=github.com/shulutkov/yellow-pages/version
+   export GIT_IMPORT=github.com/arenadata/consul/version
    export GIT_DATE=$(git_date "$1")
    export GOLDFLAGS="-X ${GIT_IMPORT}.GitCommit=${GIT_COMMIT}${GIT_DIRTY} -X ${T}.BuildDate=${GIT_DATE}"
    return 0

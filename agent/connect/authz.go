@@ -4,8 +4,8 @@
 package connect
 
 import (
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // AuthorizeIntentionTarget determines whether the destination is covered by the given intention

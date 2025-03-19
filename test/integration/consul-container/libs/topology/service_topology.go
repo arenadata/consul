@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/api"
-	libassert "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/assert"
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
+	"github.com/arenadata/consul/api"
+	libassert "github.com/arenadata/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/arenadata/consul/test/integration/consul-container/libs/service"
 	"github.com/stretchr/testify/require"
 )
 

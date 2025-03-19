@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/types"
 	"github.com/mitchellh/copystructure"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/types"
 )
 
 var (

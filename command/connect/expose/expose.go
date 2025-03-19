@@ -10,10 +10,10 @@ import (
 
 	"github.com/mitchellh/cli"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/command/intention"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/command/intention"
 )
 
 func New(ui cli.Ui) *cmd {

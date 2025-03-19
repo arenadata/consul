@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	consulapi "github.com/shulutkov/yellow-pages/api"
+	consulapi "github.com/arenadata/consul/api"
 )
 
 // watchFactory is a function that can create a new WatchFunc

@@ -8,16 +8,16 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/testrpc"
 	uuid "github.com/hashicorp/go-uuid"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/testrpc"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
 	// activate testing auth method
-	_ "github.com/shulutkov/yellow-pages/agent/consul/authmethod/testauth"
+	_ "github.com/arenadata/consul/agent/consul/authmethod/testauth"
 )
 
 func TestBindingRuleUpdateCommand_noTabs(t *testing.T) {

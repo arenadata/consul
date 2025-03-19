@@ -6,8 +6,8 @@ package proxycfg
 import (
 	"github.com/mitchellh/go-testing-interface"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/proto/private/pbpeering"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/proto/private/pbpeering"
 )
 
 func TestConfigSnapshotPeering(t testing.T) *ConfigSnapshot {

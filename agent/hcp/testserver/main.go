@@ -12,8 +12,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/shulutkov/yellow-pages/agent/hcp"
-	"github.com/shulutkov/yellow-pages/agent/hcp/bootstrap"
+	"github.com/arenadata/consul/agent/hcp"
+	"github.com/arenadata/consul/agent/hcp/bootstrap"
 )
 
 var port int

@@ -13,7 +13,7 @@ import (
 	metricpb "go.opentelemetry.io/proto/otlp/metrics/v1"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/version"
 )
 
 func TestNewMetricsClient(t *testing.T) {

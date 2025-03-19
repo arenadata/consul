@@ -9,8 +9,8 @@ package agent
 import (
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/config"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/config"
 )
 
 type enterpriseDNSConfig struct{}

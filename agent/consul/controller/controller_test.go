@@ -14,11 +14,11 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/controller/queue"
-	"github.com/shulutkov/yellow-pages/agent/consul/fsm"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/consul/stream"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/consul/controller/queue"
+	"github.com/arenadata/consul/agent/consul/fsm"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/consul/stream"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func TestBasicController(t *testing.T) {

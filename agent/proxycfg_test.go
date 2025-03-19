@@ -12,11 +12,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/grpc-external/limiter"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent/grpc-external/limiter"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/testrpc"
 )
 
 func TestAgent_local_proxycfg(t *testing.T) {
@@ -82,7 +82,7 @@ func TestAgent_local_proxycfg(t *testing.T) {
 				t.Logf("re-creating watch")
 			}
 
-			// Prior to fixes in https://github.com/shulutkov/yellow-pages/pull/16497
+			// Prior to fixes in https://github.com/arenadata/consul/pull/16497
 			// this call to Watch() would deadlock.
 			var err error
 			ch, stc, cancel, err = cfg.Watch(sid, a.config.NodeName, token)

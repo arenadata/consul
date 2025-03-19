@@ -12,8 +12,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/lib/ttlcache"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/lib/ttlcache"
 )
 
 // Store of Materializers. Store implements an interface similar to

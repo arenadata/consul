@@ -7,8 +7,8 @@
 package pbservice
 
 import (
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/proto/private/pbcommon"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/proto/private/pbcommon"
 )
 
 func EnterpriseMetaToStructs(_ *pbcommon.EnterpriseMeta) acl.EnterpriseMeta {

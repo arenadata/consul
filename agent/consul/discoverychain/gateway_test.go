@@ -6,8 +6,8 @@ package discoverychain
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/structs"
 	"github.com/stretchr/testify/require"
 )
 

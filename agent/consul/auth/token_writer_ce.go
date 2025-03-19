@@ -6,7 +6,7 @@
 
 package auth
 
-import "github.com/shulutkov/yellow-pages/agent/structs"
+import "github.com/arenadata/consul/agent/structs"
 
 func (w *TokenWriter) enterpriseValidation(token, existing *structs.ACLToken) error {
 	return nil

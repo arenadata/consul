@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/testrpc"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/testrpc"
 )
 
 func TestCatalogListNodesCommand_noTabs(t *testing.T) {

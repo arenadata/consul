@@ -6,7 +6,7 @@ package dns_test
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/agent/dns"
+	"github.com/arenadata/consul/agent/dns"
 	"github.com/stretchr/testify/require"
 )
 

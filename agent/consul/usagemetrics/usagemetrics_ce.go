@@ -11,8 +11,8 @@ import (
 
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/consul/state"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 func (u *UsageMetricsReporter) emitNodeUsage(nodeUsage state.NodeUsage) {

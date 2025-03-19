@@ -1,10 +1,10 @@
-module github.com/shulutkov/yellow-pages/envoyextensions
+module github.com/arenadata/consul/envoyextensions
 
 go 1.24.0
 
 replace (
-	github.com/shulutkov/yellow-pages/api => ../api
-	github.com/shulutkov/yellow-pages/sdk => ../sdk
+	github.com/arenadata/consul/api => ../api
+	github.com/arenadata/consul/sdk => ../sdk
 )
 
 require (
@@ -13,8 +13,8 @@ require (
 	github.com/hashicorp/go-hclog v1.5.0
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/hashicorp/go-version v1.2.1
-	github.com/shulutkov/yellow-pages/api v0.0.0
-	github.com/shulutkov/yellow-pages/sdk v0.0.0
+	github.com/arenadata/consul/api v0.0.0
+	github.com/arenadata/consul/sdk v0.0.0
 	github.com/stretchr/testify v1.9.0
 	google.golang.org/protobuf v1.34.2
 )

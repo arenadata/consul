@@ -6,14 +6,14 @@ package proxycfgglue
 import (
 	"context"
 
+	"github.com/arenadata/consul/agent/structs/aclfilter"
 	"github.com/hashicorp/go-memdb"
-	"github.com/shulutkov/yellow-pages/agent/structs/aclfilter"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/consul/watch"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/cache"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/consul/watch"
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // CacheExportedPeeredServices satisfies the proxycfg.ExportedPeeredServices

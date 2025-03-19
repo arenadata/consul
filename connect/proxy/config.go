@@ -9,12 +9,12 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/api/watch"
+	"github.com/arenadata/consul/connect"
+	"github.com/arenadata/consul/ipaddr"
+	"github.com/arenadata/consul/lib"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/api/watch"
-	"github.com/shulutkov/yellow-pages/connect"
-	"github.com/shulutkov/yellow-pages/ipaddr"
-	"github.com/shulutkov/yellow-pages/lib"
 )
 
 // Config is the publicly configurable state for an entire proxy instance. It's

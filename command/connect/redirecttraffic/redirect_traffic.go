@@ -9,11 +9,11 @@ import (
 	"net"
 	"strconv"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/sdk/iptables"
 	"github.com/mitchellh/cli"
 	"github.com/mitchellh/mapstructure"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/sdk/iptables"
 )
 
 func New(ui cli.Ui) *cmd {

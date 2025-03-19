@@ -7,10 +7,10 @@ import (
 	"context"
 	"time"
 
+	"github.com/arenadata/consul/agent/consul/authmethod"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/internal/go-sso/oidcauth"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/agent/consul/authmethod"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/internal/go-sso/oidcauth"
 )
 
 func init() {

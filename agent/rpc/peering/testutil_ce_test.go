@@ -9,8 +9,8 @@ package peering_test
 import (
 	"testing"
 
+	"github.com/arenadata/consul/agent/consul"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/agent/consul"
 )
 
 func newDefaultDepsEnterprise(t *testing.T, logger hclog.Logger, c *consul.Config) consul.EnterpriseDeps {

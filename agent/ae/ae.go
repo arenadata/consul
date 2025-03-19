@@ -12,8 +12,8 @@ import (
 
 	"github.com/hashicorp/go-hclog"
 
-	"github.com/shulutkov/yellow-pages/lib"
-	"github.com/shulutkov/yellow-pages/logging"
+	"github.com/arenadata/consul/lib"
+	"github.com/arenadata/consul/logging"
 )
 
 // scaleThreshold is the number of nodes after which regular sync runs are

@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestSegments(t *testing.T) {

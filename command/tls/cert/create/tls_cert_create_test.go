@@ -15,10 +15,10 @@ import (
 	"github.com/mitchellh/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/sdk/testutil"
 
-	caCreate "github.com/shulutkov/yellow-pages/command/tls/ca/create"
+	caCreate "github.com/arenadata/consul/command/tls/ca/create"
 )
 
 func TestValidateCommand_noTabs(t *testing.T) {

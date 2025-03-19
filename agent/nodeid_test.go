@@ -10,11 +10,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-uuid"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
 	"github.com/stretchr/testify/require"
 )
 

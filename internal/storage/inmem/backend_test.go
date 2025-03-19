@@ -9,9 +9,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/internal/storage"
-	"github.com/shulutkov/yellow-pages/internal/storage/conformance"
-	"github.com/shulutkov/yellow-pages/internal/storage/inmem"
+	"github.com/arenadata/consul/internal/storage"
+	"github.com/arenadata/consul/internal/storage/conformance"
+	"github.com/arenadata/consul/internal/storage/inmem"
 )
 
 func TestBackend_Conformance(t *testing.T) {

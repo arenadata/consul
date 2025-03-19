@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	cachetype "github.com/shulutkov/yellow-pages/agent/cache-types"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/cache"
+	cachetype "github.com/arenadata/consul/agent/cache-types"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // NewCachedRootsReader returns a RootsReader that sources data from the agent cache.

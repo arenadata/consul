@@ -10,8 +10,8 @@ package stream
 import (
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // Topic is an identifier that partitions events. A subscription will only receive

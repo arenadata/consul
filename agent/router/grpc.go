@@ -4,8 +4,8 @@
 package router
 
 import (
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/types"
 )
 
 // ServerTracker is called when Router is notified of a server being added or

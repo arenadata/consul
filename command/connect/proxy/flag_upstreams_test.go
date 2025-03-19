@@ -7,7 +7,7 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/connect/proxy"
+	"github.com/arenadata/consul/connect/proxy"
 	"github.com/stretchr/testify/require"
 )
 

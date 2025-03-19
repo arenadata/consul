@@ -6,14 +6,14 @@ package validateupstream_test
 import (
 	"testing"
 
+	"github.com/arenadata/consul/agent/proxycfg"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/xds"
+	"github.com/arenadata/consul/agent/xds/testcommon"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
+	"github.com/arenadata/consul/sdk/testutil"
+	troubleshoot "github.com/arenadata/consul/troubleshoot/proxy"
 	testinf "github.com/mitchellh/go-testing-interface"
-	"github.com/shulutkov/yellow-pages/agent/proxycfg"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/xds"
-	"github.com/shulutkov/yellow-pages/agent/xds/testcommon"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	troubleshoot "github.com/shulutkov/yellow-pages/troubleshoot/proxy"
 	"github.com/stretchr/testify/require"
 )
 

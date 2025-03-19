@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/hashicorp/memberlist"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

@@ -16,9 +16,9 @@ import (
 	"github.com/hashicorp/go-hclog"
 	testing "github.com/mitchellh/go-testing-interface"
 
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/freeport"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/freeport"
 )
 
 // TestService returns a Service instance based on a static TLS Config.

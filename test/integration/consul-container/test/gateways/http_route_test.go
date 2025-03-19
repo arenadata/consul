@@ -14,12 +14,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/api"
+	"github.com/arenadata/consul/api"
 
-	libassert "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/assert"
-	libcluster "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/cluster"
-	libservice "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/service"
-	libtopology "github.com/shulutkov/yellow-pages/test/integration/consul-container/libs/topology"
+	libassert "github.com/arenadata/consul/test/integration/consul-container/libs/assert"
+	libcluster "github.com/arenadata/consul/test/integration/consul-container/libs/cluster"
+	libservice "github.com/arenadata/consul/test/integration/consul-container/libs/service"
+	libtopology "github.com/arenadata/consul/test/integration/consul-container/libs/topology"
 )
 
 // randomName generates a random name of n length with the provided

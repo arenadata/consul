@@ -12,12 +12,12 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/arenadata/consul/agent/config"
+	"github.com/arenadata/consul/agent/consul"
+	"github.com/arenadata/consul/agent/structs"
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/memberlist"
 	"github.com/hashicorp/serf/serf"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	"github.com/shulutkov/yellow-pages/agent/consul"
-	"github.com/shulutkov/yellow-pages/agent/structs"
 )
 
 const (

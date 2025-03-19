@@ -8,10 +8,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/acl/bindingrule"
+	"github.com/arenadata/consul/command/flags"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/acl/bindingrule"
-	"github.com/shulutkov/yellow-pages/command/flags"
 )
 
 func New(ui cli.Ui) *cmd {

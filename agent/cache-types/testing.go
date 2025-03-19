@@ -9,7 +9,7 @@ import (
 
 	testinf "github.com/mitchellh/go-testing-interface"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
+	"github.com/arenadata/consul/agent/cache"
 )
 
 // TestRPC returns a mock implementation of the RPC interface.

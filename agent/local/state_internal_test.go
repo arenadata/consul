@@ -6,8 +6,8 @@ package local
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/token"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/token"
 	"github.com/stretchr/testify/require"
 )
 

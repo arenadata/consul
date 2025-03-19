@@ -6,7 +6,7 @@ package cachetype
 import (
 	"time"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
+	"github.com/arenadata/consul/agent/cache"
 )
 
 // RegisterOptionsBlockingRefresh can be embedded into a struct to implement

@@ -13,13 +13,13 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/types/known/structpb"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/configentry"
-	"github.com/shulutkov/yellow-pages/agent/consul/state"
-	external "github.com/shulutkov/yellow-pages/agent/grpc-external"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/agent/xds/accesslogs"
-	"github.com/shulutkov/yellow-pages/proto-public/pbdataplane"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/configentry"
+	"github.com/arenadata/consul/agent/consul/state"
+	external "github.com/arenadata/consul/agent/grpc-external"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/agent/xds/accesslogs"
+	"github.com/arenadata/consul/proto-public/pbdataplane"
 )
 
 func (s *Server) GetEnvoyBootstrapParams(ctx context.Context, req *pbdataplane.GetEnvoyBootstrapParamsRequest) (*pbdataplane.GetEnvoyBootstrapParamsResponse, error) {

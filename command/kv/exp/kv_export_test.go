@@ -9,10 +9,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/kv/impexp"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/kv/impexp"
 )
 
 func TestKVExportCommand_noTabs(t *testing.T) {

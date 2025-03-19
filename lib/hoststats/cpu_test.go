@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/shirou/gopsutil/v3/cpu"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

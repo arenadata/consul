@@ -7,7 +7,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 var (

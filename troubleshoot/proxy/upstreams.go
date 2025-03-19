@@ -12,7 +12,7 @@ import (
 	envoy_resource_v3 "github.com/envoyproxy/go-control-plane/pkg/resource/v3"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/envoyextensions/extensioncommon"
+	"github.com/arenadata/consul/envoyextensions/extensioncommon"
 )
 
 type UpstreamIP struct {

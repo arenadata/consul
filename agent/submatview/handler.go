@@ -4,7 +4,7 @@
 package submatview
 
 import (
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // eventHandler is a function which performs some operation on the received

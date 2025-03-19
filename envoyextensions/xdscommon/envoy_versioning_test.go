@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/go-version"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil"
 )
 
 func TestDetermineEnvoyVersionFromNode(t *testing.T) {

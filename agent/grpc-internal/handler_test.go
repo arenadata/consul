@@ -9,17 +9,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/types"
 
 	"github.com/hashicorp/go-hclog"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/shulutkov/yellow-pages/agent/grpc-internal/balancer"
-	"github.com/shulutkov/yellow-pages/agent/grpc-internal/resolver"
-	"github.com/shulutkov/yellow-pages/agent/grpc-middleware/testutil/testservice"
+	"github.com/arenadata/consul/agent/grpc-internal/balancer"
+	"github.com/arenadata/consul/agent/grpc-internal/resolver"
+	"github.com/arenadata/consul/agent/grpc-middleware/testutil/testservice"
 )
 
 func TestHandler_PanicRecoveryInterceptor(t *testing.T) {
@@ -63,6 +63,6 @@ func TestHandler_PanicRecoveryInterceptor(t *testing.T) {
 	// Checking the entire stack trace is not possible, let's
 	// make sure that it contains a couple of expected strings.
 	require.Contains(t, strLog, `[ERROR] panic serving grpc request: panic="panic from Something`)
-	require.Contains(t, strLog, `github.com/shulutkov/yellow-pages/agent/grpc-middleware/testutil/testservice.(*SimplePanic).Something`)
+	require.Contains(t, strLog, `github.com/arenadata/consul/agent/grpc-middleware/testutil/testservice.(*SimplePanic).Something`)
 
 }

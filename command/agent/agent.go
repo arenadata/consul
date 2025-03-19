@@ -18,15 +18,15 @@ import (
 	"github.com/hashicorp/go-hclog"
 	mcli "github.com/mitchellh/cli"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/agent/config"
-	hcpbootstrap "github.com/shulutkov/yellow-pages/agent/hcp/bootstrap"
-	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
-	"github.com/shulutkov/yellow-pages/command/cli"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/service_os"
-	consulversion "github.com/shulutkov/yellow-pages/version"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/agent/config"
+	hcpbootstrap "github.com/arenadata/consul/agent/hcp/bootstrap"
+	hcpclient "github.com/arenadata/consul/agent/hcp/client"
+	"github.com/arenadata/consul/command/cli"
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/service_os"
+	consulversion "github.com/arenadata/consul/version"
 )
 
 func New(ui cli.Ui) *cmd {

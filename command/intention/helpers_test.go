@@ -6,9 +6,9 @@ package intention
 import (
 	"testing"
 
-	"github.com/shulutkov/yellow-pages/agent"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/testrpc"
+	"github.com/arenadata/consul/agent"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/testrpc"
 	"github.com/stretchr/testify/require"
 )
 

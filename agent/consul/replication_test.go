@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/arenadata/consul/lib/routine"
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/hashicorp/go-hclog"
-	"github.com/shulutkov/yellow-pages/lib/routine"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

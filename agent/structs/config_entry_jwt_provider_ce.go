@@ -9,7 +9,7 @@ package structs
 import (
 	"fmt"
 
-	"github.com/shulutkov/yellow-pages/acl"
+	"github.com/arenadata/consul/acl"
 )
 
 func (e *JWTProviderConfigEntry) validatePartitionAndNamespace() error {

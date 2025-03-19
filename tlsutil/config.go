@@ -18,9 +18,9 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/go-multierror"
 
-	"github.com/shulutkov/yellow-pages/logging"
-	"github.com/shulutkov/yellow-pages/proto/private/pbconfig"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/logging"
+	"github.com/arenadata/consul/proto/private/pbconfig"
+	"github.com/arenadata/consul/types"
 )
 
 // ALPNWrapper is a function that is used to wrap a non-TLS connection and

@@ -13,13 +13,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/connect"
-	"github.com/shulutkov/yellow-pages/agent/consul"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/connect"
+	"github.com/arenadata/consul/agent/consul"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/sdk/testutil"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 // Test that after an initial signing, new CA roots (new ID) will
@@ -853,7 +853,7 @@ func TestManager_workflow_goodNotLocal(t *testing.T) {
 		require.Equal(t, issued, issued2)
 	})
 
-	// Test Blocking - see https://github.com/shulutkov/yellow-pages/issues/4462
+	// Test Blocking - see https://github.com/arenadata/consul/issues/4462
 	testutil.RunStep(t, "test blocking issue 4462", func(t *testing.T) {
 		// Fetch it again
 		req := &ConnectCALeafRequest{
@@ -921,7 +921,7 @@ func TestManager_workflow_goodNotLocal(t *testing.T) {
 }
 
 func TestManager_workflow_nonBlockingQuery_after_blockingQuery_shouldNotBlock(t *testing.T) {
-	// see: https://github.com/shulutkov/yellow-pages/issues/12048
+	// see: https://github.com/arenadata/consul/issues/12048
 
 	if testing.Short() {
 		t.Skip("too slow for testing.Short")

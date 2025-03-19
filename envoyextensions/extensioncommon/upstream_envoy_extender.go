@@ -5,12 +5,12 @@ package extensioncommon
 
 import (
 	"fmt"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/envoyextensions/xdscommon"
 	envoy_cluster_v3 "github.com/envoyproxy/go-control-plane/envoy/config/cluster/v3"
 	envoy_listener_v3 "github.com/envoyproxy/go-control-plane/envoy/config/listener/v3"
 	envoy_route_v3 "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 	"github.com/hashicorp/go-multierror"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/envoyextensions/xdscommon"
 	"google.golang.org/protobuf/proto"
 )
 

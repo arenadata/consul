@@ -9,8 +9,8 @@ import (
 	"log"
 	"time"
 
-	hcpclient "github.com/shulutkov/yellow-pages/agent/hcp/client"
-	"github.com/shulutkov/yellow-pages/agent/hcp/config"
+	hcpclient "github.com/arenadata/consul/agent/hcp/client"
+	"github.com/arenadata/consul/agent/hcp/config"
 )
 
 type Provider struct {

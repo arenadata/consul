@@ -7,8 +7,8 @@ import (
 	"github.com/hashicorp/go-hclog"
 	"github.com/hashicorp/serf/serf"
 
-	"github.com/shulutkov/yellow-pages/agent/metadata"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/agent/metadata"
+	"github.com/arenadata/consul/types"
 )
 
 // routerFn selects one of the router operations to map to incoming Serf events.

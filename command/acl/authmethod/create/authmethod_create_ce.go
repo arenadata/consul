@@ -6,7 +6,7 @@
 
 package authmethodcreate
 
-import "github.com/shulutkov/yellow-pages/api"
+import "github.com/arenadata/consul/api"
 
 type enterpriseCmd struct {
 }

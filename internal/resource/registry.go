@@ -10,8 +10,8 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/proto-public/pbresource"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/proto-public/pbresource"
 )
 
 var (
@@ -46,7 +46,7 @@ type Registration struct {
 	Mutate func(*pbresource.Resource) error
 
 	// In the future, we'll add hooks, the controller etc. here.
-	// TODO: https://github.com/shulutkov/yellow-pages/pull/16622#discussion_r1134515909
+	// TODO: https://github.com/arenadata/consul/pull/16622#discussion_r1134515909
 }
 
 type ACLHooks struct {

@@ -10,10 +10,10 @@ import (
 	"os"
 	"time"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/lib/decode"
 	"github.com/hashicorp/go-multierror"
 	"github.com/mitchellh/mapstructure"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/lib/decode"
 )
 
 func loadFromFile(path string) (string, error) {

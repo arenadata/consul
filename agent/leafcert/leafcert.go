@@ -12,9 +12,9 @@ import (
 	"golang.org/x/sync/singleflight"
 	"golang.org/x/time/rate"
 
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/structs"
-	"github.com/shulutkov/yellow-pages/lib/ttlcache"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/structs"
+	"github.com/arenadata/consul/lib/ttlcache"
 )
 
 const (
@@ -342,7 +342,7 @@ func (m *Manager) internalGet(ctx context.Context, req *ConnectCALeafRequest) (*
 		// error, we return. Note that the invariant is that if both entry.Value AND
 		// entry.Error are non-nil, the error _must_ be more recent than the Value. In
 		// other words valid fetches should reset the error. See
-		// https://github.com/shulutkov/yellow-pages/issues/4480.
+		// https://github.com/arenadata/consul/issues/4480.
 		if !first && lastFetchErr != nil {
 			return existing, cache.ResultMeta{Index: existingIndex}, lastFetchErr
 		}

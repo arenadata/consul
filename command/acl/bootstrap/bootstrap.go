@@ -9,11 +9,11 @@ import (
 	"os"
 	"strings"
 
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/command/acl/token"
+	"github.com/arenadata/consul/command/flags"
+	"github.com/arenadata/consul/command/helpers"
 	"github.com/mitchellh/cli"
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/command/acl/token"
-	"github.com/shulutkov/yellow-pages/command/flags"
-	"github.com/shulutkov/yellow-pages/command/helpers"
 )
 
 func New(ui cli.Ui) *cmd {

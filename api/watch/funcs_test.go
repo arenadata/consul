@@ -20,9 +20,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shulutkov/yellow-pages/api"
-	"github.com/shulutkov/yellow-pages/api/watch"
-	"github.com/shulutkov/yellow-pages/sdk/testutil"
+	"github.com/arenadata/consul/api"
+	"github.com/arenadata/consul/api/watch"
+	"github.com/arenadata/consul/sdk/testutil"
 	"github.com/stretchr/testify/require"
 )
 

@@ -7,8 +7,8 @@
 package structs
 
 import (
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/types"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/types"
 )
 
 // TODO(acl-move-enterprise-meta) sync this with enterprise

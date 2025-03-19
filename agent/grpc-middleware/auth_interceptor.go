@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shulutkov/yellow-pages/tlsutil"
+	"github.com/arenadata/consul/tlsutil"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"

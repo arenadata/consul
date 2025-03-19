@@ -2,7 +2,7 @@
 
 package pbconfigentry
 
-import "github.com/shulutkov/yellow-pages/agent/structs"
+import "github.com/arenadata/consul/agent/structs"
 
 func APIGatewayToStructs(s *APIGateway, t *structs.APIGatewayConfigEntry) {
 	if s == nil {

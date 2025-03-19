@@ -59,7 +59,6 @@ Full, comprehensive documentation is available on the Consul website: https://co
 
 ## Contributing
 
-Thank you for your interest in contributing! Please refer to [CONTRIBUTING.md](https://github.com/shulutkov/yellow-pages/blob/main/.github/CONTRIBUTING.md)
-for guidance. For contributions specifically to the browser based UI, please
-refer to the UI's [README.md](https://github.com/shulutkov/yellow-pages/blob/main/ui/packages/consul-ui/README.md)
+For contributions specifically to the browser based UI, please
+refer to the UI's [README.md](https://github.com/arenadata/consul/blob/main/ui/packages/consul-ui/README.md)
 for guidance.

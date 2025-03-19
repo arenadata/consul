@@ -8,7 +8,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/shulutkov/yellow-pages/proto/private/pbsubscribe"
+	"github.com/arenadata/consul/proto/private/pbsubscribe"
 )
 
 // streamClient is a mock StreamingClient for testing that allows

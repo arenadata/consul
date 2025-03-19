@@ -11,10 +11,10 @@ import (
 	"github.com/hashicorp/go-memdb"
 	"github.com/mitchellh/hashstructure"
 
-	"github.com/shulutkov/yellow-pages/acl"
-	"github.com/shulutkov/yellow-pages/agent/cache"
-	"github.com/shulutkov/yellow-pages/agent/local"
-	"github.com/shulutkov/yellow-pages/agent/structs"
+	"github.com/arenadata/consul/acl"
+	"github.com/arenadata/consul/agent/cache"
+	"github.com/arenadata/consul/agent/local"
+	"github.com/arenadata/consul/agent/structs"
 )
 
 // Recommended name for registration.

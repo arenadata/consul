@@ -37,8 +37,8 @@ import (
 	"github.com/hashicorp/go-version"
 	"github.com/pkg/errors"
 
-	"github.com/shulutkov/yellow-pages/sdk/freeport"
-	"github.com/shulutkov/yellow-pages/sdk/testutil/retry"
+	"github.com/arenadata/consul/sdk/freeport"
+	"github.com/arenadata/consul/sdk/testutil/retry"
 )
 
 // TestPerformanceConfig configures the performance parameters.
